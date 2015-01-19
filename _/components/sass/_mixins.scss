@@ -1,0 +1,23 @@
+@mixin animateAll()
+{
+  @include single-transition(all, $transition-time, ease-out);
+}
+
+@mixin animate($toAnimate)
+{
+  @include single-transition($toAnimate, $transition-time, ease-out);
+}
+
+@mixin drop-shadow($shadow1:$color1 $h-offset1 $v-offset1 $blur1, $shadow2: $color2 $h-offset2 $v-offset2 $blur2, $shadow3:$color3 $h-offset3 $v-offset3 $blur3, $shadow4: $color4 $h-offset4 $v-offset4 $blur4)
+{
+  @include box-shadow($shadow1, $shadow2, $shadow3, $shadow4);
+}
+
+@mixin content-box($bg-color:$black, $border-color:$white, $alpha:1)
+{
+  @include background($bg-color);
+  border:1px solid $border-color;
+  opacity:$alpha;
+  height:100%;
+}
+

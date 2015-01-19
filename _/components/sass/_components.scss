@@ -1,0 +1,36 @@
+.contact-phone-link
+{
+  color:$dk-grey;
+  @include animate(color);
+  &:hover
+  {
+    color:$orange;
+    text-decoration:none;
+    @include animate(color);
+  }
+}
+
+nav.menu-container
+{
+  max-width:600px;
+  margin-right:auto;
+}
+.menu-button
+{
+  cursor:pointer;
+  color:#888686;
+  @include animate(color);
+  display:box;
+  float:left;
+  padding:7px 17px;
+  border-right:1px solid orange;
+  &:last-child
+  {
+    border-right:none;
+  }
+  &:hover
+  {
+    color:$dk-grey;
+    @include animate(color);
+  }
+}

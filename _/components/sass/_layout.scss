@@ -1,0 +1,19 @@
+///SUSY-----------------0-------------0------------0-----
+@import "susy";
+@include border-box-sizing;
+
+header
+{
+  @include clearfix;
+}
+
+nav
+{
+  float:right;
+  @include clearfix;
+}
+
+footer
+{
+  @include clearfix;
+}

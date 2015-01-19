@@ -1,0 +1,128 @@
+//
+//FONT STYLES=========================================== FONT STYLES
+//
+@font-face {
+    font-family: 'bankgothic_lt_md';
+    src: url('../../fonts/bankgothic_md_bt_medium-webfont.eot');
+    src: url('../../fonts/bankgothic_md_bt_medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/bankgothic_md_bt_medium-webfont.woff2') format('woff2'),
+         url('../../fonts/bankgothic_md_bt_medium-webfont.woff') format('woff'),
+         url('../../fonts/bankgothic_md_bt_medium-webfont.ttf') format('truetype'),
+         url('../../fonts/bankgothic_md_bt_medium-webfont.svg#bankgothic_lt_md') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pts55f';
+    src: url('../../fonts/pts55f-webfont.eot');
+    src: url('../../fonts/pts55f-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/pts55f-webfont.woff2') format('woff2'),
+         url('../../fonts/pts55f-webfont.woff') format('woff'),
+         url('../../fonts/pts55f-webfont.ttf') format('truetype'),
+         url('../../fonts/pts55f-webfont.svg#pts55f') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pts75f';
+    src: url('../../fonts/pts75f-webfont.eot');
+    src: url('../../fonts/pts75f-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/pts75f-webfont.woff2') format('woff2'),
+         url('../../fonts/pts75f-webfont.woff') format('woff'),
+         url('../../fonts/pts75f-webfont.ttf') format('truetype'),
+         url('../../fonts/pts75f-webfont.svg#pts75f') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+//======================================================
+//============ TYPOGRAPHY ==============================
+//Font Size: 20 Line Height: 33 Content Width: 1170 Approx. CPL: 133 
+//http://modularscale.com/scale/?px1=20&px2=47&ra1=1.618&ra2=0
+//======================================================
+/*
+ * $rembase:10px;
+ * $line-height-base:33
+ */
+
+html
+{
+  font-size:62.5%;
+}
+body
+{
+  font-family:$main-font!important;
+  font-size:10px; /*fallback*/
+  font-size:1.0rem; /* 10/$rembase */
+  line-height: 1.542; /* $line-height-base ÷ $fontbase */
+}
+h1
+{
+  font-size:52px; /*fallback*/
+  font-size:5.2rem; /*52/$rembase*/
+  line-height: 3.25; /* $line-height-base ÷ 52*/
+}
+h2
+{
+  font-size:47px; 
+  font-size:4.7rem;
+  line-height:2.93;
+}
+h3
+{
+  font-size:32px; 
+  font-size:3.2rem; 
+  line-height:2;
+}
+h4
+{
+  font-size:29px; 
+  font-size:2.9rem; 
+  line-height:1.815;
+}
+p
+{
+  font-size:20px; 
+  font-size:2.0rem; 
+  line-height:1.25;
+}
+
+//
+//MAIN STYLES=========================================== MAIN STYLES
+//
+body
+{
+  color: $white;
+  background: $lt-lt-grey;  
+  @include background(image-url('pattern-2cns.png'));
+}
+
+.container-fluid//reset
+{
+  padding:0;
+}
+
+//
+//LINK STYLES=========================================== LINK STYLES
+//
+//
+//LINK STYLES=========================================== LINK STYLES
+//
+a
+{
+  text-decoration:none;
+  color:$orange;
+  @include animateAll();
+  &:hover
+  {
+    color: darken($orange, 25%);
+    text-decoration:underline;
+    @include animateAll();
+  }
+  
+}
