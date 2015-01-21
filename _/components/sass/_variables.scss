@@ -8,8 +8,8 @@ $large-screen:75em;
 //-------------------
 //-----FONTS--------
 //-------------------
-$main-font:'pts55f';
-$main-font-bold:'pts75f';
+$main-font:'quicksand-light';
+$main-font-bold:'quicksand-regular';
 $secondary-font:'bankgothic_lt_md';
 
 //------------------
@@ -31,3 +31,10 @@ $alpha-end:1;
 //----ANIMATIONS-----
 //-------------------
 $transition-time:.7s;
+
+//-------------------
+//---MARGINS/PADS--
+//--------------------
+$default-space-sm:4px;
+$default-space-md:7px;
+$default-space-lg:17px;

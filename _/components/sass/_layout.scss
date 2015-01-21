@@ -2,18 +2,125 @@
 @import "susy";
 @include border-box-sizing;
 
+.header-nav-container
+{
+  @include background(rgba(161, 161, 161, .8));
+  height:100%; //75 large screen
+}
+
 header
 {
   @include clearfix;
+  font-family:'bankgothic_lt_md';
+  padding-left:$default-space-lg;
+  
+  .company-name h1
+  {
+    color:$red;
+    font-size:66px;
+    font-size:6.6rem;
+    line-height:.8;
+    .company-co
+    {
+      color:$black;
+      font-size:48px;
+      font-size:4.8rem;
+    }//company co
+  }//company-name
+  
 }
+.company-info
+{
+  @include clearfix;
+  padding-left:$default-space-lg;
+  padding-bottom:$default-space-md;
+  //more line-height or top padding for larger screen sizes
+  
+  .contact
+  {
+    float:left;
+    padding:0 6px 0 0;
+    font-family:'bankgothic_lt_bt';
+    
+    &:last-child
+    {
+      padding:0;
+    }
+    h3
+    {
+    font-size:13px;
+    font-size:1.3rem;
+    line-height:.8;
+    color:$dk-grey;
+    }//h3
+  }//contact 
+  
+  .contact-divider
+    {
+      display:inline-block;
+      border:none;
+      width:4px;
+      margin-left:$default-space-sm;
+    }
+}//company-info
 
 nav
 {
   float:right;
   @include clearfix;
+  height:26px; //restrict btn border height
+  margin-top:$default-space-lg+3;//auto
+  font-family:$main-font-bold;
 }
 
 footer
 {
   @include clearfix;
+  @include background($lt-lt-grey);
+   
+  .footer-container
+  {
+    margin-top:30px;
+  }//footer-container
+  
+  .footer-header h4, .footer-content p
+  {
+      //text-align:center;
+      margin-left:$default-space-lg;
+  }//footer-header h4/footer-content p
+  
+  .footer-header
+  {
+    //put margin here for larger screens
+    @include background($black);
+    h4
+    {
+      color:$orange;
+    }
+  }//footer-header
+  
+  .footer-content
+  {
+    margin:$default-space-lg $default-space-md $default-space-lg 0;
+    p
+    {
+      color:$black;
+      font-family:$main-font-bold;
+      font-size:18px;
+      font-size:1.8rem;
+    }
+  }//footer-content
+  
+  .legal-contact-social
+  {
+    color:$lt-grey;
+    padding-bottom:$default-space-md;
+    p
+    {
+      font-family:$main-font-bold;
+      font-size:11.096px;
+      font-size:1.109rem;
+      text-align: center;
+    }
+  }//legal-contact-social
 }

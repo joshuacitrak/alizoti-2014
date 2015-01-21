@@ -1,6 +1,7 @@
 .contact-phone-link
 {
   color:$dk-grey;
+  text-decoration:underline;//remove for larger screens
   @include animate(color);
   &:hover
   {
@@ -10,27 +11,49 @@
   }
 }
 
-nav.menu-container
+.menu-container
 {
-  max-width:600px;
-  margin-right:auto;
+  margin-top:-13px; //hlf the height of parent
 }
 .menu-button
 {
   cursor:pointer;
-  color:#888686;
   @include animate(color);
   display:box;
   float:left;
-  padding:7px 17px;
+  padding:7px;
+  //padding:7px 17px; large screen
   border-right:1px solid orange;
+  
   &:last-child
   {
     border-right:none;
   }
-  &:hover
+  &:hover a, &:active a
   {
     color:$dk-grey;
-    @include animate(color);
+    @include animateAll();
   }
+  h3
+  {
+    font-size:17px;
+    font-size:1.7rem;
+    white-space: nowrap;
+    //font-size:20px; large screen
+    //font-size:2rem;
+    a
+    {
+      color:#888686;
+      &:hover
+      {
+        color:$dk-grey;
+        text-decoration:none;
+        @include animate(color);
+      }//hover
+      .active
+      {
+        color:$dk-grey;
+      }//active
+    }//a
+  }//h3
 }

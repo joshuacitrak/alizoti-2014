@@ -15,27 +15,40 @@
 }
 
 @font-face {
-    font-family: 'pts55f';
-    src: url('../../fonts/pts55f-webfont.eot');
-    src: url('../../fonts/pts55f-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/pts55f-webfont.woff2') format('woff2'),
-         url('../../fonts/pts55f-webfont.woff') format('woff'),
-         url('../../fonts/pts55f-webfont.ttf') format('truetype'),
-         url('../../fonts/pts55f-webfont.svg#pts55f') format('svg');
+    font-family: 'bankgothic_lt_bt';
+    src: url('../../fonts/bankgothic_lt_bt_light-webfont.eot');
+    src: url('../../fonts/bankgothic_lt_bt_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/bankgothic_lt_bt_light-webfont.woff2') format('woff2'),
+         url('../../fonts/bankgothic_lt_bt_light-webfont.woff') format('woff'),
+         url('../../fonts/bankgothic_lt_bt_light-webfont.ttf') format('truetype'),
+         url('../../fonts/bankgothic_lt_bt_light-webfont.svg#bankgothic_lt_bt') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'pts75f';
-    src: url('../../fonts/pts75f-webfont.eot');
-    src: url('../../fonts/pts75f-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/pts75f-webfont.woff2') format('woff2'),
-         url('../../fonts/pts75f-webfont.woff') format('woff'),
-         url('../../fonts/pts75f-webfont.ttf') format('truetype'),
-         url('../../fonts/pts75f-webfont.svg#pts75f') format('svg');
-    font-weight: bold;
+    font-family: 'quicksand-light';
+    src: url('../../fonts/quicksand-light-webfont.eot');
+    src: url('../../fonts/quicksand-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/quicksand-light-webfont.woff2') format('woff2'),
+         url('../../fonts/quicksand-light-webfont.woff') format('woff'),
+         url('../../fonts/quicksand-light-webfont.ttf') format('truetype'),
+         url('../../fonts/quicksand-light-webfont.svg#quicksand-light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'quicksand-regular';
+    src: url('../../fonts/quicksand-regular-webfont.eot');
+    src: url('../../fonts/quicksand-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/quicksand-regular-webfont.woff2') format('woff2'),
+         url('../../fonts/quicksand-regular-webfont.woff') format('woff'),
+         url('../../fonts/quicksand-regular-webfont.ttf') format('truetype'),
+         url('../../fonts/quicksand-regular-webfont.svg#quicksand-regular') format('svg');
+    font-weight: normal;
     font-style: normal;
 
 }
@@ -60,6 +73,7 @@ body
   font-size:10px; /*fallback*/
   font-size:1.0rem; /* 10/$rembase */
   line-height: 1.542; /* $line-height-base ÷ $fontbase */
+  overflow-x:hidden;
 }
 h1
 {
