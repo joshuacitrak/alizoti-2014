@@ -6,13 +6,15 @@
 {
   @include background(rgba(161, 161, 161, .8));
   height:100%; //75 large screen
+  padding-left:$default-space-lg;
+  //
 }
 
 header
 {
   @include clearfix;
   font-family:'bankgothic_lt_md';
-  padding-left:$default-space-lg;
+  
   
   .company-name h1
   {
@@ -32,7 +34,6 @@ header
 .company-info
 {
   @include clearfix;
-  padding-left:$default-space-lg;
   padding-bottom:$default-space-md;
   //more line-height or top padding for larger screen sizes
   
@@ -48,8 +49,8 @@ header
     }
     h3
     {
-    font-size:13px;
-    font-size:1.3rem;
+    font-size:17px;
+    font-size:1.7rem;
     line-height:.8;
     color:$dk-grey;
     }//h3

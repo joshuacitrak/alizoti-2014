@@ -1,3 +1,27 @@
+.mobile-menu
+{
+  @include clearfix;
+  font-size:20px; //for easy touch
+  .mobile-list-menu
+  {
+    .mobile-list-menu-item
+    {
+      display:block;
+       float:left;
+       padding-right:$default-space-lg+2;
+       a
+       {
+         color:$dk-grey;
+         &:hover
+         {
+           color: $orange;
+           @include animate(color);
+         }
+       }
+    }
+  }
+}
+
 .contact-phone-link
 {
   color:$dk-grey;
