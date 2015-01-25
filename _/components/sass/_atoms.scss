@@ -1,0 +1,102 @@
+//======================================================
+//============ TYPOGRAPHY ==============================
+//Font Size: 20 Line Height: 33 Content Width: 1170 Approx. CPL: 133 
+//http://modularscale.com/scale/?px1=20&px2=47&ra1=1.618&ra2=0
+//======================================================
+/*
+ * $rembase:10px;
+ * $line-height-base:33
+ */
+h2, h3, h4
+{
+  font-family:$main-font;
+}
+h1
+{
+  font-size:$h1-font-size; /*fallback*/
+  font-size:$h1-font-size-rem; /*52/$rembase*/
+  line-height: $h1-line-height; /* $line-height-base ÷ 52*/
+}
+h2
+{
+  font-size:$h2-font-size; 
+  font-size:$h2-font-size-rem;
+  line-height:$h2-line-height;
+}
+h3
+{
+  font-size:$h3-font-size; 
+  font-size:$h3-font-size-rem;
+  line-height:$h3-line-height;
+}
+h4
+{
+  font-size:$h4-font-size; 
+  font-size:$h4-font-size-rem;
+  line-height:$h4-line-height;
+}
+p
+{
+  font-size:$p-font-size; 
+  font-size:$p-font-size-rem;
+  line-height:$p-line-height;
+}
+
+//
+//LINK STYLES=========================================== LINK STYLES
+//
+//
+//LINK STYLES=========================================== LINK STYLES
+//
+a, .link
+{
+  @include text-link-style($orange, none, $orange, underline);
+}
+
+.contact-phone-link
+{
+  @include text-link-style($dk-grey, underline, $dk-grey, underline);
+}
+
+.emphasize
+{
+  color:$orange;
+  @include single-text-shadow;
+}
+
+.quotes //should be 129 % of base font size
+{
+  font-size:129%;
+  font-family:$secondary-font;
+  //<span class="quotes">&ldquo;</span>
+}
+
+.btn-caret
+{
+  display:inline-block;
+  font-family:$main-font;
+
+  &:after
+  {
+    content:">";
+  }
+}
+
+.btn //overwrite BS
+{
+  @include border-radius(0px 0px);
+  font-size:20px;
+  @include animate(background);
+}
+
+.btn-primary //overwrite BS
+{  
+  @include background(rgba(8, 8, 8, .8));
+  border:none;
+  
+  &:active, &:hover, &:focus,
+  {
+    @include background(rgba(8, 8, 8, 1));
+    @include animate(background);
+  }
+}

@@ -1,0 +1,38 @@
+.secondary-menu-item-primary-btn, .menu-item-cta-btn
+{
+  width:160px;
+  max-width:160px;
+  float: right;
+  @media (min-width:$sm-screen)//necessary evil BS doesn't give me the BPs i need
+    {
+      width:200px;
+      max-width:200px;
+    }
+}
+
+.secondary-menu-item-primary-btn
+{
+  height: 100%;
+      
+  h2
+  {
+    height:250px;
+    line-height:250px;
+    font-size:27px;
+    font-size:2.7rem;
+    @media (min-width:$sm-screen)//necessary evil BS doesn't give me the BPs i need
+    {
+      font-size:$h3-font-size;
+      font-size:$h3-font-size-rem;
+    }
+  }
+}//.second-menu-item-primary-btn
+    
+  
+.menu-item-cta-btn
+{
+  @include background(rgba(8, 8, 8, 1));
+  border:none;
+  margin-top: 11px; //bc it should match the text's lower case top
+  padding:$default-space-md 0;
+}

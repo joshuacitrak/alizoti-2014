@@ -1,5 +1,3 @@
-///SUSY-----------------0-------------0------------0-----
-@import "susy";
 @include border-box-sizing;
 
 .header-nav-container
@@ -40,7 +38,6 @@ header
   {
     float:left;
     padding:0 6px 0 0;
-    font-family:'bankgothic_lt_bt';
     
     &:last-child
     {
@@ -50,6 +47,7 @@ header
     {
     font-size:17px;
     font-size:1.7rem;
+    font-family:'bankgothic_lt_bt';
     line-height:.8;
     color:$dk-grey;
     }//h3
@@ -114,7 +112,7 @@ footer
   .legal-contact-social
   {
     color:$lt-grey;
-    padding-bottom:$default-space-md;
+    padding-bottom:$default-space-lg;
     p
     {
       font-family:$main-font-bold;
@@ -122,5 +120,17 @@ footer
       font-size:1.109rem;
       text-align: center;
     }
+    
+    a
+    {
+      color:$lt-grey;
+      display:inline-block;
+      padding-left:$default-space-md;
+      &:hover
+        {
+          color: $orange;
+          @include animate(color);
+        }
+    }//a
   }//legal-contact-social
 }

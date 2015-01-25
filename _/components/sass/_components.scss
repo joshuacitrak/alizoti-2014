@@ -1,7 +1,8 @@
 .mobile-menu
 {
   @include clearfix;
-  font-size:20px; //for easy touch
+  font-size:$p-font-size; //for easy touch
+  font-size:$p-font-size-rem; //for easy touch
   .mobile-list-menu
   {
     .mobile-list-menu-item
@@ -11,27 +12,9 @@
        padding-right:$default-space-lg+2;
        a
        {
-         color:$dk-grey;
-         &:hover
-         {
-           color: $orange;
-           @include animate(color);
-         }
+         @include text-link-style($dk-grey, none, $dk-grey, underline);
        }
     }
-  }
-}
-
-.contact-phone-link
-{
-  color:$dk-grey;
-  text-decoration:underline;//remove for larger screens
-  @include animate(color);
-  &:hover
-  {
-    color:$orange;
-    text-decoration:none;
-    @include animate(color);
   }
 }
 
@@ -39,13 +22,14 @@
 {
   margin-top:-13px; //hlf the height of parent
 }
+
 .menu-button
 {
   cursor:pointer;
   @include animate(color);
   display:box;
   float:left;
-  padding:7px;
+  padding:$default-space-md;
   //padding:7px 17px; large screen
   border-right:1px solid orange;
   
@@ -67,17 +51,55 @@
     //font-size:2rem;
     a
     {
-      color:#888686;
-      &:hover
-      {
-        color:$dk-grey;
-        text-decoration:none;
-        @include animate(color);
-      }//hover
-      .active
-      {
-        color:$dk-grey;
-      }//active
+      @include text-link-style(#888686, none, #888686, none);
     }//a
   }//h3
+}
+
+.secondary-menu-item
+{
+  @include background($lt-lt-grey);
+  padding:$default-space-lg+$default-space-md+1;
+  margin-bottom:$default-space-sm;
+  @media (min-width:$md-sm-screen)//necessary evil BS doesn't give me the BPs i need
+    {
+      margin-bottom:$default-space-md;
+    }
+  .secondary-menu-item-background
+  {
+    @include clearfix;
+    @include background(url('http://placehold.it/720x265'));
+    height:265px;
+ }
+  
+  h3
+  {
+    display: inline-block;
+    color:$dk-grey;
+    line-height:1.1;
+    font-family:$main-font-bold;
+    padding-top: 7px;
+    font-size:$p-font-size; 
+    font-size:$p-font-size-rem; 
+    width: 50%;
+    @media (min-width:$sm-screen)//necessary evil BS doesn't give me the BPs i need
+    {
+      width: 58%;
+    }
+    @media (min-width:$md-sm-screen)//necessary evil BS doesn't give me the BPs i need
+    {
+      font-size:$h4-font-size; 
+      font-size:$h4-font-size-rem; 
+      width: 67%;
+    }//min-width 685
+    
+  }//h3
+}
+
+
+//add the shadow to base layers of elements
+.header-nav-container, .main-content, .secondary-menu-item
+{
+  @include drop-shadow(rgba(8, 8, 8, .2) 1px 1px 3px, rgba(8, 8, 8, .2) -1px 1px 3px, rgba(8, 8, 8, .2) 1px -1px 3px, rgba(8, 8, 8, .2) -1px -1px 3px );
+  //@include box-shadow(rgba(8, 8, 8, .2) 0 0 25px, rgba(8, 8, 8, .2) 0 0 3px 1px inset);
 }

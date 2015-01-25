@@ -2,6 +2,8 @@
 //---SCREEN SIZES-----
 //--------------------
 $small-screen :32em;
+$sm-screen: 37.1875em;
+$md-sm-screen:42.1875em;
 $medium-screen:47em;
 $large-screen:75em;
 
@@ -11,6 +13,29 @@ $large-screen:75em;
 $main-font:'quicksand-light';
 $main-font-bold:'quicksand-regular';
 $secondary-font:'bankgothic_lt_md';
+
+//------------------
+//-----TEXT---------
+//------------------
+$h1-font-size:52px; /*fallback*/
+$h1-font-size-rem:5.2rem; /*52/$rembase*/
+$h1-line-height: 3.25; /* $line-height-base ÷ 52*/
+$h2-font-size:47px; 
+$h2-font-size-rem:4.7rem;
+$h2-line-height:2.93;
+$h3-font-size:32px; 
+$h3-font-size-rem:3.2rem; 
+$h3-line-height:2;
+$h4-font-size:29px; 
+$h4-font-size-rem:2.9rem; 
+$h4-line-height:1.815;
+$p-font-size:20px; 
+$p-font-size-rem:2.0rem; 
+$p-line-height:1.25;
+
+$default-text-shadow-color: rgba(black, 0.6);
+$default-text-shadow-blur: 2px;
+$default-text-shadow-v-offset: 2px;
 
 //------------------
 //------COLORS------
@@ -27,6 +52,8 @@ $orange:#f99d33;
 $alpha-start:.75;
 $alpha-end:1;
 
+$inherit:inherit;
+
 //-------------------
 //----ANIMATIONS-----
 //-------------------
@@ -38,3 +65,5 @@ $transition-time:.7s;
 $default-space-sm:4px;
 $default-space-md:7px;
 $default-space-lg:17px;
+
+

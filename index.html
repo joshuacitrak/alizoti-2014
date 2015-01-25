@@ -11,7 +11,8 @@
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="_/css/styles.css">
+		<link rel="stylesheet" media="(max-width:767px)" href="_/css/styles.css">
+		<link rel="stylesheet" media="(min-width:768px)"  href="_/css/styles-lg.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     </head>
     <body>
@@ -71,6 +72,38 @@
          
        	<div class="main-content"><!--angular partials go here-->
        		<img src="http://placehold.it/1670x600">
+       		<div class="row">
+       			<!-- turn these into angular partials or ng-repeat this?-->
+	       		<section class="col-xs-12 col-sm-4">
+	       			<div class="secondary-menu-item">
+	       				<div class="secondary-menu-item-background">
+		       				<div class="secondary-menu-item-primary-btn btn btn-primary"><h2>Indoor</h2></div>
+		       			</div>
+		       			<h3>So you have this great idea... Let us help you set it in stone.</h3>
+		       			<button class="menu-item-cta-btn btn btn-primary">Get inspired <span class="btn-caret"></span></button>
+	       			</div>
+	       		</section>
+       			<!-- turn these into angular partials -->
+	       		<section class="col-xs-12 col-sm-4">
+	       			<div class="secondary-menu-item">
+	       				<div class="secondary-menu-item-background">
+		       				<div class="secondary-menu-item-primary-btn btn btn-primary"><h2>Outdoor</h2></div>
+		       			</div>
+		       			<h3>Step-by-step, we’ll walk you through the process of turning your living space into a dream home.</h3>
+		       			<button class="menu-item-cta-btn btn btn-primary">Start here <span class="btn-caret"></span></button>
+	       			</div>
+	       		</section>
+       			<!-- turn these into angular partials -->
+	       		<section class="col-xs-12 col-sm-4">
+	       			<div class="secondary-menu-item">
+	       				<div class="secondary-menu-item-background">
+		       				<div class="secondary-menu-item-primary-btn btn btn-primary"><h2>Fine Detail</h2></div>
+		       			</div>
+		       			<h3>Quality workmanship down to the finest details.</h3>
+		       			<button class="menu-item-cta-btn btn btn-primary">See it now <span class="btn-caret"></span></button>
+	       			</div>
+	       		</section>
+       		</div>
        	</div><!--main-content-->
        	
        	<footer>
@@ -95,7 +128,7 @@
        		</div><!--footer-container-->
        		<hr />
        		<div class="legal-contact-social">
-       			<p>&copy; 2015 Alizoti Co. 209 Ashbury St. SF, CA 94117 <a class="footer-phone-link" href="tel:4153416577">415-341-6577</a> <a href="#"><i class="fa fa-envelope"></i></a><span class="sr-only">Email us</span> <i class="fa fa-instagram"></i></a><span class="sr-only">Find us on Instagram</span></p>
+       			<p>&copy; 2015 Alizoti Co. 209 Ashbury St. SF, CA 94117 <a class="footer-phone-link" href="tel:4153416577">415-341-6577</a> <a href="#"><i class="fa fa-envelope"></i></a><span class="sr-only">Email us</span> <a href="#"><i class="fa fa-instagram"></i></a><span class="sr-only">Find us on Instagram</span></p>
        		</div><!--legal-contact-social-->
        	</footer>
        	

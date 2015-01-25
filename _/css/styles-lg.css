@@ -358,6 +358,12 @@ footer {
         -webkit-transition: color 0.7s ease-out;
         transition: color 0.7s ease-out; }
 
+/* line 11, ../../../../../../Users/apple/.rvm/gems/ruby-2.1.2/gems/susy-2.1.2/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
 /* line 1, ../components/sass/_components.scss */
 .mobile-menu {
   overflow: hidden;
