@@ -142,26 +142,26 @@ nav
 {
   .bio-name
   {
-    
+    font-family:$main-font-bold;
+    font-size:$h4-font-size;
+    line-height:1;
+    display:inline-block;    
   }
   
   .bio-aside
   {
-    color:$lt-grey;
-    font-size:90%;
-    margin:$default-space-lg $default-space-lg $default-space-lg 0;
-    @include background(darken($lt-lt-grey, 5%));
+    margin-top:$default-space-md;
   }
 }
 
 footer
 {
   @include clearfix;
-  @include background($lt-lt-grey);
+  @include background(rgba(161, 161, 161, .8));
    
   .footer-container
   {
-    margin-top:30px;
+    //margin-top:30px;
   }//footer-container
   
   .footer-header h4, .footer-content p
@@ -173,7 +173,7 @@ footer
   .footer-header
   {
     //put margin here for larger screens
-    @include background($black);
+    @include background($dk-grey);
     h4
     {
       color:$orange;
@@ -185,7 +185,7 @@ footer
     margin:$default-space-lg $default-space-md $default-space-lg 0;
     p
     {
-      color:$black;
+      color:$md-grey;
       font-family:$main-font-bold;
       font-size:18px;
       font-size:1.8rem;
@@ -194,7 +194,7 @@ footer
   
   .legal-contact-social
   {
-    color:$lt-grey;
+    color:$lt-lt-grey;
     padding-bottom:$default-space-lg;
     p
     {
@@ -206,14 +206,9 @@ footer
     
     a
     {
-      color:$lt-grey;
+      color:$lt-lt-grey;
       display:inline-block;
       padding-left:$default-space-md;
-      &:hover
-        {
-          color: $orange;
-          @include animate(color);
-        }
     }//a
   }//legal-contact-social
 }

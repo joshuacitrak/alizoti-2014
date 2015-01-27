@@ -28,7 +28,7 @@
   text-decoration:$text-decoration;
   &:hover, &:active, &:focus
   {
-    color: darken($orange, 15%);
+    color: darken($hover-color, 15%);
     text-decoration:$hover-text-decoration;
   }
 }

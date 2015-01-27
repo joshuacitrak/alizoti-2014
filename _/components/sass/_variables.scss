@@ -40,14 +40,15 @@ $default-text-shadow-v-offset: 2px;
 //------------------
 //------COLORS------
 //------------------
-$black:#080808;
-$dk-grey:#332424;
-$md-grey:#543b3b;
-$lt-grey:#a1a1a1;
-$lt-lt-grey:#ededed;
-$white:#fff;
-$red:#ee1c24;
-$orange:#f99d33;
+$black:#080808;//header, important text
+$dk-grey:#332424;//text
+$md-grey:#543b3b;//divver/accent
+$lt-grey:#a1a1a1;//header/footer bg
+$lt-lt-grey:#ededed;//main bg
+$white:#fff;//footer link+btn text
+$red:#ee1c24;//alizoti
+$orange:#f99d33;//divver/accent
+$lt-blue:#A7B3BA;//link color
 
 $alpha-start:.75;
 $alpha-end:1;

@@ -50,13 +50,17 @@ p
 //
 a, .link
 {
-  @include text-link-style($orange, none, $orange, underline);
+  @include text-link-style($lt-blue, none, $white, underline);
 }
 
 .contact-phone-link
 {
   @include text-link-style($dk-grey, underline, $dk-grey, underline);
 }
+
+//--------TEXT ONE OFFS------------------------------------------
+//----------------------------
+//--------TEXT ONE OFFS -----------------------------------------
 
 .emphasize
 {
@@ -70,6 +74,7 @@ a, .link
   font-family:$secondary-font;
   //<span class="quotes">&ldquo;</span>
 }
+
 
 .btn-caret
 {
@@ -104,4 +109,9 @@ a, .link
 section
 {
   @include background($lt-lt-grey);
+}
+
+article, aside
+{
+  margin-bottom:$default-space-lg;
 }

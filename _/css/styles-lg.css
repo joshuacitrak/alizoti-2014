@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* line 5, ../../../../../../Users/apple/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,38 +20,38 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline; }
 
-/* line 22, ../../../../../../Users/apple/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1; }
 
-/* line 24, ../../../../../../Users/apple/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
-/* line 26, ../../../../../../Users/apple/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 28, ../../../../../../Users/apple/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
-/* line 30, ../../../../../../Users/apple/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none; }
-  /* line 103, ../../../../../../Users/apple/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+  /* line 103, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
   q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none; }
 
-/* line 32, ../../../../../../Users/apple/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none; }
 
-/* line 116, ../../../../../../Users/apple/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
@@ -98,7 +98,7 @@ body {
   overflow-x: hidden;
   color: white;
   background: #ededed;
-  background: url('../../images/pattern-2cns.png?1415228600'); }
+  background: url('../../images/pattern-2cns.png?1421775716'); }
 
 /* line 75, ../components/sass/_base.scss */
 .container-fluid {
@@ -151,11 +151,11 @@ a, .link {
   -o-transition: all 0.7s ease-out;
   -webkit-transition: all 0.7s ease-out;
   transition: all 0.7s ease-out;
-  color: #f99d33;
+  color: #a7b3ba;
   text-decoration: none; }
   /* line 29, ../components/sass/_mixins.scss */
   a:hover, a:active, a:focus, .link:hover, .link:active, .link:focus {
-    color: #d97706;
+    color: #d9d9d9;
     text-decoration: underline; }
 
 /* line 56, ../components/sass/_atoms.scss */
@@ -168,28 +168,28 @@ a, .link {
   text-decoration: underline; }
   /* line 29, ../components/sass/_mixins.scss */
   .contact-phone-link:hover, .contact-phone-link:active, .contact-phone-link:focus {
-    color: #d97706;
+    color: #060404;
     text-decoration: underline; }
 
-/* line 61, ../components/sass/_atoms.scss */
+/* line 65, ../components/sass/_atoms.scss */
 .emphasize {
   color: #f99d33;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6); }
 
-/* line 67, ../components/sass/_atoms.scss */
+/* line 71, ../components/sass/_atoms.scss */
 .quotes {
   font-size: 129%;
   font-family: "bankgothic_lt_md"; }
 
-/* line 74, ../components/sass/_atoms.scss */
+/* line 79, ../components/sass/_atoms.scss */
 .btn-caret {
   display: inline-block;
   font-family: "quicksand-light"; }
-  /* line 79, ../components/sass/_atoms.scss */
+  /* line 84, ../components/sass/_atoms.scss */
   .btn-caret:after {
     content: ">"; }
 
-/* line 85, ../components/sass/_atoms.scss */
+/* line 90, ../components/sass/_atoms.scss */
 .btn {
   -moz-border-radius: 0px 0px;
   -webkit-border-radius: 0px;
@@ -200,11 +200,11 @@ a, .link {
   -webkit-transition: background 0.7s ease-out;
   transition: background 0.7s ease-out; }
 
-/* line 92, ../components/sass/_atoms.scss */
+/* line 97, ../components/sass/_atoms.scss */
 .btn-primary {
   background: rgba(8, 8, 8, 0.8);
   border: none; }
-  /* line 97, ../components/sass/_atoms.scss */
+  /* line 102, ../components/sass/_atoms.scss */
   .btn-primary:active, .btn-primary:hover, .btn-primary:focus {
     background: #080808;
     -moz-transition: background 0.7s ease-out;
@@ -212,9 +212,13 @@ a, .link {
     -webkit-transition: background 0.7s ease-out;
     transition: background 0.7s ease-out; }
 
-/* line 104, ../components/sass/_atoms.scss */
+/* line 109, ../components/sass/_atoms.scss */
 section {
   background: #ededed; }
+
+/* line 114, ../components/sass/_atoms.scss */
+article, aside {
+  margin-bottom: 17px; }
 
 /* line 1, ../components/sass/_molecules.scss */
 .secondary-menu-item-primary-btn, .menu-item-cta-btn {
@@ -243,27 +247,30 @@ section {
         font-size: 3.2rem; } }
 
 /* line 32, ../components/sass/_molecules.scss */
-.menu-item-cta-btn {
+.menu-item-cta-btn, .btn-submit {
   background: #080808;
-  border: none;
+  border: none; }
+
+/* line 37, ../components/sass/_molecules.scss */
+.menu-item-cta-btn {
   margin-top: 11px;
   padding: 7px 0; }
 
-/* line 40, ../components/sass/_molecules.scss */
+/* line 43, ../components/sass/_molecules.scss */
 .btn-submit {
   color: #ededed; }
 
-/* line 45, ../components/sass/_molecules.scss */
+/* line 48, ../components/sass/_molecules.scss */
 .bio-title, .contact-title {
   display: inline-block;
   font-family: "quicksand-regular";
   color: #080808;
   line-height: 1;
   border-bottom: 1px solid #543b3b;
-  margin-bottom: 7px;
+  margin-bottom: 24px;
   width: 390px; }
 
-/* line 11, ../../../../../../Users/apple/.rvm/gems/ruby-2.1.2/gems/susy-2.1.2/sass/susy/language/susy/_box-sizing.scss */
+/* line 11, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/susy-2.1.2/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -388,27 +395,27 @@ nav {
   -webkit-transition: all 0.7s ease-out;
   transition: all 0.7s ease-out; }
 
-/* line 148, ../components/sass/_layout.scss */
+/* line 143, ../components/sass/_layout.scss */
+.bio-container .bio-name {
+  font-family: "quicksand-regular";
+  font-size: 29px;
+  line-height: 1;
+  display: inline-block; }
+/* line 151, ../components/sass/_layout.scss */
 .bio-container .bio-aside {
-  color: #a1a1a1;
-  font-size: 90%;
-  margin: 17px 17px 17px 0;
-  background: #e0e0e0; }
+  margin-top: 7px; }
 
 /* line 157, ../components/sass/_layout.scss */
 footer {
   overflow: hidden;
   *zoom: 1;
-  background: #ededed; }
-  /* line 162, ../components/sass/_layout.scss */
-  footer .footer-container {
-    margin-top: 30px; }
+  background: rgba(161, 161, 161, 0.8); }
   /* line 167, ../components/sass/_layout.scss */
   footer .footer-header h4, footer .footer-content p {
     margin-left: 17px; }
   /* line 173, ../components/sass/_layout.scss */
   footer .footer-header {
-    background: #080808; }
+    background: #332424; }
     /* line 177, ../components/sass/_layout.scss */
     footer .footer-header h4 {
       color: #f99d33; }
@@ -417,13 +424,13 @@ footer {
     margin: 17px 7px 17px 0; }
     /* line 186, ../components/sass/_layout.scss */
     footer .footer-content p {
-      color: #080808;
+      color: #543b3b;
       font-family: "quicksand-regular";
       font-size: 18px;
       font-size: 1.8rem; }
   /* line 195, ../components/sass/_layout.scss */
   footer .legal-contact-social {
-    color: #a1a1a1;
+    color: #ededed;
     padding-bottom: 17px; }
     /* line 199, ../components/sass/_layout.scss */
     footer .legal-contact-social p {
@@ -433,18 +440,11 @@ footer {
       text-align: center; }
     /* line 207, ../components/sass/_layout.scss */
     footer .legal-contact-social a {
-      color: #a1a1a1;
+      color: #ededed;
       display: inline-block;
       padding-left: 7px; }
-      /* line 212, ../components/sass/_layout.scss */
-      footer .legal-contact-social a:hover {
-        color: #f99d33;
-        -moz-transition: color 0.7s ease-out;
-        -o-transition: color 0.7s ease-out;
-        -webkit-transition: color 0.7s ease-out;
-        transition: color 0.7s ease-out; }
 
-/* line 11, ../../../../../../Users/apple/.rvm/gems/ruby-2.1.2/gems/susy-2.1.2/sass/susy/language/susy/_box-sizing.scss */
+/* line 11, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/susy-2.1.2/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -471,7 +471,7 @@ footer {
       text-decoration: none; }
       /* line 29, ../components/sass/_mixins.scss */
       .mobile-menu .mobile-list-menu .mobile-list-menu-item a:hover, .mobile-menu .mobile-list-menu .mobile-list-menu-item a:active, .mobile-menu .mobile-list-menu .mobile-list-menu-item a:focus {
-        color: #d97706;
+        color: #060404;
         text-decoration: underline; }
 
 /* line 21, ../components/sass/_components.scss */
@@ -514,7 +514,7 @@ footer {
       text-decoration: none; }
       /* line 29, ../components/sass/_mixins.scss */
       .menu-button h3 a:hover, .menu-button h3 a:active, .menu-button h3 a:focus {
-        color: #d97706;
+        color: #626060;
         text-decoration: none; }
 
 /* line 59, ../components/sass/_components.scss */
