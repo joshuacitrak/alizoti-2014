@@ -71,6 +71,89 @@ nav
   font-family:$main-font-bold;
 }
 
+.form-container, .bio-container
+{
+  @include clearfix;
+  margin:$default-space-lg*2 0 $default-space-sm $default-space-lg;
+  color:$black;
+  font-size:17px;
+  font-size:1.7rem;
+  @media (min-width:$md-sm-screen)//necessary evil BS doesn't give me the BPs i need
+    {
+      font-size:$p-font-size;
+      font-size:$p-font-size-rem;
+    }
+}
+
+.form-container
+{
+    li
+    {
+      position:relative;
+    }
+    
+    .form
+    {
+      padding-top:$default-space-md;
+    }
+    
+    .form-item
+    {
+      margin-bottom:$default-space-md;
+      @include animateAll();
+      &:focus
+      {
+        @include animateAll();
+        outline:none;
+        @include background(#fff);
+        @include box-shadow(rgba(8, 8, 8, .2));
+      }
+      
+    }//form-item
+    
+    input, textarea
+      {
+        @include background($lt-lt-grey);
+      }
+      
+      textarea
+      {
+        width:390px;
+        max-width:390px;
+        height:300px;
+        max-height:300px;
+      }
+      
+      .form-item-hint
+      {
+        font-size:12px;
+        font-size:1.2rem;
+        color:$lt-lt-grey;
+        padding:$default-space-sm;
+        //display:hidden; //only show on error
+        position:absolute;
+        top:0;
+        @include background($red);
+        @include animateAll();
+      }//form-item-hint
+}
+
+.bio-container
+{
+  .bio-name
+  {
+    
+  }
+  
+  .bio-aside
+  {
+    color:$lt-grey;
+    font-size:90%;
+    margin:$default-space-lg $default-space-lg $default-space-lg 0;
+    @include background(darken($lt-lt-grey, 5%));
+  }
+}
+
 footer
 {
   @include clearfix;

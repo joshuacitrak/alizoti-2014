@@ -36,3 +36,19 @@
   margin-top: 11px; //bc it should match the text's lower case top
   padding:$default-space-md 0;
 }
+
+.btn-submit
+{
+  color:$lt-lt-grey;
+}
+
+.bio-title,.contact-title
+  {
+    display:inline-block;
+    font-family:$main-font-bold;
+    color:$black;
+    line-height:1;
+    border-bottom:1px solid $md-grey;
+    margin-bottom:$default-space-md;
+    width:390px;
+  }

@@ -100,3 +100,8 @@ a, .link
     @include animate(background);
   }
 }
+
+section
+{
+  @include background($lt-lt-grey);
+}
