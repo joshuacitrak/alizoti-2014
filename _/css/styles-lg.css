@@ -58,6 +58,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*fallback*/
 /*52/$rembase*/
 /* $line-height-base ÷ 52*/
+/* line 11, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/susy-2.1.2/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
 @font-face {
   font-family: 'bankgothic_lt_md';
   src: url("../../fonts/bankgothic_md_bt_medium-webfont.eot");
@@ -82,11 +88,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   src: url("../../fonts/quicksand-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/quicksand-regular-webfont.woff2") format("woff2"), url("../../fonts/quicksand-regular-webfont.woff") format("woff"), url("../../fonts/quicksand-regular-webfont.ttf") format("truetype"), url("../../fonts/quicksand-regular-webfont.svg#quicksand-regular") format("svg");
   font-weight: normal;
   font-style: normal; }
-/* line 56, ../components/sass/_base.scss */
+/* line 57, ../components/sass/_atoms.scss */
 html {
   font-size: 62.5%; }
 
-/* line 60, ../components/sass/_base.scss */
+/* line 61, ../components/sass/_atoms.scss */
 body {
   font-family: "quicksand-regular" !important;
   font-size: 10px;
@@ -100,7 +106,7 @@ body {
   background: #ededed;
   background: url('../../images/pattern-2cns.png?1421775716'); }
 
-/* line 75, ../components/sass/_base.scss */
+/* line 76, ../components/sass/_atoms.scss */
 .container-fluid {
   padding: 0; }
 
@@ -108,11 +114,15 @@ body {
  * $rembase:10px;
  * $line-height-base:33
  */
-/* line 10, ../components/sass/_atoms.scss */
+/* line 89, ../components/sass/_atoms.scss */
+h1, h2, h3, h4 {
+  text-rendering: optimizeLegibility; }
+
+/* line 93, ../components/sass/_atoms.scss */
 h2, h3, h4 {
   font-family: "quicksand-light"; }
 
-/* line 14, ../components/sass/_atoms.scss */
+/* line 97, ../components/sass/_atoms.scss */
 h1 {
   font-size: 52px;
   /*fallback*/
@@ -121,75 +131,168 @@ h1 {
   line-height: 3.25;
   /* $line-height-base ÷ 52*/ }
 
-/* line 20, ../components/sass/_atoms.scss */
+/* line 103, ../components/sass/_atoms.scss */
 h2 {
   font-size: 47px;
   font-size: 4.7rem;
   line-height: 2.93; }
 
-/* line 26, ../components/sass/_atoms.scss */
+/* line 109, ../components/sass/_atoms.scss */
 h3 {
   font-size: 32px;
   font-size: 3.2rem;
   line-height: 2; }
 
-/* line 32, ../components/sass/_atoms.scss */
+/* line 115, ../components/sass/_atoms.scss */
 h4 {
   font-size: 29px;
   font-size: 2.9rem;
   line-height: 1.815; }
 
-/* line 38, ../components/sass/_atoms.scss */
+/* line 121, ../components/sass/_atoms.scss */
 p {
   font-size: 20px;
   font-size: 2rem;
   line-height: 1.25; }
 
-/* line 51, ../components/sass/_atoms.scss */
+/* line 134, ../components/sass/_atoms.scss */
 a, .link {
   -moz-transition: all 0.7s ease-out;
   -o-transition: all 0.7s ease-out;
   -webkit-transition: all 0.7s ease-out;
   transition: all 0.7s ease-out;
-  color: #a7b3ba;
-  text-decoration: none; }
+  color: #080808;
+  text-decoration: underline; }
   /* line 29, ../components/sass/_mixins.scss */
   a:hover, a:active, a:focus, .link:hover, .link:active, .link:focus {
-    color: #d9d9d9;
-    text-decoration: underline; }
+    color: #474747;
+    text-decoration: none; }
 
-/* line 56, ../components/sass/_atoms.scss */
+/* line 139, ../components/sass/_atoms.scss */
 .contact-phone-link {
   -moz-transition: all 0.7s ease-out;
   -o-transition: all 0.7s ease-out;
   -webkit-transition: all 0.7s ease-out;
   transition: all 0.7s ease-out;
-  color: #332424;
+  color: #6d6d6d;
   text-decoration: underline; }
   /* line 29, ../components/sass/_mixins.scss */
   .contact-phone-link:hover, .contact-phone-link:active, .contact-phone-link:focus {
-    color: #060404;
+    color: #adadad;
     text-decoration: underline; }
 
-/* line 65, ../components/sass/_atoms.scss */
+/* line 144, ../components/sass/_atoms.scss */
+section, nav, article, aside, header, footer {
+  overflow: hidden;
+  *zoom: 1; }
+
+/* line 149, ../components/sass/_atoms.scss */
+nav, article, aside {
+  margin-bottom: 17px; }
+
+/* line 154, ../components/sass/_atoms.scss */
+section, .main-content, .secondary-menu-item {
+  -moz-box-shadow: rgba(8, 8, 8, 0.2) 1px 1px 3px, rgba(8, 8, 8, 0.2) -1px 1px 3px, rgba(8, 8, 8, 0.2) 1px -1px 3px, rgba(8, 8, 8, 0.2) -1px -1px 3px;
+  -webkit-box-shadow: rgba(8, 8, 8, 0.2) 1px 1px 3px, rgba(8, 8, 8, 0.2) -1px 1px 3px, rgba(8, 8, 8, 0.2) 1px -1px 3px, rgba(8, 8, 8, 0.2) -1px -1px 3px;
+  box-shadow: rgba(8, 8, 8, 0.2) 1px 1px 3px, rgba(8, 8, 8, 0.2) -1px 1px 3px, rgba(8, 8, 8, 0.2) 1px -1px 3px, rgba(8, 8, 8, 0.2) -1px -1px 3px; }
+
+/* line 160, ../components/sass/_atoms.scss */
+header {
+  font-family: 'bankgothic_lt_md'; }
+
+/* line 165, ../components/sass/_atoms.scss */
+nav {
+  float: right;
+  height: 26px;
+  margin-top: 20px;
+  font-family: "quicksand-regular"; }
+
+/* line 173, ../components/sass/_atoms.scss */
+section {
+  background: #ededed;
+  margin-top: 17px;
+  padding-left: 17px; }
+
+/* line 180, ../components/sass/_atoms.scss */
+input, textarea {
+  background: #ededed;
+  width: 390px;
+  max-width: 390px; }
+
+/* line 187, ../components/sass/_atoms.scss */
+textarea {
+  height: 300px;
+  max-height: 300px; }
+
+/* line 197, ../components/sass/_atoms.scss */
 .emphasize {
   color: #f99d33;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6); }
 
-/* line 71, ../components/sass/_atoms.scss */
+/* line 203, ../components/sass/_atoms.scss */
 .quotes {
   font-size: 129%;
   font-family: "bankgothic_lt_md"; }
 
-/* line 79, ../components/sass/_atoms.scss */
+/* line 210, ../components/sass/_atoms.scss */
+.contact-required {
+  color: #ae9d6b;
+  font-size: 11.096px;
+  font-size: 1.109rem; }
+
+/* line 217, ../components/sass/_atoms.scss */
+.form-item-hint {
+  font-size: 12px;
+  font-size: 1.2rem;
+  color: #ededed;
+  padding: 4px;
+  background: #ee1c24;
+  -moz-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+  -webkit-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out; }
+
+/* line 233, ../components/sass/_atoms.scss */
 .btn-caret {
   display: inline-block;
   font-family: "quicksand-light"; }
-  /* line 84, ../components/sass/_atoms.scss */
+  /* line 238, ../components/sass/_atoms.scss */
   .btn-caret:after {
     content: ">"; }
 
-/* line 90, ../components/sass/_atoms.scss */
+/* line 4, ../components/sass/_molecules.scss */
+.header-nav-container, .footer-container {
+  background: rgba(161, 161, 161, 0.7); }
+
+/* line 9, ../components/sass/_molecules.scss */
+.header-nav-container {
+  height: 100%;
+  padding-left: 17px;
+  margin-top: 0; }
+
+/* line 16, ../components/sass/_molecules.scss */
+.menu-container {
+  margin-top: -13px; }
+
+/* line 21, ../components/sass/_molecules.scss */
+.secondary-menu-container, .contact-container, .bio-container {
+  padding-bottom: 17px; }
+
+/* line 26, ../components/sass/_molecules.scss */
+.contact-container, .bio-container {
+  overflow: hidden;
+  *zoom: 1;
+  color: #080808;
+  font-size: 17px;
+  font-size: 1.7rem;
+  padding-top: 17px; }
+  @media (min-width: 42.1875em) {
+    /* line 26, ../components/sass/_molecules.scss */
+    .contact-container, .bio-container {
+      font-size: 20px;
+      font-size: 2rem; } }
+
+/* line 43, ../components/sass/_molecules.scss */
 .btn {
   -moz-border-radius: 0px 0px;
   -webkit-border-radius: 0px;
@@ -200,11 +303,12 @@ a, .link {
   -webkit-transition: background 0.7s ease-out;
   transition: background 0.7s ease-out; }
 
-/* line 97, ../components/sass/_atoms.scss */
+/* line 50, ../components/sass/_molecules.scss */
 .btn-primary {
   background: rgba(8, 8, 8, 0.8);
-  border: none; }
-  /* line 102, ../components/sass/_atoms.scss */
+  border: none;
+  color: #ededed; }
+  /* line 55, ../components/sass/_molecules.scss */
   .btn-primary:active, .btn-primary:hover, .btn-primary:focus {
     background: #080808;
     -moz-transition: background 0.7s ease-out;
@@ -212,273 +316,96 @@ a, .link {
     -webkit-transition: background 0.7s ease-out;
     transition: background 0.7s ease-out; }
 
-/* line 109, ../components/sass/_atoms.scss */
-section {
-  background: #ededed; }
-
-/* line 114, ../components/sass/_atoms.scss */
-article, aside {
-  margin-bottom: 17px; }
-
-/* line 1, ../components/sass/_molecules.scss */
+/* line 62, ../components/sass/_molecules.scss */
 .secondary-menu-item-primary-btn, .menu-item-cta-btn {
   width: 160px;
   max-width: 160px;
   float: right; }
   @media (min-width: 37.1875em) {
-    /* line 1, ../components/sass/_molecules.scss */
+    /* line 62, ../components/sass/_molecules.scss */
     .secondary-menu-item-primary-btn, .menu-item-cta-btn {
       width: 200px;
       max-width: 200px; } }
 
-/* line 13, ../components/sass/_molecules.scss */
+/* line 74, ../components/sass/_molecules.scss */
 .secondary-menu-item-primary-btn {
   height: 100%; }
-  /* line 17, ../components/sass/_molecules.scss */
+  /* line 78, ../components/sass/_molecules.scss */
   .secondary-menu-item-primary-btn h2 {
     height: 250px;
     line-height: 250px;
     font-size: 27px;
     font-size: 2.7rem; }
     @media (min-width: 37.1875em) {
-      /* line 17, ../components/sass/_molecules.scss */
+      /* line 78, ../components/sass/_molecules.scss */
       .secondary-menu-item-primary-btn h2 {
         font-size: 32px;
         font-size: 3.2rem; } }
 
-/* line 32, ../components/sass/_molecules.scss */
+/* line 92, ../components/sass/_molecules.scss */
 .menu-item-cta-btn, .btn-submit {
   background: #080808;
   border: none; }
 
-/* line 37, ../components/sass/_molecules.scss */
+/* line 98, ../components/sass/_molecules.scss */
 .menu-item-cta-btn {
   margin-top: 11px;
   padding: 7px 0; }
+  /* line 102, ../components/sass/_molecules.scss */
+  .menu-item-cta-btn:active, .menu-item-cta-btn:hover, .menu-item-cta-btn:focus {
+    background: #f99d33;
+    -moz-transition: background 0.7s ease-out;
+    -o-transition: background 0.7s ease-out;
+    -webkit-transition: background 0.7s ease-out;
+    transition: background 0.7s ease-out; }
 
-/* line 43, ../components/sass/_molecules.scss */
-.btn-submit {
-  color: #ededed; }
+/* line 109, ../components/sass/_molecules.scss */
+.text-content {
+  margin-right: 7px; }
 
-/* line 48, ../components/sass/_molecules.scss */
+/* line 116, ../components/sass/_molecules.scss */
+.btn-submit:active, .btn-submit:hover, .btn-submit:focus {
+  background: #adadad;
+  -moz-transition: background 0.7s ease-out;
+  -o-transition: background 0.7s ease-out;
+  -webkit-transition: background 0.7s ease-out;
+  transition: background 0.7s ease-out; }
+
+/* line 123, ../components/sass/_molecules.scss */
 .bio-title, .contact-title {
   display: inline-block;
   font-family: "quicksand-regular";
   color: #080808;
   line-height: 1;
-  border-bottom: 1px solid #543b3b;
+  border-bottom: 1px solid lightgray;
   margin-bottom: 24px;
   width: 390px; }
 
-/* line 11, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/susy-2.1.2/sass/susy/language/susy/_box-sizing.scss */
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-/* line 3, ../components/sass/_layout.scss */
-.header-nav-container {
-  background: rgba(161, 161, 161, 0.8);
-  height: 100%;
-  padding-left: 17px; }
-
-/* line 11, ../components/sass/_layout.scss */
-header {
-  overflow: hidden;
-  *zoom: 1;
-  font-family: 'bankgothic_lt_md'; }
-  /* line 16, ../components/sass/_layout.scss */
-  header .company-name h1 {
-    color: #ee1c24;
-    font-size: 66px;
-    font-size: 6.6rem;
-    line-height: .8; }
-    /* line 22, ../components/sass/_layout.scss */
-    header .company-name h1 .company-co {
-      color: #080808;
-      font-size: 48px;
-      font-size: 4.8rem; }
-
-/* line 31, ../components/sass/_layout.scss */
-.company-info {
-  overflow: hidden;
-  *zoom: 1;
-  padding-bottom: 7px; }
-  /* line 37, ../components/sass/_layout.scss */
-  .company-info .contact {
-    float: left;
-    padding: 0 6px 0 0; }
-    /* line 42, ../components/sass/_layout.scss */
-    .company-info .contact:last-child {
-      padding: 0; }
-    /* line 46, ../components/sass/_layout.scss */
-    .company-info .contact h3 {
-      font-size: 17px;
-      font-size: 1.7rem;
-      font-family: 'bankgothic_lt_bt';
-      line-height: .8;
-      color: #332424; }
-  /* line 56, ../components/sass/_layout.scss */
-  .company-info .contact-divider {
-    display: inline-block;
-    border: none;
-    width: 4px;
-    margin-left: 4px; }
-
-/* line 65, ../components/sass/_layout.scss */
-nav {
-  float: right;
-  overflow: hidden;
-  *zoom: 1;
-  height: 26px;
-  margin-top: 20px;
-  font-family: "quicksand-regular"; }
-
-/* line 74, ../components/sass/_layout.scss */
-.form-container, .bio-container {
-  overflow: hidden;
-  *zoom: 1;
-  margin: 34px 0 4px 17px;
-  color: #080808;
-  font-size: 17px;
-  font-size: 1.7rem; }
-  @media (min-width: 42.1875em) {
-    /* line 74, ../components/sass/_layout.scss */
-    .form-container, .bio-container {
-      font-size: 20px;
-      font-size: 2rem; } }
-
-/* line 90, ../components/sass/_layout.scss */
-.form-container li {
-  position: relative; }
-/* line 95, ../components/sass/_layout.scss */
-.form-container .form {
-  padding-top: 7px; }
-/* line 100, ../components/sass/_layout.scss */
-.form-container .form-item {
-  margin-bottom: 7px;
-  -moz-transition: all 0.7s ease-out;
-  -o-transition: all 0.7s ease-out;
-  -webkit-transition: all 0.7s ease-out;
-  transition: all 0.7s ease-out; }
-  /* line 104, ../components/sass/_layout.scss */
-  .form-container .form-item:focus {
-    -moz-transition: all 0.7s ease-out;
-    -o-transition: all 0.7s ease-out;
-    -webkit-transition: all 0.7s ease-out;
-    transition: all 0.7s ease-out;
-    outline: none;
-    background: white;
-    -moz-box-shadow: rgba(8, 8, 8, 0.2);
-    -webkit-box-shadow: rgba(8, 8, 8, 0.2);
-    box-shadow: rgba(8, 8, 8, 0.2); }
-/* line 114, ../components/sass/_layout.scss */
-.form-container input, .form-container textarea {
-  background: #ededed; }
-/* line 119, ../components/sass/_layout.scss */
-.form-container textarea {
-  width: 390px;
-  max-width: 390px;
-  height: 300px;
-  max-height: 300px; }
-/* line 127, ../components/sass/_layout.scss */
-.form-container .form-item-hint {
-  font-size: 12px;
-  font-size: 1.2rem;
-  color: #ededed;
-  padding: 4px;
-  position: absolute;
-  top: 0;
-  background: #ee1c24;
-  -moz-transition: all 0.7s ease-out;
-  -o-transition: all 0.7s ease-out;
-  -webkit-transition: all 0.7s ease-out;
-  transition: all 0.7s ease-out; }
-
-/* line 143, ../components/sass/_layout.scss */
-.bio-container .bio-name {
-  font-family: "quicksand-regular";
-  font-size: 29px;
-  line-height: 1;
-  display: inline-block; }
-/* line 151, ../components/sass/_layout.scss */
-.bio-container .bio-aside {
-  margin-top: 7px; }
-
-/* line 157, ../components/sass/_layout.scss */
-footer {
-  overflow: hidden;
-  *zoom: 1;
-  background: rgba(161, 161, 161, 0.8); }
-  /* line 167, ../components/sass/_layout.scss */
-  footer .footer-header h4, footer .footer-content p {
-    margin-left: 17px; }
-  /* line 173, ../components/sass/_layout.scss */
-  footer .footer-header {
-    background: #332424; }
-    /* line 177, ../components/sass/_layout.scss */
-    footer .footer-header h4 {
-      color: #f99d33; }
-  /* line 183, ../components/sass/_layout.scss */
-  footer .footer-content {
-    margin: 17px 7px 17px 0; }
-    /* line 186, ../components/sass/_layout.scss */
-    footer .footer-content p {
-      color: #543b3b;
-      font-family: "quicksand-regular";
-      font-size: 18px;
-      font-size: 1.8rem; }
-  /* line 195, ../components/sass/_layout.scss */
-  footer .legal-contact-social {
-    color: #ededed;
-    padding-bottom: 17px; }
-    /* line 199, ../components/sass/_layout.scss */
-    footer .legal-contact-social p {
-      font-family: "quicksand-regular";
-      font-size: 11.096px;
-      font-size: 1.109rem;
-      text-align: center; }
-    /* line 207, ../components/sass/_layout.scss */
-    footer .legal-contact-social a {
-      color: #ededed;
-      display: inline-block;
-      padding-left: 7px; }
-
-/* line 11, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/susy-2.1.2/sass/susy/language/susy/_box-sizing.scss */
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-/* line 1, ../components/sass/_components.scss */
+/* line 1, ../components/sass/_organisms.scss */
 .mobile-menu {
-  overflow: hidden;
-  *zoom: 1;
+  float: none;
+  margin-top: 0;
   font-size: 20px;
   font-size: 2rem; }
-  /* line 8, ../components/sass/_components.scss */
+  /* line 9, ../components/sass/_organisms.scss */
   .mobile-menu .mobile-list-menu .mobile-list-menu-item {
     display: block;
     float: left;
     padding-right: 19px; }
-    /* line 13, ../components/sass/_components.scss */
+    /* line 14, ../components/sass/_organisms.scss */
     .mobile-menu .mobile-list-menu .mobile-list-menu-item a {
       -moz-transition: all 0.7s ease-out;
       -o-transition: all 0.7s ease-out;
       -webkit-transition: all 0.7s ease-out;
       transition: all 0.7s ease-out;
-      color: #332424;
+      color: #6d6d6d;
       text-decoration: none; }
       /* line 29, ../components/sass/_mixins.scss */
       .mobile-menu .mobile-list-menu .mobile-list-menu-item a:hover, .mobile-menu .mobile-list-menu .mobile-list-menu-item a:active, .mobile-menu .mobile-list-menu .mobile-list-menu-item a:focus {
-        color: #060404;
+        color: #d4d4d4;
         text-decoration: underline; }
 
-/* line 21, ../components/sass/_components.scss */
-.menu-container {
-  margin-top: -13px; }
-
-/* line 26, ../components/sass/_components.scss */
+/* line 22, ../components/sass/_organisms.scss */
 .menu-button {
   cursor: pointer;
   -moz-transition: color 0.7s ease-out;
@@ -489,22 +416,22 @@ footer {
   float: left;
   padding: 7px;
   border-right: 1px solid orange; }
-  /* line 36, ../components/sass/_components.scss */
+  /* line 32, ../components/sass/_organisms.scss */
   .menu-button:last-child {
     border-right: none; }
-  /* line 40, ../components/sass/_components.scss */
+  /* line 36, ../components/sass/_organisms.scss */
   .menu-button:hover a, .menu-button:active a {
     color: #332424;
     -moz-transition: all 0.7s ease-out;
     -o-transition: all 0.7s ease-out;
     -webkit-transition: all 0.7s ease-out;
     transition: all 0.7s ease-out; }
-  /* line 45, ../components/sass/_components.scss */
+  /* line 41, ../components/sass/_organisms.scss */
   .menu-button h3 {
     font-size: 17px;
     font-size: 1.7rem;
     white-space: nowrap; }
-    /* line 52, ../components/sass/_components.scss */
+    /* line 48, ../components/sass/_organisms.scss */
     .menu-button h3 a {
       -moz-transition: all 0.7s ease-out;
       -o-transition: all 0.7s ease-out;
@@ -517,22 +444,60 @@ footer {
         color: #626060;
         text-decoration: none; }
 
-/* line 59, ../components/sass/_components.scss */
+/* line 55, ../components/sass/_organisms.scss */
+.company-name h1 {
+  color: #ee1c24;
+  font-size: 66px;
+  font-size: 6.6rem;
+  line-height: .8; }
+  /* line 61, ../components/sass/_organisms.scss */
+  .company-name h1 .company-co {
+    color: #080808;
+    font-size: 48px;
+    font-size: 4.8rem; }
+
+/* line 68, ../components/sass/_organisms.scss */
+.company-info {
+  overflow: hidden;
+  *zoom: 1;
+  padding-bottom: 7px; }
+  /* line 74, ../components/sass/_organisms.scss */
+  .company-info .contact {
+    float: left;
+    padding: 0 6px 0 0; }
+    /* line 79, ../components/sass/_organisms.scss */
+    .company-info .contact:last-child {
+      padding: 0; }
+    /* line 83, ../components/sass/_organisms.scss */
+    .company-info .contact h3 {
+      font-size: 17px;
+      font-size: 1.7rem;
+      font-family: 'bankgothic_lt_bt';
+      line-height: .8;
+      color: #332424; }
+  /* line 93, ../components/sass/_organisms.scss */
+  .company-info .contact-divider {
+    display: inline-block;
+    border: none;
+    width: 6px;
+    margin-left: 6px; }
+
+/* line 102, ../components/sass/_organisms.scss */
 .secondary-menu-item {
-  background: #ededed;
+  height: 100%;
   padding: 25px;
   margin-bottom: 4px; }
   @media (min-width: 42.1875em) {
-    /* line 59, ../components/sass/_components.scss */
+    /* line 102, ../components/sass/_organisms.scss */
     .secondary-menu-item {
       margin-bottom: 7px; } }
-  /* line 68, ../components/sass/_components.scss */
+  /* line 112, ../components/sass/_organisms.scss */
   .secondary-menu-item .secondary-menu-item-background {
     overflow: hidden;
     *zoom: 1;
     background: url("http://placehold.it/720x265");
     height: 265px; }
-  /* line 75, ../components/sass/_components.scss */
+  /* line 119, ../components/sass/_organisms.scss */
   .secondary-menu-item h3 {
     display: inline-block;
     color: #332424;
@@ -543,18 +508,95 @@ footer {
     font-size: 2rem;
     width: 50%; }
     @media (min-width: 37.1875em) {
-      /* line 75, ../components/sass/_components.scss */
+      /* line 119, ../components/sass/_organisms.scss */
       .secondary-menu-item h3 {
         width: 58%; } }
     @media (min-width: 42.1875em) {
-      /* line 75, ../components/sass/_components.scss */
+      /* line 119, ../components/sass/_organisms.scss */
       .secondary-menu-item h3 {
         font-size: 29px;
         font-size: 2.9rem;
         width: 67%; } }
 
-/* line 101, ../components/sass/_components.scss */
-.header-nav-container, .main-content, .secondary-menu-item {
-  -moz-box-shadow: rgba(8, 8, 8, 0.2) 1px 1px 3px, rgba(8, 8, 8, 0.2) -1px 1px 3px, rgba(8, 8, 8, 0.2) 1px -1px 3px, rgba(8, 8, 8, 0.2) -1px -1px 3px;
-  -webkit-box-shadow: rgba(8, 8, 8, 0.2) 1px 1px 3px, rgba(8, 8, 8, 0.2) -1px 1px 3px, rgba(8, 8, 8, 0.2) 1px -1px 3px, rgba(8, 8, 8, 0.2) -1px -1px 3px;
-  box-shadow: rgba(8, 8, 8, 0.2) 1px 1px 3px, rgba(8, 8, 8, 0.2) -1px 1px 3px, rgba(8, 8, 8, 0.2) 1px -1px 3px, rgba(8, 8, 8, 0.2) -1px -1px 3px; }
+/* line 145, ../components/sass/_organisms.scss */
+.contact-container li {
+  position: relative; }
+/* line 150, ../components/sass/_organisms.scss */
+.contact-container .form {
+  padding-top: 7px; }
+/* line 155, ../components/sass/_organisms.scss */
+.contact-container .form-item {
+  margin-bottom: 7px;
+  -moz-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+  -webkit-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out; }
+  /* line 159, ../components/sass/_organisms.scss */
+  .contact-container .form-item:focus {
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    -webkit-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+    outline: none;
+    background: white;
+    -moz-box-shadow: rgba(8, 8, 8, 0.2);
+    -webkit-box-shadow: rgba(8, 8, 8, 0.2);
+    box-shadow: rgba(8, 8, 8, 0.2); }
+
+/* line 173, ../components/sass/_organisms.scss */
+.bio-container .bio-name {
+  font-family: "quicksand-regular";
+  font-size: 29px;
+  color: #d47d19;
+  line-height: 1;
+  display: inline-block; }
+/* line 182, ../components/sass/_organisms.scss */
+.bio-container .bio-aside {
+  margin-top: 7px; }
+
+/* line 188, ../components/sass/_organisms.scss */
+.footer-container {
+  padding-left: 0; }
+  /* line 194, ../components/sass/_organisms.scss */
+  .footer-container footer .footer-header h4, .footer-container footer .footer-content p {
+    margin-left: 17px; }
+  /* line 200, ../components/sass/_organisms.scss */
+  .footer-container footer .footer-header {
+    background: #332424; }
+    /* line 204, ../components/sass/_organisms.scss */
+    .footer-container footer .footer-header h4 {
+      color: #f99d33; }
+  /* line 210, ../components/sass/_organisms.scss */
+  .footer-container footer .footer-content {
+    margin: 17px 7px 17px 0; }
+    /* line 213, ../components/sass/_organisms.scss */
+    .footer-container footer .footer-content p {
+      color: #543b3b;
+      font-family: "quicksand-regular";
+      font-size: 18px;
+      font-size: 1.8rem; }
+  /* line 222, ../components/sass/_organisms.scss */
+  .footer-container footer .legal-contact-social {
+    color: #ededed;
+    padding-bottom: 17px;
+    margin: 17px 7px 17px 0; }
+    /* line 227, ../components/sass/_organisms.scss */
+    .footer-container footer .legal-contact-social p {
+      font-family: "bankgothic_lt_md";
+      font-size: 11.096px;
+      font-size: 1.109rem;
+      text-align: center; }
+      /* line 234, ../components/sass/_organisms.scss */
+      .footer-container footer .legal-contact-social p a {
+        -moz-transition: all 0.7s ease-out;
+        -o-transition: all 0.7s ease-out;
+        -webkit-transition: all 0.7s ease-out;
+        transition: all 0.7s ease-out;
+        color: #ededed;
+        text-decoration: underline;
+        display: inline-block;
+        padding-left: 7px; }
+        /* line 29, ../components/sass/_mixins.scss */
+        .footer-container footer .legal-contact-social p a:hover, .footer-container footer .legal-contact-social p a:active, .footer-container footer .legal-contact-social p a:focus {
+          color: #474747;
+          text-decoration: none; }
