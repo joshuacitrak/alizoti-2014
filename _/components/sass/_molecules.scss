@@ -18,7 +18,7 @@
   margin-top:-13px; //hlf the height of parent
 }
 
-.secondary-menu-container, .contact-container, .bio-container, .portfolio-container
+.secondary-menu-container, .contact-container, .bio-container, .portfolio-container, .more-container
 {
   padding-bottom:$default-space-lg;
   position:relative;
@@ -38,10 +38,22 @@
     }
 }
 
-.portfolio-container
+.portfolio-container, .more-container
 {
   padding-top:$default-space-lg;
-  margin-right:$default-space-lg;
+  margin-right:$default-space-md;
+}
+
+.btn-portfolio-container
+{
+  padding-top:$default-space-md;
+}
+
+.more-container
+{
+  min-height:20px;
+  min-width:20px;
+  margin-left:$default-space-lg;
 }
 
 //--------nested molecules-----------------
@@ -64,6 +76,13 @@
     @include background(rgba(8, 8, 8, 1));
     @include animate(background);
   }
+}
+
+.btn-inactive
+{
+  opacity:.7;
+  cursor:default;
+  @include animate(opacity);
 }
 
 .secondary-menu-item-primary-btn, .menu-item-cta-btn
@@ -113,11 +132,6 @@
   }
 }
 
-.text-content
-{
-  margin-right:$default-space-md;
-}
-
 .btn-submit
 {
   &:active, &:hover, &:focus,
@@ -125,6 +139,21 @@
     @include background($grey2);
     @include animate(background);
   }
+}
+
+.btn-portfolio
+{
+  &:active, &:hover, &:focus,
+  {
+    color:$grey5;
+    @include background($lt-blue);
+    @include animateAll();
+  }
+}
+
+.text-content
+{
+  margin-right:$default-space-md;
 }
 
 .bio-title, .contact-title, .portfolio-title, .portfolio-more
@@ -188,6 +217,11 @@
 .more-fg
 {
   max-width:100px;
+  &:hover >.caption, &:focus > .caption, &:active > .caption
+  {
+    color:$grey5;
+    @include background($lt-blue);
+  }
 }
 
 .portfolio-more

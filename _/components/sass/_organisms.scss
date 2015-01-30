@@ -111,7 +111,7 @@
 {
     li
     {
-      position:relative;
+      float:none;
     }
     
     .form
@@ -149,6 +149,18 @@
   .bio-aside
   {
     margin-top:$default-space-md;
+  }
+}
+
+.more-container
+{
+  .more-list-item
+  {
+    margin:$default-space-md $default-space-md 0 0;
+    &:last-child
+    {
+      margin-right:0;
+    }
   }
 }
 
