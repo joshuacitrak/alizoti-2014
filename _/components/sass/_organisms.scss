@@ -19,39 +19,6 @@
   }
 }
 
-.menu-button
-{
-  cursor:pointer;
-  @include animate(color);
-  display:box;
-  float:left;
-  padding:$default-space-md;
-  //padding:7px 17px; large screen
-  border-right:1px solid orange;
-  
-  &:last-child
-  {
-    border-right:none;
-  }
-  &:hover a, &:active a
-  {
-    color:$red1;
-    @include animateAll();
-  }
-  h3
-  {
-    font-size:17px;
-    font-size:1.7rem;
-    white-space: nowrap;
-    //font-size:20px; large screen
-    //font-size:2rem;
-    a
-    {
-      @include text-link-style($grey1, none, $grey1, none);
-    }//a
-  }//h3
-}
-
 .company-name h1
   {
     color:$red2;
