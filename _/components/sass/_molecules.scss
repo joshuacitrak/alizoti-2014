@@ -18,9 +18,10 @@
   margin-top:-13px; //hlf the height of parent
 }
 
-.secondary-menu-container, .contact-container, .bio-container
+.secondary-menu-container, .contact-container, .bio-container, .portfolio-container
 {
   padding-bottom:$default-space-lg;
+  position:relative;
 }
 
 .contact-container, .bio-container
@@ -35,6 +36,12 @@
       font-size:$p-font-size;
       font-size:$p-font-size-rem;
     }
+}
+
+.portfolio-container
+{
+  padding-top:$default-space-lg;
+  margin-right:$default-space-lg;
 }
 
 //--------nested molecules-----------------
@@ -101,7 +108,7 @@
   padding:$default-space-md 0;
   &:active, &:hover, &:focus,
   {
-    @include background($orange);
+    @include background($orange2);
     @include animate(background);
   }
 }
@@ -120,13 +127,71 @@
   }
 }
 
-.bio-title,.contact-title
+.bio-title, .contact-title, .portfolio-title, .portfolio-more
   {
-    display:inline-block;
+    //display:inline-block;
     font-family:$main-font-bold;
     color:$black;
     line-height:1;
     border-bottom:1px solid $grey3;
     margin-bottom:24px;
     width:390px;
+}
+
+.portfolio-title
+{
+  margin-left:$default-space-lg;
+}
+
+.portfolio-description, .portfolio-more
+{
+  margin-top:$default-space-md;
+  color:$grey1;
+}
+
+.thumb-list
+{
+  .thumb-list-item
+  {
+    margin-bottom:$default-space-md;
+    &:last-child
+    {
+      margin-bottom:0;
+    }
+    .thumb-caption
+    {
+      font-size:13px;
+      font-size:1.3rem;
+      bottom:0;
+    }//thumb fg
+  }//thumb listitem
+}//thumb list
+
+.main-fg, .thumb-fg, .more-fg
+{
+  &:hover >.caption, &:focus > .caption, &:active > .caption
+  {
+    @include animateAll();
+    @include background(rgba(8, 8,8, 1));
+    bottom:0;
   }
+}
+
+.thumb-fg
+{
+  &:hover >.thumb-caption, &:focus > .thumb-caption, &:active > .thumb-caption
+  {
+    bottom:$default-space-lg;
+  }
+}
+
+.more-fg
+{
+  max-width:100px;
+}
+
+.portfolio-more
+{
+  margin-bottom:0;
+  margin:$default-space-md 0;
+}

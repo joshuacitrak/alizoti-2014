@@ -35,7 +35,7 @@
   }
   &:hover a, &:active a
   {
-    color:$dk-grey;
+    color:$red1;
     @include animateAll();
   }
   h3
@@ -47,14 +47,14 @@
     //font-size:2rem;
     a
     {
-      @include text-link-style(#888686, none, #888686, none);
+      @include text-link-style($grey1, none, $grey1, none);
     }//a
   }//h3
 }
 
 .company-name h1
   {
-    color:$red;
+    color:$red2;
     font-size:66px;
     font-size:6.6rem;
     line-height:.8;
@@ -86,7 +86,7 @@
     font-size:1.7rem;
     font-family:'bankgothic_lt_bt';
     line-height:.8;
-    color:$dk-grey;
+    color:$red1;
     }//h3
   }//contact 
   
@@ -119,7 +119,7 @@
   h3
   {
     display: inline-block;
-    color:$dk-grey;
+    color:$grey1;
     line-height:1.1;
     font-family:$main-font-bold;
     padding-top: 7px;
@@ -200,10 +200,10 @@
     .footer-header
     {
       //put margin here for larger screens
-      @include background($dk-grey);
+      @include background($red1);
       h4
       {
-        color:$orange;
+        color:$orange2;
       }
     }//footer-header
     
@@ -212,7 +212,7 @@
       margin:$default-space-lg $default-space-md $default-space-lg 0;
       p
       {
-        color:$md-grey;
+        color:darken($grey1, 10%);
         font-family:$main-font-bold;
         font-size:18px;
         font-size:1.8rem;
@@ -221,7 +221,7 @@
     
     .legal-contact-social
     {
-      color:$lt-lt-grey;
+      color:$grey4;
       padding-bottom:$default-space-lg;
       margin: $default-space-lg $default-space-md $default-space-lg 0;
       p

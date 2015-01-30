@@ -66,7 +66,7 @@ body
   line-height: 1.542; /* $line-height-base ÷ $fontbase */
   overflow-x:hidden;
   color: $white;
-  background: $lt-lt-grey;  
+  background: $grey4;  
   @include background(image-url('pattern-2cns.png'));
 }
 
@@ -172,7 +172,7 @@ nav
 
 section
 {
-  @include background($lt-lt-grey);
+  @include background($grey4);
   margin-top:$default-space-lg;
   padding-left:$default-space-lg;
 }
@@ -190,14 +190,34 @@ textarea
   max-height:300px;
 }
 
+figure
+{
+  position:relative;
+  overflow:hidden;
+  cursor:pointer;
+}
+
+figcaption
+{
+  position:absolute;
+  bottom:$default-space-lg;
+  left:0;
+  padding-left:$default-space-lg;
+  font-size:17px;
+  font-size:1.7rem;
+  @include single-text-shadow;
+  @include background(rgba(8, 8,8, .6));
+  @include animateAll();
+  width:100%;
+}
+
 //--------TEXT ONE OFFS------------------------------------------
 //----------------------------
 //--------TEXT ONE OFFS -----------------------------------------
 
 .emphasize
 {
-  color:$orange;
-  @include single-text-shadow;
+  color:$orange2;
 }
 
 .quotes //should be 129 % of base font size
