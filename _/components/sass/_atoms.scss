@@ -136,11 +136,6 @@ a, .link
   @include text-link-style($black, underline, $grey1, none);
 }
 
-.contact-phone-link
-{
-  @include text-link-style($grey1, underline, $grey3, underline);
-}
-
 section, nav, article, aside, header, footer
 {
   @include clearfix;
@@ -164,10 +159,13 @@ header
 
 nav
 {
-  float:right;
-  height:26px; //restrict btn border height
-  margin-top:$default-space-lg+3;//auto
   font-family:$main-font-bold;
+  @media (min-width:970px)
+  {
+    float:right;
+    height:26px; //restrict btn border height
+    margin-top:$default-space-lg+3;//auto
+  }
 }
 
 section

@@ -169,68 +169,58 @@ a, .link {
     text-decoration: none; }
 
 /* line 139, ../components/sass/_atoms.scss */
-.contact-phone-link {
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-  color: #6d6d6d;
-  text-decoration: underline; }
-  /* line 29, ../components/sass/_mixins.scss */
-  .contact-phone-link:hover, .contact-phone-link:active, .contact-phone-link:focus {
-    color: #adadad;
-    text-decoration: underline; }
-
-/* line 144, ../components/sass/_atoms.scss */
 section, nav, article, aside, header, footer {
   overflow: hidden;
   *zoom: 1; }
 
-/* line 149, ../components/sass/_atoms.scss */
+/* line 144, ../components/sass/_atoms.scss */
 nav, article, aside {
   margin-bottom: 17px; }
 
-/* line 154, ../components/sass/_atoms.scss */
+/* line 149, ../components/sass/_atoms.scss */
 section, .main-content, .secondary-menu-item {
   -moz-box-shadow: rgba(8, 8, 8, 0.2) 1px 1px 3px, rgba(8, 8, 8, 0.2) -1px 1px 3px, rgba(8, 8, 8, 0.2) 1px -1px 3px, rgba(8, 8, 8, 0.2) -1px -1px 3px;
   -webkit-box-shadow: rgba(8, 8, 8, 0.2) 1px 1px 3px, rgba(8, 8, 8, 0.2) -1px 1px 3px, rgba(8, 8, 8, 0.2) 1px -1px 3px, rgba(8, 8, 8, 0.2) -1px -1px 3px;
   box-shadow: rgba(8, 8, 8, 0.2) 1px 1px 3px, rgba(8, 8, 8, 0.2) -1px 1px 3px, rgba(8, 8, 8, 0.2) 1px -1px 3px, rgba(8, 8, 8, 0.2) -1px -1px 3px; }
 
-/* line 160, ../components/sass/_atoms.scss */
+/* line 155, ../components/sass/_atoms.scss */
 header {
   font-family: 'bankgothic_lt_md'; }
 
-/* line 165, ../components/sass/_atoms.scss */
+/* line 160, ../components/sass/_atoms.scss */
 nav {
-  float: right;
-  height: 26px;
-  margin-top: 20px;
   font-family: "quicksand-regular"; }
+  @media (min-width: 970px) {
+    /* line 160, ../components/sass/_atoms.scss */
+    nav {
+      float: right;
+      height: 26px;
+      margin-top: 20px; } }
 
-/* line 173, ../components/sass/_atoms.scss */
+/* line 171, ../components/sass/_atoms.scss */
 section {
   background: #ededed;
   margin-top: 17px;
   padding-left: 17px; }
 
-/* line 180, ../components/sass/_atoms.scss */
+/* line 178, ../components/sass/_atoms.scss */
 input, textarea {
   background: #ededed;
   width: 390px;
   max-width: 390px; }
 
-/* line 187, ../components/sass/_atoms.scss */
+/* line 185, ../components/sass/_atoms.scss */
 textarea {
   height: 300px;
   max-height: 300px; }
 
-/* line 193, ../components/sass/_atoms.scss */
+/* line 191, ../components/sass/_atoms.scss */
 figure {
   position: relative;
   overflow: hidden;
   cursor: pointer; }
 
-/* line 200, ../components/sass/_atoms.scss */
+/* line 198, ../components/sass/_atoms.scss */
 figcaption {
   position: absolute;
   bottom: 17px;
@@ -246,27 +236,27 @@ figcaption {
   transition: all 0.5s ease-out;
   width: 100%; }
 
-/* line 214, ../components/sass/_atoms.scss */
+/* line 212, ../components/sass/_atoms.scss */
 li {
   position: relative;
   float: left; }
 
-/* line 224, ../components/sass/_atoms.scss */
+/* line 222, ../components/sass/_atoms.scss */
 .emphasize {
   color: #eebc1c; }
 
-/* line 229, ../components/sass/_atoms.scss */
+/* line 227, ../components/sass/_atoms.scss */
 .quotes {
   font-size: 129%;
   font-family: "bankgothic_lt_md"; }
 
-/* line 236, ../components/sass/_atoms.scss */
+/* line 234, ../components/sass/_atoms.scss */
 .contact-required {
   color: #ae9d6b;
   font-size: 11.096px;
   font-size: 1.109rem; }
 
-/* line 243, ../components/sass/_atoms.scss */
+/* line 241, ../components/sass/_atoms.scss */
 .form-item-hint {
   font-size: 12px;
   font-size: 1.2rem;
@@ -278,11 +268,11 @@ li {
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out; }
 
-/* line 259, ../components/sass/_atoms.scss */
+/* line 257, ../components/sass/_atoms.scss */
 .btn-caret {
   display: inline-block;
   font-family: "quicksand-light"; }
-  /* line 264, ../components/sass/_atoms.scss */
+  /* line 262, ../components/sass/_atoms.scss */
   .btn-caret:after {
     content: ">"; }
 
@@ -297,15 +287,11 @@ li {
   margin-top: 0; }
 
 /* line 16, ../components/sass/_molecules.scss */
-.menu-container {
-  margin-top: -13px; }
-
-/* line 21, ../components/sass/_molecules.scss */
 .secondary-menu-container, .contact-container, .bio-container, .portfolio-container, .more-container {
   padding-bottom: 17px;
   position: relative; }
 
-/* line 27, ../components/sass/_molecules.scss */
+/* line 22, ../components/sass/_molecules.scss */
 .contact-container, .bio-container {
   overflow: hidden;
   *zoom: 1;
@@ -314,27 +300,27 @@ li {
   font-size: 1.7rem;
   padding-top: 17px; }
   @media (min-width: 42.1875em) {
-    /* line 27, ../components/sass/_molecules.scss */
+    /* line 22, ../components/sass/_molecules.scss */
     .contact-container, .bio-container {
       font-size: 20px;
       font-size: 2rem; } }
 
-/* line 41, ../components/sass/_molecules.scss */
+/* line 36, ../components/sass/_molecules.scss */
 .portfolio-container, .more-container {
   padding-top: 17px;
   margin-right: 7px; }
 
-/* line 47, ../components/sass/_molecules.scss */
+/* line 42, ../components/sass/_molecules.scss */
 .btn-portfolio-container {
   padding-top: 7px; }
 
-/* line 52, ../components/sass/_molecules.scss */
+/* line 47, ../components/sass/_molecules.scss */
 .more-container {
   min-height: 20px;
   min-width: 20px;
   margin-left: 17px; }
 
-/* line 62, ../components/sass/_molecules.scss */
+/* line 57, ../components/sass/_molecules.scss */
 .btn {
   -moz-border-radius: 0px 0px;
   -webkit-border-radius: 0px;
@@ -345,12 +331,12 @@ li {
   -webkit-transition: background 0.5s ease-out;
   transition: background 0.5s ease-out; }
 
-/* line 69, ../components/sass/_molecules.scss */
+/* line 64, ../components/sass/_molecules.scss */
 .btn-primary {
   background: rgba(8, 8, 8, 0.8);
   border: none;
   color: #ededed; }
-  /* line 74, ../components/sass/_molecules.scss */
+  /* line 69, ../components/sass/_molecules.scss */
   .btn-primary:active, .btn-primary:hover, .btn-primary:focus {
     background: #080808;
     -moz-transition: background 0.5s ease-out;
@@ -358,7 +344,7 @@ li {
     -webkit-transition: background 0.5s ease-out;
     transition: background 0.5s ease-out; }
 
-/* line 81, ../components/sass/_molecules.scss */
+/* line 76, ../components/sass/_molecules.scss */
 .btn-inactive {
   opacity: .7;
   cursor: default;
@@ -367,42 +353,42 @@ li {
   -webkit-transition: opacity 0.5s ease-out;
   transition: opacity 0.5s ease-out; }
 
-/* line 88, ../components/sass/_molecules.scss */
+/* line 83, ../components/sass/_molecules.scss */
 .secondary-menu-item-primary-btn, .menu-item-cta-btn {
   width: 160px;
   max-width: 160px;
   float: right; }
   @media (min-width: 37.1875em) {
-    /* line 88, ../components/sass/_molecules.scss */
+    /* line 83, ../components/sass/_molecules.scss */
     .secondary-menu-item-primary-btn, .menu-item-cta-btn {
       width: 200px;
       max-width: 200px; } }
 
-/* line 100, ../components/sass/_molecules.scss */
+/* line 95, ../components/sass/_molecules.scss */
 .secondary-menu-item-primary-btn {
   height: 100%; }
-  /* line 104, ../components/sass/_molecules.scss */
+  /* line 99, ../components/sass/_molecules.scss */
   .secondary-menu-item-primary-btn h2 {
     height: 250px;
     line-height: 250px;
     font-size: 27px;
     font-size: 2.7rem; }
     @media (min-width: 37.1875em) {
-      /* line 104, ../components/sass/_molecules.scss */
+      /* line 99, ../components/sass/_molecules.scss */
       .secondary-menu-item-primary-btn h2 {
         font-size: 32px;
         font-size: 3.2rem; } }
 
-/* line 118, ../components/sass/_molecules.scss */
+/* line 113, ../components/sass/_molecules.scss */
 .menu-item-cta-btn, .btn-submit {
   background: #080808;
   border: none; }
 
-/* line 124, ../components/sass/_molecules.scss */
+/* line 119, ../components/sass/_molecules.scss */
 .menu-item-cta-btn {
   margin-top: 11px;
   padding: 7px 0; }
-  /* line 128, ../components/sass/_molecules.scss */
+  /* line 123, ../components/sass/_molecules.scss */
   .menu-item-cta-btn:active, .menu-item-cta-btn:hover, .menu-item-cta-btn:focus {
     background: #eebc1c;
     -moz-transition: background 0.5s ease-out;
@@ -410,7 +396,7 @@ li {
     -webkit-transition: background 0.5s ease-out;
     transition: background 0.5s ease-out; }
 
-/* line 137, ../components/sass/_molecules.scss */
+/* line 132, ../components/sass/_molecules.scss */
 .btn-submit:active, .btn-submit:hover, .btn-submit:focus {
   background: #adadad;
   -moz-transition: background 0.5s ease-out;
@@ -418,7 +404,7 @@ li {
   -webkit-transition: background 0.5s ease-out;
   transition: background 0.5s ease-out; }
 
-/* line 146, ../components/sass/_molecules.scss */
+/* line 141, ../components/sass/_molecules.scss */
 .btn-portfolio:active, .btn-portfolio:hover, .btn-portfolio:focus {
   color: #fafafa;
   background: #1cafee;
@@ -427,11 +413,11 @@ li {
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out; }
 
-/* line 154, ../components/sass/_molecules.scss */
+/* line 149, ../components/sass/_molecules.scss */
 .text-content {
   margin-right: 7px; }
 
-/* line 159, ../components/sass/_molecules.scss */
+/* line 154, ../components/sass/_molecules.scss */
 .bio-title, .contact-title, .portfolio-title, .portfolio-more {
   font-family: "quicksand-regular";
   color: #080808;
@@ -440,28 +426,28 @@ li {
   margin-bottom: 24px;
   width: 390px; }
 
-/* line 170, ../components/sass/_molecules.scss */
+/* line 165, ../components/sass/_molecules.scss */
 .portfolio-title {
   margin-left: 17px; }
 
-/* line 175, ../components/sass/_molecules.scss */
+/* line 170, ../components/sass/_molecules.scss */
 .portfolio-description, .portfolio-more {
   margin-top: 7px;
   color: #6d6d6d; }
 
-/* line 183, ../components/sass/_molecules.scss */
+/* line 178, ../components/sass/_molecules.scss */
 .thumb-list .thumb-list-item {
   margin-bottom: 7px; }
-  /* line 186, ../components/sass/_molecules.scss */
+  /* line 181, ../components/sass/_molecules.scss */
   .thumb-list .thumb-list-item:last-child {
     margin-bottom: 0; }
-  /* line 190, ../components/sass/_molecules.scss */
+  /* line 185, ../components/sass/_molecules.scss */
   .thumb-list .thumb-list-item .thumb-caption {
     font-size: 13px;
     font-size: 1.3rem;
     bottom: 0; }
 
-/* line 201, ../components/sass/_molecules.scss */
+/* line 196, ../components/sass/_molecules.scss */
 .main-fg:hover > .caption, .main-fg:focus > .caption, .main-fg:active > .caption, .thumb-fg:hover > .caption, .thumb-fg:focus > .caption, .thumb-fg:active > .caption, .more-fg:hover > .caption, .more-fg:focus > .caption, .more-fg:active > .caption {
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
@@ -470,19 +456,19 @@ li {
   background: #080808;
   bottom: 0; }
 
-/* line 211, ../components/sass/_molecules.scss */
+/* line 206, ../components/sass/_molecules.scss */
 .thumb-fg:hover > .thumb-caption, .thumb-fg:focus > .thumb-caption, .thumb-fg:active > .thumb-caption {
   bottom: 17px; }
 
-/* line 217, ../components/sass/_molecules.scss */
+/* line 212, ../components/sass/_molecules.scss */
 .more-fg {
   max-width: 100px; }
-  /* line 220, ../components/sass/_molecules.scss */
+  /* line 215, ../components/sass/_molecules.scss */
   .more-fg:hover > .caption, .more-fg:focus > .caption, .more-fg:active > .caption {
     color: #fafafa;
     background: #1cafee; }
 
-/* line 227, ../components/sass/_molecules.scss */
+/* line 222, ../components/sass/_molecules.scss */
 .portfolio-more {
   margin-bottom: 0;
   margin: 7px 0; }
@@ -533,38 +519,35 @@ li {
     float: left;
     padding: 0 6px 0 0; }
     /* line 46, ../components/sass/_organisms.scss */
-    .company-info .contact:last-child {
-      padding: 0; }
-    /* line 50, ../components/sass/_organisms.scss */
     .company-info .contact h3 {
       font-size: 17px;
       font-size: 1.7rem;
       font-family: 'bankgothic_lt_bt';
       line-height: .8;
       color: #332424; }
-  /* line 60, ../components/sass/_organisms.scss */
+  /* line 56, ../components/sass/_organisms.scss */
   .company-info .contact-divider {
     display: inline-block;
     border: none;
     width: 6px;
     margin-left: 6px; }
 
-/* line 69, ../components/sass/_organisms.scss */
+/* line 65, ../components/sass/_organisms.scss */
 .secondary-menu-item {
   height: 100%;
   padding: 25px;
   margin-bottom: 4px; }
   @media (min-width: 42.1875em) {
-    /* line 69, ../components/sass/_organisms.scss */
+    /* line 65, ../components/sass/_organisms.scss */
     .secondary-menu-item {
       margin-bottom: 7px; } }
-  /* line 79, ../components/sass/_organisms.scss */
+  /* line 75, ../components/sass/_organisms.scss */
   .secondary-menu-item .secondary-menu-item-background {
     overflow: hidden;
     *zoom: 1;
     background: url("http://placehold.it/720x265");
     height: 265px; }
-  /* line 86, ../components/sass/_organisms.scss */
+  /* line 82, ../components/sass/_organisms.scss */
   .secondary-menu-item h3 {
     display: inline-block;
     color: #6d6d6d;
@@ -575,30 +558,30 @@ li {
     font-size: 2rem;
     width: 50%; }
     @media (min-width: 37.1875em) {
-      /* line 86, ../components/sass/_organisms.scss */
+      /* line 82, ../components/sass/_organisms.scss */
       .secondary-menu-item h3 {
         width: 58%; } }
     @media (min-width: 42.1875em) {
-      /* line 86, ../components/sass/_organisms.scss */
+      /* line 82, ../components/sass/_organisms.scss */
       .secondary-menu-item h3 {
         font-size: 29px;
         font-size: 2.9rem;
         width: 67%; } }
 
-/* line 112, ../components/sass/_organisms.scss */
+/* line 108, ../components/sass/_organisms.scss */
 .contact-container li {
   float: none; }
-/* line 117, ../components/sass/_organisms.scss */
+/* line 113, ../components/sass/_organisms.scss */
 .contact-container .form {
   padding-top: 7px; }
-/* line 122, ../components/sass/_organisms.scss */
+/* line 118, ../components/sass/_organisms.scss */
 .contact-container .form-item {
   margin-bottom: 7px;
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out; }
-  /* line 126, ../components/sass/_organisms.scss */
+  /* line 122, ../components/sass/_organisms.scss */
   .contact-container .form-item:focus {
     -moz-transition: all 0.5s ease-out;
     -o-transition: all 0.5s ease-out;
@@ -610,57 +593,57 @@ li {
     -webkit-box-shadow: rgba(8, 8, 8, 0.2);
     box-shadow: rgba(8, 8, 8, 0.2); }
 
-/* line 140, ../components/sass/_organisms.scss */
+/* line 136, ../components/sass/_organisms.scss */
 .bio-container .bio-name {
   font-family: "quicksand-regular";
   font-size: 29px;
   color: #d47d19;
   line-height: 1;
   display: inline-block; }
-/* line 149, ../components/sass/_organisms.scss */
+/* line 145, ../components/sass/_organisms.scss */
 .bio-container .bio-aside {
   margin-top: 7px; }
 
-/* line 157, ../components/sass/_organisms.scss */
+/* line 153, ../components/sass/_organisms.scss */
 .more-container .more-list-item {
   margin: 7px 7px 0 0; }
-  /* line 160, ../components/sass/_organisms.scss */
+  /* line 156, ../components/sass/_organisms.scss */
   .more-container .more-list-item:last-child {
     margin-right: 0; }
 
-/* line 167, ../components/sass/_organisms.scss */
+/* line 163, ../components/sass/_organisms.scss */
 .footer-container {
   padding-left: 0; }
-  /* line 173, ../components/sass/_organisms.scss */
+  /* line 169, ../components/sass/_organisms.scss */
   .footer-container footer .footer-header h4, .footer-container footer .footer-content p {
     margin-left: 17px; }
-  /* line 179, ../components/sass/_organisms.scss */
+  /* line 175, ../components/sass/_organisms.scss */
   .footer-container footer .footer-header {
     background: #332424; }
-    /* line 183, ../components/sass/_organisms.scss */
+    /* line 179, ../components/sass/_organisms.scss */
     .footer-container footer .footer-header h4 {
       color: #eebc1c; }
-  /* line 189, ../components/sass/_organisms.scss */
+  /* line 185, ../components/sass/_organisms.scss */
   .footer-container footer .footer-content {
     margin: 17px 7px 17px 0; }
-    /* line 192, ../components/sass/_organisms.scss */
+    /* line 188, ../components/sass/_organisms.scss */
     .footer-container footer .footer-content p {
       color: #535353;
       font-family: "quicksand-regular";
       font-size: 18px;
       font-size: 1.8rem; }
-  /* line 201, ../components/sass/_organisms.scss */
+  /* line 197, ../components/sass/_organisms.scss */
   .footer-container footer .legal-contact-social {
     color: #ededed;
     padding-bottom: 17px;
     margin: 17px 7px 17px 0; }
-    /* line 206, ../components/sass/_organisms.scss */
+    /* line 202, ../components/sass/_organisms.scss */
     .footer-container footer .legal-contact-social p {
       font-family: "bankgothic_lt_md";
       font-size: 11.096px;
       font-size: 1.109rem;
       text-align: center; }
-      /* line 213, ../components/sass/_organisms.scss */
+      /* line 209, ../components/sass/_organisms.scss */
       .footer-container footer .legal-contact-social p a {
         -moz-transition: all 0.5s ease-out;
         -o-transition: all 0.5s ease-out;
@@ -676,40 +659,65 @@ li {
           text-decoration: none; }
 
 /* line 1, ../components/sass/_organisms-lg.scss */
-.menu-button {
-  cursor: pointer;
-  -moz-transition: color 0.5s ease-out;
-  -o-transition: color 0.5s ease-out;
-  -webkit-transition: color 0.5s ease-out;
-  transition: color 0.5s ease-out;
-  display: box;
+.company-name h1 {
+  font-size: 72px;
+  font-size: 7.2rem; }
+  /* line 5, ../components/sass/_organisms-lg.scss */
+  .company-name h1 .company-co {
+    font-size: 52px;
+    font-size: 5.2rem; }
+
+/* line 14, ../components/sass/_organisms-lg.scss */
+.company-info .contact {
+  float: none;
+  padding: 0;
+  padding: 4px 0; }
+
+/* line 22, ../components/sass/_organisms-lg.scss */
+.menu-container {
+  margin-top: 7px;
+  margin-left: 17px;
   float: left;
-  padding: 7px;
-  border-right: 1px solid orange; }
-  /* line 11, ../components/sass/_organisms-lg.scss */
-  .menu-button:last-child {
-    border-right: none; }
-  /* line 15, ../components/sass/_organisms-lg.scss */
-  .menu-button:hover a, .menu-button:active a {
-    color: #332424;
-    -moz-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-    -webkit-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out; }
-  /* line 20, ../components/sass/_organisms-lg.scss */
-  .menu-button h3 {
-    font-size: 17px;
-    font-size: 1.7rem;
-    white-space: nowrap; }
-    /* line 27, ../components/sass/_organisms-lg.scss */
-    .menu-button h3 a {
-      -moz-transition: all 0.5s ease-out;
-      -o-transition: all 0.5s ease-out;
-      -webkit-transition: all 0.5s ease-out;
-      transition: all 0.5s ease-out;
-      color: #6d6d6d;
-      text-decoration: none; }
-      /* line 29, ../components/sass/_mixins.scss */
-      .menu-button h3 a:hover, .menu-button h3 a:active, .menu-button h3 a:focus {
-        color: #474747;
+  padding-left: 0; }
+  /* line 28, ../components/sass/_organisms-lg.scss */
+  .menu-container .menu-button {
+    float: left;
+    height: 26px;
+    cursor: pointer;
+    -moz-transition: color 0.5s ease-out;
+    -o-transition: color 0.5s ease-out;
+    -webkit-transition: color 0.5s ease-out;
+    transition: color 0.5s ease-out;
+    display: box;
+    padding: 7px;
+    border-right: 1px solid orange; }
+    /* line 37, ../components/sass/_organisms-lg.scss */
+    .menu-container .menu-button:first-child {
+      padding-left: 0; }
+    /* line 43, ../components/sass/_organisms-lg.scss */
+    .menu-container .menu-button:last-child {
+      border-right: none; }
+    /* line 47, ../components/sass/_organisms-lg.scss */
+    .menu-container .menu-button h3 {
+      font-family: "quicksand-regular";
+      font-size: 20px;
+      font-size: 2rem;
+      white-space: nowrap;
+      margin-top: -13px; }
+      /* line 54, ../components/sass/_organisms-lg.scss */
+      .menu-container .menu-button h3 a {
+        -moz-transition: all 0.5s ease-out;
+        -o-transition: all 0.5s ease-out;
+        -webkit-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+        color: #fafafa;
         text-decoration: none; }
+        /* line 29, ../components/sass/_mixins.scss */
+        .menu-container .menu-button h3 a:hover, .menu-container .menu-button h3 a:active, .menu-container .menu-button h3 a:focus {
+          color: #474747;
+          text-decoration: none; }
+  @media (min-width: 60.625em) {
+    /* line 22, ../components/sass/_organisms-lg.scss */
+    .menu-container {
+      margin: -29px 17px 7px 0;
+      float: right; } }

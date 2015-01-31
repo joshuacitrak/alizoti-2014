@@ -1,32 +1,65 @@
-.menu-button
+.company-name h1
 {
-  cursor:pointer;
-  @include animate(color);
-  display:box;
-  float:left;
-  padding:$default-space-md;
-  //padding:7px 17px; large screen
-  border-right:1px solid orange;
-  
-  &:last-child
-  {
-    border-right:none;
-  }
-  &:hover a, &:active a
-  {
-    color:$red1;
-    @include animateAll();
-  }
-  h3
-  {
-    font-size:17px;
-    font-size:1.7rem;
-    white-space: nowrap;
-    //font-size:20px; large screen
-    //font-size:2rem;
-    a
+    font-size:72px;
+    font-size:7.2rem;
+    .company-co
     {
-      @include text-link-style($grey1, none, $grey1, none);
-    }//a
-  }//h3
+      font-size:52px;
+      font-size:5.2rem;
+    }//company co
+}//company-name
+
+.company-info
+{
+  .contact
+  {
+    float:none;
+    padding:0;
+    padding:$default-space-sm 0;
+  }
+}
+
+.menu-container
+{
+  margin-top:$default-space-md; 
+  margin-left:$default-space-lg;
+  float:left;
+  padding-left:0;
+  .menu-button
+  {
+    float: left;
+    height: 26px;
+    cursor:pointer;
+    @include animate(color);
+    display:box;
+    //float:left;
+    padding:$default-space-md;
+    &:first-child
+    {
+      padding-left:0;
+    }
+    
+    border-right:1px solid orange;
+    &:last-child
+    {
+      border-right:none;
+    }
+    h3
+    {
+      font-family:$main-font-bold;
+      font-size:20px;
+      font-size:2rem;
+      white-space: nowrap;
+      margin-top:-13px;
+      a
+      {
+        @include text-link-style($grey5, none, $grey1, none);
+      }//a
+    }//h3
+  }
+  @media (min-width:$md-lg-screen)//it now floats right
+  {
+    margin:-29px $default-space-lg $default-space-md 0;
+    float:right;
+  }
 }
