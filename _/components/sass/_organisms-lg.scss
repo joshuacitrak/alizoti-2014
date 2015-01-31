@@ -21,6 +21,58 @@
 
 .menu-container
 {
+  width:130px;
+  float:right;
+  margin:-50px 34px 0 0;
+  .menu-button
+  {
+    cursor:pointer;
+    @include animate(color);
+    display:box;
+     h3
+    {
+      font-family:$main-font-bold;
+      font-size:20px;
+      font-size:2rem;
+      line-height:1.4;
+      white-space: nowrap;
+      a
+      {
+        @include text-link-style($grey5, none, $grey1, none);
+      }//a
+    }//h3
+  }
+  
+  @media (min-width:$md-lg-screen)//it now floats right
+  {
+    width:450px;
+    margin-top:-35px;
+    .menu-button
+    {
+      float:left;
+      padding:0 $default-space-md;
+      border-right:1px solid $orange1;
+      &:first-child
+      {
+        padding-left:0px;
+      }
+       &:last-child
+      {
+        border-right:none;
+        padding-right:0;
+      }
+      h3
+      {
+        font-family:$main-font-bold;
+        font-size:24px;
+        font-size:2.4rem;
+      }
+    }//.menu-button 
+  }//@media (min-width:$md-lg-screen)/
+}
+/*
+.menu-container
+{
   margin-top:$default-space-md; 
   margin-left:$default-space-lg;
   float:left;
@@ -59,7 +111,8 @@
   }
   @media (min-width:$md-lg-screen)//it now floats right
   {
-    margin:-29px $default-space-lg $default-space-md 0;
+    margin:-100px $default-space-lg $default-space-md 0;
     float:right;
   }
 }
+*/

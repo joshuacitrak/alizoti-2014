@@ -160,12 +160,15 @@ header
 nav
 {
   font-family:$main-font-bold;
+  position:relative;
+  /*
   @media (min-width:970px)
   {
     float:right;
     height:26px; //restrict btn border height
     margin-top:$default-space-lg+3;//auto
   }
+  */
 }
 
 section

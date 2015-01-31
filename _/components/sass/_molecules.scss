@@ -11,15 +11,16 @@
   height:100%; //75 large screen
   padding-left:$default-space-lg;
   margin-top:0;
+  z-index:30;
 }
 
-.secondary-menu-container, .contact-container, .bio-container, .portfolio-container, .more-container
+.secondary-menu-container, .contact-container, .bio-container, .portfolio-container
 {
   padding-bottom:$default-space-lg;
   position:relative;
 }
 
-.contact-container, .bio-container
+.contact-container
 {
   @include clearfix;
   color:$black;
@@ -31,6 +32,10 @@
       font-size:$p-font-size;
       font-size:$p-font-size-rem;
     }
+}
+.bio-container
+{
+  padding-top:$default-space-lg*3;
 }
 
 .portfolio-container, .more-container
@@ -46,9 +51,8 @@
 
 .more-container
 {
-  min-height:20px;
-  min-width:20px;
-  margin-left:$default-space-lg;
+  min-height:2px;
+  min-width:2px;
 }
 
 //--------nested molecules-----------------
@@ -191,7 +195,7 @@
   }//thumb listitem
 }//thumb list
 
-.main-fg, .thumb-fg, .more-fg
+.main-fg, .thumb-fg, .more-fg, .secondary-menu-caption
 {
   &:hover >.caption, &:focus > .caption, &:active > .caption
   {
@@ -223,4 +227,24 @@
 {
   margin-bottom:0;
   margin:$default-space-md 0;
+}
+
+.secondary-menu-caption
+{
+  width: 50%;
+  left: 50%;
+  bottom:0;
+  height: 100%;
+  text-align:center;
+  padding-top:$default-space-lg;
+}
+
+.secondary-menu-caption-show
+{
+  
+}
+
+.secondary-menu-caption-hide
+{
+  
 }
