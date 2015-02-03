@@ -70,49 +70,63 @@
     }//.menu-button 
   }//@media (min-width:$md-lg-screen)/
 }
-/*
-.menu-container
+
+.secondary-menu-item
 {
-  margin-top:$default-space-md; 
-  margin-left:$default-space-lg;
-  float:left;
-  padding-left:0;
-  .menu-button
+  .secondary-menu-fg
   {
-    float: left;
-    height: 26px;
-    cursor:pointer;
-    @include animate(color);
-    display:box;
-    //float:left;
-    padding:$default-space-md;
-    &:first-child
+    &:active > .secondary-menu-item-primary-btn, &:hover > .secondary-menu-item-primary-btn, &:focus > .secondary-menu-item-primary-btn
     {
-      padding-left:0;
+      @include animateAll();
+      right:100%; 
     }
-    
-    border-right:1px solid orange;
-    &:last-child
+    &:active > .secondary-menu-item-secondary-btn , &:hover > .secondary-menu-item-secondary-btn, &:focus > .secondary-menu-item-secondary-btn
     {
-      border-right:none;
+      @include animateAll();
+      right:0; 
     }
-    h3
-    {
-      font-family:$main-font-bold;
-      font-size:20px;
-      font-size:2rem;
-      white-space: nowrap;
-      margin-top:-13px;
-      a
+  }//secondary-fg
+  
+  .secondary-menu-item-primary-btn, .secondary-menu-item-secondary-btn
+  {
+    width:100%;
+    max-width:100%;
+    height:30%;//these two equal out
+    top:70%;
+    text-align:left;    
+    @media (min-width:$md-lg-screen)//necessary evil BS doesn't give me the BPs i need
       {
-        @include text-link-style($grey5, none, $grey1, none);
-      }//a
-    }//h3
+        height:25%;//these two equal out
+        top:75%;
+      }
   }
-  @media (min-width:$md-lg-screen)//it now floats right
+  .secondary-menu-item-primary-btn
   {
-    margin:-100px $default-space-lg $default-space-md 0;
-    float:right;
+    h2
+    {
+      line-height:2;//this just works
+      height:inherit;
+      @media (min-width:$md-lg-screen)//necessary evil BS doesn't give me the BPs i need
+      {
+       line-height:$h4-line-height;//align to center
+      }
+    }
+  }
+  .secondary-menu-item-secondary-btn
+  {
+    display:block;
+    visibility:visible;
+    white-space:normal;
+    right:100%;
+    p
+    {
+      font-size:17px;
+      font-size:1.7rem;
+      @media (min-width:$md-lg-screen)//necessary evil BS doesn't give me the BPs i need
+      {
+        font-size:$p-font-size;
+        font-size:$p-font-size-rem;
+      }
+    }
   }
 }
-*/

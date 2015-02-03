@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* line 5, ../../../../../../Users/apple/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline; }
 
-/* line 22, ../../../../../../Users/apple/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1; }
 
-/* line 24, ../../../../../../Users/apple/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
-/* line 26, ../../../../../../Users/apple/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 28, ../../../../../../Users/apple/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
-/* line 30, ../../../../../../Users/apple/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none; }
-  /* line 103, ../../../../../../Users/apple/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+  /* line 103, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
   q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none; }
 
-/* line 32, ../../../../../../Users/apple/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none; }
 
-/* line 116, ../../../../../../Users/apple/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
 /*fallback*/
 /*52/$rembase*/
 /* $line-height-base ÷ 52*/
-/* line 11, ../../../../../../Users/apple/.rvm/gems/ruby-2.1.2/gems/susy-2.1.2/sass/susy/language/susy/_box-sizing.scss */
+/* line 11, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/susy-2.1.2/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -104,7 +104,7 @@ body {
   overflow-x: hidden;
   color: white;
   background: #ededed;
-  background: url('../../images/pattern-2cns.png?1415228600'); }
+  background: url('../../images/pattern-2cns.png?1421775716'); }
 
 /* line 76, ../components/sass/_atoms.scss */
 .container-fluid {
@@ -557,22 +557,17 @@ li {
     /* line 65, ../components/sass/_organisms.scss */
     .secondary-menu-item {
       margin-bottom: 7px; } }
-  /* line 75, ../components/sass/_organisms.scss */
-  .secondary-menu-item .secondary-menu-item-background {
-    overflow: hidden;
-    *zoom: 1;
-    background: url("http://placehold.it/720x265");
-    height: 265px; }
-  /* line 82, ../components/sass/_organisms.scss */
+  /* line 76, ../components/sass/_organisms.scss */
   .secondary-menu-item .secondary-menu-item-primary-btn, .secondary-menu-item .secondary-menu-item-secondary-btn {
     position: absolute;
     right: 0;
     top: 0;
     height: 265px; }
-  /* line 90, ../components/sass/_organisms.scss */
+  /* line 84, ../components/sass/_organisms.scss */
   .secondary-menu-item .secondary-menu-item-secondary-btn {
-    display: none; }
-  /* line 95, ../components/sass/_organisms.scss */
+    display: none;
+    visibility: hidden; }
+  /* line 90, ../components/sass/_organisms.scss */
   .secondary-menu-item h3 {
     display: inline-block;
     color: #6d6d6d;
@@ -583,30 +578,30 @@ li {
     font-size: 2rem;
     width: 50%; }
     @media (min-width: 37.1875em) {
-      /* line 95, ../components/sass/_organisms.scss */
+      /* line 90, ../components/sass/_organisms.scss */
       .secondary-menu-item h3 {
         width: 58%; } }
     @media (min-width: 42.1875em) {
-      /* line 95, ../components/sass/_organisms.scss */
+      /* line 90, ../components/sass/_organisms.scss */
       .secondary-menu-item h3 {
         font-size: 29px;
         font-size: 2.9rem;
         width: 67%; } }
 
-/* line 126, ../components/sass/_organisms.scss */
+/* line 121, ../components/sass/_organisms.scss */
 .contact-container li {
   float: none; }
-/* line 131, ../components/sass/_organisms.scss */
+/* line 126, ../components/sass/_organisms.scss */
 .contact-container .form {
   padding-top: 7px; }
-/* line 136, ../components/sass/_organisms.scss */
+/* line 131, ../components/sass/_organisms.scss */
 .contact-container .form-item {
   margin-bottom: 7px;
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out; }
-  /* line 140, ../components/sass/_organisms.scss */
+  /* line 135, ../components/sass/_organisms.scss */
   .contact-container .form-item:focus {
     -moz-transition: all 0.5s ease-out;
     -o-transition: all 0.5s ease-out;
@@ -618,46 +613,46 @@ li {
     -webkit-box-shadow: rgba(8, 8, 8, 0.2);
     box-shadow: rgba(8, 8, 8, 0.2); }
 
-/* line 154, ../components/sass/_organisms.scss */
+/* line 149, ../components/sass/_organisms.scss */
 .bio-container .bio-name {
   font-family: "quicksand-regular";
   font-size: 29px;
   color: #d47d19;
   line-height: 1;
   display: inline-block; }
-/* line 163, ../components/sass/_organisms.scss */
+/* line 158, ../components/sass/_organisms.scss */
 .bio-container .bio-aside {
   margin-top: 7px; }
 
-/* line 171, ../components/sass/_organisms.scss */
+/* line 166, ../components/sass/_organisms.scss */
 .more-container .more-list-item {
   margin: 7px 7px 0 0; }
-  /* line 174, ../components/sass/_organisms.scss */
+  /* line 169, ../components/sass/_organisms.scss */
   .more-container .more-list-item:last-child {
     margin-right: 0; }
 
-/* line 181, ../components/sass/_organisms.scss */
+/* line 176, ../components/sass/_organisms.scss */
 .footer-container {
   padding-left: 0; }
-  /* line 187, ../components/sass/_organisms.scss */
+  /* line 182, ../components/sass/_organisms.scss */
   .footer-container footer .footer-header h4, .footer-container footer .footer-content p {
     margin-left: 17px; }
-  /* line 193, ../components/sass/_organisms.scss */
+  /* line 188, ../components/sass/_organisms.scss */
   .footer-container footer .footer-header {
     background: #332424; }
-    /* line 197, ../components/sass/_organisms.scss */
+    /* line 192, ../components/sass/_organisms.scss */
     .footer-container footer .footer-header h4 {
       color: #eebc1c; }
-  /* line 203, ../components/sass/_organisms.scss */
+  /* line 198, ../components/sass/_organisms.scss */
   .footer-container footer .footer-content {
     margin: 17px 7px 17px 0; }
-    /* line 206, ../components/sass/_organisms.scss */
+    /* line 201, ../components/sass/_organisms.scss */
     .footer-container footer .footer-content p {
       color: #535353;
       font-family: "quicksand-regular";
       font-size: 18px;
       font-size: 1.8rem; }
-  /* line 215, ../components/sass/_organisms.scss */
+  /* line 210, ../components/sass/_organisms.scss */
   .footer-container footer .legal-contact-social {
     overflow: hidden;
     *zoom: 1;
@@ -665,13 +660,13 @@ li {
     color: #ededed;
     padding-bottom: 17px;
     margin: 17px 7px 17px 0; }
-    /* line 222, ../components/sass/_organisms.scss */
+    /* line 217, ../components/sass/_organisms.scss */
     .footer-container footer .legal-contact-social p {
       font-family: "bankgothic_lt_md";
       font-size: 11.096px;
       font-size: 1.109rem;
       text-align: center; }
-      /* line 229, ../components/sass/_organisms.scss */
+      /* line 224, ../components/sass/_organisms.scss */
       .footer-container footer .legal-contact-social p a {
         -moz-transition: all 0.5s ease-out;
         -o-transition: all 0.5s ease-out;
