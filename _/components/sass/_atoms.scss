@@ -134,6 +134,10 @@ p
 a, .link
 {
   @include text-link-style($black, underline, $grey1, none);
+  &:active, &:hover, &focus
+  {
+    outline: 0;
+  }
 }
 
 section, nav, article, aside, header, footer

@@ -61,7 +61,8 @@
 .btn //overwrite BS
 {
   @include border-radius(0px 0px);
-  font-size:20px;
+  font-size:17px;
+  font-size:1.7rem;
   @include animate(background);
 }
 
@@ -149,6 +150,16 @@
     @include animateAll();
   }
 }
+
+.active
+ {
+  color:$grey1 !important;
+ }
+ 
+ .inactive
+ {
+   opacity:.7 !important;
+ }
 
 .text-content
 {
