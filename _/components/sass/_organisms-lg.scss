@@ -1,39 +1,59 @@
 .company-name h1
 {
-    font-size:72px;
-    font-size:7.2rem;
-    .company-co
+  @media (min-width:825px)//necessary evil d its thang
     {
-      font-size:52px;
-      font-size:5.2rem;
-    }//company co
+      font-size:72px;
+      font-size:7.2rem;
+      .company-co
+      {
+        font-size:52px;
+        font-size:5.2rem;
+      }//company co
+    }//media
 }//company-name
 
 .company-info
 {
   .contact
   {
-    float:none;
-    padding:0;
-    padding:$default-space-sm 0;
-  }
-}
+    h3
+    {
+       @media (min-width:825px)//necessary evil d its thang
+      {
+        font-size:17px;
+        font-size:1.7rem;
+      }
+    }
+  }//.contact
+}//.company-info
 
 .menu-container
 {
-  width:130px;
-  float:right;
-  margin:-50px 34px 0 0;
+  position:absolute;
+  right:$default-space-lg;
+  top:32px;
   .menu-button
   {
     cursor:pointer;
     @include animate(color);
     display:box;
+    float:left;
+    padding:0 $default-space-md;
+    border-right:1px solid $orange1;
+      &:first-child
+      {
+        padding-left:0px;
+      }
+       &:last-child
+      {
+        border-right:none;
+        padding-right:0;
+      }
      h3
     {
       font-family:$main-font-bold;
-      font-size:20px;
-      font-size:2rem;
+      font-size:15px;
+      font-size:1.5rem;
       line-height:1.4;
       white-space: nowrap;
       a
@@ -45,27 +65,13 @@
   
   @media (min-width:$md-lg-screen)//it now floats right
   {
-    width:450px;
-    margin-top:-35px;
     .menu-button
     {
-      float:left;
-      padding:0 $default-space-md;
-      border-right:1px solid $orange1;
-      &:first-child
-      {
-        padding-left:0px;
-      }
-       &:last-child
-      {
-        border-right:none;
-        padding-right:0;
-      }
       h3
       {
         font-family:$main-font-bold;
-        font-size:24px;
-        font-size:2.4rem;
+        font-size:17px;
+        font-size:1.7rem;
       }
     }//.menu-button 
   }//@media (min-width:$md-lg-screen)/

@@ -528,62 +528,60 @@ li {
 /* line 22, ../components/sass/_organisms.scss */
 .company-name h1 {
   color: #ee1c24;
-  font-size: 66px;
-  font-size: 6.6rem;
   line-height: .8; }
-  /* line 28, ../components/sass/_organisms.scss */
+  /* line 26, ../components/sass/_organisms.scss */
   .company-name h1 a {
     color: inherit;
     text-decoration: none; }
-  /* line 33, ../components/sass/_organisms.scss */
+  /* line 31, ../components/sass/_organisms.scss */
   .company-name h1 .company-co {
     color: #080808;
-    font-size: 48px;
-    font-size: 4.8rem; }
+    font-size: 32px;
+    font-size: 3.2rem; }
 
-/* line 40, ../components/sass/_organisms.scss */
+/* line 38, ../components/sass/_organisms.scss */
 .company-info {
   overflow: hidden;
   *zoom: 1;
   padding-bottom: 7px; }
-  /* line 46, ../components/sass/_organisms.scss */
+  /* line 44, ../components/sass/_organisms.scss */
   .company-info .contact {
     float: left;
     padding: 0 6px 0 0; }
-    /* line 51, ../components/sass/_organisms.scss */
+    /* line 49, ../components/sass/_organisms.scss */
     .company-info .contact h3 {
-      font-size: 17px;
-      font-size: 1.7rem;
-      font-family: 'bankgothic_lt_bt';
+      font-size: 13px;
+      font-size: 1.3rem;
+      font-family: "quicksand-regular";
       line-height: .8;
       color: #332424; }
-  /* line 61, ../components/sass/_organisms.scss */
+  /* line 59, ../components/sass/_organisms.scss */
   .company-info .contact-divider {
     display: inline-block;
     border: none;
     width: 6px;
     margin-left: 6px; }
 
-/* line 70, ../components/sass/_organisms.scss */
+/* line 68, ../components/sass/_organisms.scss */
 .secondary-menu-item {
   height: 100%;
   padding: 25px;
   margin-bottom: 4px; }
   @media (min-width: 42.1875em) {
-    /* line 70, ../components/sass/_organisms.scss */
+    /* line 68, ../components/sass/_organisms.scss */
     .secondary-menu-item {
       margin-bottom: 7px; } }
-  /* line 81, ../components/sass/_organisms.scss */
+  /* line 79, ../components/sass/_organisms.scss */
   .secondary-menu-item .secondary-menu-item-primary-btn, .secondary-menu-item .secondary-menu-item-secondary-btn {
     position: absolute;
     right: 0;
     top: 0;
     height: 265px; }
-  /* line 89, ../components/sass/_organisms.scss */
+  /* line 87, ../components/sass/_organisms.scss */
   .secondary-menu-item .secondary-menu-item-secondary-btn {
     display: none;
     visibility: hidden; }
-  /* line 95, ../components/sass/_organisms.scss */
+  /* line 93, ../components/sass/_organisms.scss */
   .secondary-menu-item h3 {
     display: inline-block;
     color: #6d6d6d;
@@ -594,30 +592,30 @@ li {
     font-size: 2rem;
     width: 50%; }
     @media (min-width: 37.1875em) {
-      /* line 95, ../components/sass/_organisms.scss */
+      /* line 93, ../components/sass/_organisms.scss */
       .secondary-menu-item h3 {
         width: 58%; } }
     @media (min-width: 42.1875em) {
-      /* line 95, ../components/sass/_organisms.scss */
+      /* line 93, ../components/sass/_organisms.scss */
       .secondary-menu-item h3 {
         font-size: 29px;
         font-size: 2.9rem;
         width: 67%; } }
 
-/* line 126, ../components/sass/_organisms.scss */
+/* line 124, ../components/sass/_organisms.scss */
 .contact-container li {
   float: none; }
-/* line 131, ../components/sass/_organisms.scss */
+/* line 129, ../components/sass/_organisms.scss */
 .contact-container .form {
   padding-top: 7px; }
-/* line 136, ../components/sass/_organisms.scss */
+/* line 134, ../components/sass/_organisms.scss */
 .contact-container .form-item {
   margin-bottom: 7px;
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out; }
-  /* line 140, ../components/sass/_organisms.scss */
+  /* line 138, ../components/sass/_organisms.scss */
   .contact-container .form-item:focus {
     -moz-transition: all 0.5s ease-out;
     -o-transition: all 0.5s ease-out;
@@ -629,46 +627,46 @@ li {
     -webkit-box-shadow: rgba(8, 8, 8, 0.2);
     box-shadow: rgba(8, 8, 8, 0.2); }
 
-/* line 154, ../components/sass/_organisms.scss */
+/* line 152, ../components/sass/_organisms.scss */
 .bio-container .bio-name {
   font-family: "quicksand-regular";
   font-size: 29px;
   color: #d47d19;
   line-height: 1;
   display: inline-block; }
-/* line 163, ../components/sass/_organisms.scss */
+/* line 161, ../components/sass/_organisms.scss */
 .bio-container .bio-aside {
   margin-top: 7px; }
 
-/* line 171, ../components/sass/_organisms.scss */
+/* line 169, ../components/sass/_organisms.scss */
 .more-container .more-list-item {
   margin: 7px 7px 0 0; }
-  /* line 174, ../components/sass/_organisms.scss */
+  /* line 172, ../components/sass/_organisms.scss */
   .more-container .more-list-item:last-child {
     margin-right: 0; }
 
-/* line 181, ../components/sass/_organisms.scss */
+/* line 179, ../components/sass/_organisms.scss */
 .footer-container {
   padding-left: 0; }
-  /* line 187, ../components/sass/_organisms.scss */
+  /* line 185, ../components/sass/_organisms.scss */
   .footer-container footer .footer-header h4, .footer-container footer .footer-content p {
     margin-left: 17px; }
-  /* line 193, ../components/sass/_organisms.scss */
+  /* line 191, ../components/sass/_organisms.scss */
   .footer-container footer .footer-header {
     background: #332424; }
-    /* line 197, ../components/sass/_organisms.scss */
+    /* line 195, ../components/sass/_organisms.scss */
     .footer-container footer .footer-header h4 {
       color: #eebc1c; }
-  /* line 203, ../components/sass/_organisms.scss */
+  /* line 201, ../components/sass/_organisms.scss */
   .footer-container footer .footer-content {
     margin: 17px 7px 17px 0; }
-    /* line 206, ../components/sass/_organisms.scss */
+    /* line 204, ../components/sass/_organisms.scss */
     .footer-container footer .footer-content p {
       color: #535353;
       font-family: "quicksand-regular";
       font-size: 18px;
       font-size: 1.8rem; }
-  /* line 215, ../components/sass/_organisms.scss */
+  /* line 213, ../components/sass/_organisms.scss */
   .footer-container footer .legal-contact-social {
     overflow: hidden;
     *zoom: 1;
@@ -676,13 +674,13 @@ li {
     color: #ededed;
     padding-bottom: 17px;
     margin: 17px 7px 17px 0; }
-    /* line 222, ../components/sass/_organisms.scss */
+    /* line 220, ../components/sass/_organisms.scss */
     .footer-container footer .legal-contact-social p {
       font-family: "bankgothic_lt_md";
       font-size: 11.096px;
       font-size: 1.109rem;
       text-align: center; }
-      /* line 229, ../components/sass/_organisms.scss */
+      /* line 227, ../components/sass/_organisms.scss */
       .footer-container footer .legal-contact-social p a {
         -moz-transition: all 0.5s ease-out;
         -o-transition: all 0.5s ease-out;

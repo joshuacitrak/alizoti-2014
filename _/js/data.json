@@ -1,24 +1,70 @@
 {
+	"menu" : ["Indoor", "Outdoor", "Fine Detail", "415-341-6577"],
 	"services" : [
 	{
 		"type" : "indoor",
 		"slideshows" : [],
-		"heroes" : [],
-		"lgThumbs" : [],
-		"smThumbs" : []
+		"heroes" : [
+		{
+			"smScreen" : [],
+			"mdScreen" : [],
+			"lgScreen" : []
+		}],
+		"lgThumbs" : [
+		{
+			"smScreen" : [],
+			"mdScreen" : [],
+			"lgScreen" : []
+		}],
+		"smThumbs" : [
+		{
+			"smScreen" : [],
+			"mdScreen" : [],
+			"lgScreen" : []
+		}]
 	},
 	{
 		"type" : "outdoor",
 		"slideshows" : [],
-		"heroes" : [],
-		"lgThumbs" : [],
-		"smThumbs" : []
+		"heroes" : [
+		{
+			"smScreen" : [],
+			"mdScreen" : [],
+			"lgScreen" : []
+		}],
+		"lgThumbs" : [
+		{
+			"smScreen" : [],
+			"mdScreen" : [],
+			"lgScreen" : []
+		}],
+		"smThumbs" : [
+		{
+			"smScreen" : [],
+			"mdScreen" : [],
+			"lgScreen" : []
+		}]
 	},
 	{
 		"type" : "detail",
 		"slideshows" : [],
-		"heroes" : [],
-		"lgThumbs" : [],
-		"smThumbs" : []
+		"heroes" : [
+		{
+			"smScreen" : [],
+			"mdScreen" : [],
+			"lgScreen" : []
+		}],
+		"lgThumbs" : [
+		{
+			"smScreen" : [],
+			"mdScreen" : [],
+			"lgScreen" : []
+		}],
+		"smThumbs" : [
+		{
+			"smScreen" : [],
+			"mdScreen" : [],
+			"lgScreen" : []
+		}]
 	}]
 }
