@@ -14,8 +14,7 @@
 		}).otherwise({
 			redirectTo : '/'
 		});
-	}
-	;
+	};
 
 	var dataObj = [];
 
