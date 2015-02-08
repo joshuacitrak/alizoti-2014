@@ -14,7 +14,7 @@
 		}).otherwise({
 			redirectTo : '/'
 		});
-	};
+	}
 
 	var dataObj = [];
 
@@ -33,4 +33,31 @@
 			return viewLocation === $location.path();		
 		};
 	});
+    
+    var formData = {};
+    
+    app.controller('FormController', function($scope, $http){
+        var returnMessage='hello';
+        this.processForm = function(formData)
+        {
+            //send to php script
+            $http.post('/someUrl', {msg:$scope.formData}).
+              success(function(data, status, headers, config) {
+                // this callback will be called asynchronously
+                // when the response is available
+                $scope.returnMessage = "Thanks for contacting us. We'll get back to you real soon!";
+              }).
+              error(function(data, status, headers, config) {
+                // called asynchronously if an error occurs
+                // or server returns response with an error status.
+                $scope.returnMessage = "The email failed to send, try again later."; 
+                console.log($scope.returnMessage);
+              });
+            
+            //reset form
+           $scope.formData = {};
+            $scope.myForm.$setPristine();
+            $scope.myForm.$setUntouched();
+        };//process form
+    });
 })();

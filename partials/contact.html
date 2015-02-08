@@ -1,7 +1,7 @@
 <!--contact partial-->
 <section class="contact-container">
     <div class="col-xs-12 col-sm-6 col-sm-push-6">
-        <div class="form-container">
+        <div class="form-container" ng-controller="FormController as formCtrl">
             <!-- is this needed? -->
             <header>
                 <h2 class="contact-title">Contact us</h2>
@@ -9,26 +9,33 @@
                     *Required
                 </p>
             </header>
-            <form class="form" action="">
+            <form class="form" name="myForm" novalidate ng-submit="formCtrl.processForm()">
                 <ul class="form-list">
                     <li>
-                        <span class="form-item-hint">We'll need your name to contact you!</span>
+                        <span class="form-item-hint"
+                        ng-show="myForm.name.$touched && myForm.name.$invalid">We'll need your name to contact you!</span>
                     </li>
                     <li>
-                        <input class="form-item" type="text" name="name" placeholder="*Full Name" required/>
+                        <input class="form-item" type="text" name="name" placeholder="*Full Name" autofocus
+                        ng-model="formData.name" ng-required="true"/>
                     </li>
                     <li>
-                        <span class="form-item-hint">We'll need your email (name@address.com) to contact you!</span>
+                        <span class="form-item-hint"
+                        ng-show="myForm.email.$invalid && myForm.email.$touched">
+                        We'll need your email (name@address.com) to contact you!</span>
                     </li>
                     <li>
-                        <input class="form-item" type="email" name="email" placeholder="*Name@Address.com" required/>
+                        <input class="form-item" type="email" name="email" placeholder="*Name@Address.com"
+                        ng-model="formData.email" ng-required="true"/>
                     </li>
                     <li>
-                        <input class="form-item" type="text" name="phone" placeholder="Phone XXX-XXX-XXXX" />
+                        <input class="form-item" type="text" name="phone" placeholder="Phone XXX-XXX-XXXX" 
+                        ng-model="formData.phone"/>
                     </li>
                     <li>
                         <label class="form-item" for="type">Project Type:</label>
-                        <select class="form-label" name="project-type">
+                        <select class="form-label" name="project-type"
+                           ng-model="formData.type">
                             <optgroup label="Indoor Projects">
                                 <option value="bathroom">Bathroom</option>
                                 <option value="kitchen">Kitchen</option>
@@ -44,15 +51,21 @@
                         </select>
                     </li>
                     <li>
-                        <span class="form-item-hint text-form hint">Please tell us about your project! We'll get right back to you. Promise!</span>
+                        <span class="form-item-hint text-form hint"
+                        ng-show="myForm.message.$touched && myForm.message.$invalid">
+                        Please tell us about your project! We'll get right back to you. Promise!</span>
                     </li>
                     <li>
-                        <textarea class="form-item" name="note" id="" cols="30" rows="10" placeholder="*Tell us about your project. We promise to get back to you fast!" required></textarea>
+                        <textarea class="form-item" name="message" id="" cols="30" rows="10" placeholder="*Tell us about your project. We promise to get back to you fast!"
+                            ng-model ="formData.message" ng-required="true"
+                        ></textarea>
                     </li>
                     <li>
-                        <button type="submit" class="btn btn-primary btn-submit">
+                        <button type="submit" class="btn btn-primary btn-submit" 
+                           ng-disabled="myForm.$invalid">
                             Send Email <span class="btn-caret"></span>
                         </button>
+                        <span class="form-item-thanks">{{ returnMessage }}</span>
                     </li>
                 </ul>
             </form>
