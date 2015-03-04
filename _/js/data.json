@@ -1,70 +1,111 @@
 {
 	"menu" : ["Indoor", "Outdoor", "Fine Detail", "415-341-6577"],
+    "slideshow" : [
+        {
+            "smScreen" : [],
+            "mdScreen" : [],
+            "lgScreen" : []
+        }
+    ],
 	"services" : [
 	{
 		"type" : "indoor",
-		"slideshows" : [],
-		"heroes" : [
-		{
-			"smScreen" : [],
-			"mdScreen" : [],
-			"lgScreen" : []
-		}],
-		"lgThumbs" : [
-		{
-			"smScreen" : [],
-			"mdScreen" : [],
-			"lgScreen" : []
-		}],
-		"smThumbs" : [
-		{
-			"smScreen" : [],
-			"mdScreen" : [],
-			"lgScreen" : []
-		}]
-	},
-	{
-		"type" : "outdoor",
-		"slideshows" : [],
-		"heroes" : [
-		{
-			"smScreen" : [],
-			"mdScreen" : [],
-			"lgScreen" : []
-		}],
-		"lgThumbs" : [
-		{
-			"smScreen" : [],
-			"mdScreen" : [],
-			"lgScreen" : []
-		}],
-		"smThumbs" : [
-		{
-			"smScreen" : [],
-			"mdScreen" : [],
-			"lgScreen" : []
-		}]
-	},
-	{
-		"type" : "detail",
-		"slideshows" : [],
-		"heroes" : [
-		{
-			"smScreen" : [],
-			"mdScreen" : [],
-			"lgScreen" : []
-		}],
-		"lgThumbs" : [
-		{
-			"smScreen" : [],
-			"mdScreen" : [],
-			"lgScreen" : []
-		}],
-		"smThumbs" : [
-		{
-			"smScreen" : [],
-			"mdScreen" : [],
-			"lgScreen" : []
-		}]
-	}]
+        "projects" : [
+            {
+                "images" : [
+                    {
+                    	"heroes" : [
+                        {
+                            "description" : "Lorem Ipsum",
+                            "smScreen" : [],
+                            "mdScreen" : [],
+                            "lgScreen" : []
+                        }]
+                    },
+                    {
+                        "lgThumbs" : [
+                        {
+                            "description" : "LG Lorem Ipsum",
+                            "smScreen" : [],
+                            "mdScreen" : [],
+                            "lgScreen" : []
+                        }]
+                    },
+                    {
+                    "smThumbs" : [
+                        {
+                            "description" : "SM Lorem Ipsum",
+                            "smScreen" : []
+                        }]
+                    }
+                ]
+            }
+        ]},
+        {
+		"type" : "Outdoor",
+        "projects" : [
+            {
+                "images" : [
+                    {
+                    	"heroes" : [
+                        {
+                            "description" : "Lorem Ipsum",
+                            "smScreen" : [],
+                            "mdScreen" : [],
+                            "lgScreen" : []
+                        }]
+                    },
+                    {
+                        "lgThumbs" : [
+                        {
+                            "description" : "LG Lorem Ipsum",
+                            "smScreen" : [],
+                            "mdScreen" : [],
+                            "lgScreen" : []
+                        }]
+                    },
+                    {
+                    "smThumbs" : [
+                        {
+                            "description" : "SM Lorem Ipsum",
+                            "smScreen" : []
+                        }]
+                    }
+                ]
+            }
+        ]},
+        {
+		"type" : "Fine Details",
+        "projects" : [
+            {
+                "images" : [
+                    {
+                    	"heroes" : [
+                        {
+                            "description" : "Lorem Ipsum",
+                            "smScreen" : [],
+                            "mdScreen" : [],
+                            "lgScreen" : []
+                        }]
+                    },
+                    {
+                        "lgThumbs" : [
+                        {
+                            "description" : "LG Lorem Ipsum",
+                            "smScreen" : [],
+                            "mdScreen" : [],
+                            "lgScreen" : []
+                        }]
+                    },
+                    {
+                    "smThumbs" : [
+                        {
+                            "description" : "SM Lorem Ipsum",
+                            "smScreen" : []
+                        }]
+                    }
+                ]
+            }
+        ]}
+    ]
 }
