@@ -2,6 +2,17 @@
 	"menu" : ["Indoor", "Outdoor", "Fine Detail", "415-341-6577"],
     "slideshow" : [
         {
+            "description" : "Slideshow Lorem",
+            "smScreen" : [],
+            "mdScreen" : [],
+            "lgScreen" : []
+        },  {
+            "description" : "Slideshow Lorem",
+            "smScreen" : [],
+            "mdScreen" : [],
+            "lgScreen" : []
+        },  {
+            "description" : "Slideshow Lorem",
             "smScreen" : [],
             "mdScreen" : [],
             "lgScreen" : []
@@ -12,6 +23,94 @@
 		"type" : "indoor",
         "projects" : [
             {
+                "description" : "Projects Lorem Ipsum",
+                "images" : [
+                    {
+                    	"heroes" : [
+                        {
+                            "description" : "Lorem Ipsum",
+                            "smScreen" : [],
+                            "mdScreen" : [],
+                            "lgScreen" : []
+                        }]
+                    },
+                    {
+                        "lgThumbs" : [
+                        {
+                            "description" : "LG Lorem Ipsum",
+                            "smScreen" : [],
+                            "mdScreen" : [],
+                            "lgScreen" : []
+                        }]
+                    },
+                    {
+                    "smThumbs" : [
+                        {
+                            "description" : "SM Lorem Ipsum",
+                            "smScreen" : []
+                        }]
+                    }
+                ]
+            }, {
+                "description" : "Projects Lorem Ipsum",
+                "images" : [
+                    {
+                    	"heroes" : [
+                        {
+                            "description" : "Lorem Ipsum",
+                            "smScreen" : [],
+                            "mdScreen" : [],
+                            "lgScreen" : []
+                        }]
+                    },
+                    {
+                        "lgThumbs" : [
+                        {
+                            "description" : "LG Lorem Ipsum",
+                            "smScreen" : [],
+                            "mdScreen" : [],
+                            "lgScreen" : []
+                        }]
+                    },
+                    {
+                    "smThumbs" : [
+                        {
+                            "description" : "SM Lorem Ipsum",
+                            "smScreen" : []
+                        }]
+                    }
+                ]
+            }, {
+                "description" : "Projects Lorem Ipsum",
+                "images" : [
+                    {
+                    	"heroes" : [
+                        {
+                            "description" : "Lorem Ipsum",
+                            "smScreen" : [],
+                            "mdScreen" : [],
+                            "lgScreen" : []
+                        }]
+                    },
+                    {
+                        "lgThumbs" : [
+                        {
+                            "description" : "LG Lorem Ipsum",
+                            "smScreen" : [],
+                            "mdScreen" : [],
+                            "lgScreen" : []
+                        }]
+                    },
+                    {
+                    "smThumbs" : [
+                        {
+                            "description" : "SM Lorem Ipsum",
+                            "smScreen" : []
+                        }]
+                    }
+                ]
+            }, {
+                "description" : "Projects Lorem Ipsum",
                 "images" : [
                     {
                     	"heroes" : [
@@ -45,6 +144,152 @@
 		"type" : "Outdoor",
         "projects" : [
             {
+                "description" : "Out door project Lorem Ipsum",
+                "images" : [
+                    {
+                    	"heroes" : [
+                        {
+                            "description" : "Lorem Ipsum",
+                            "smScreen" : [],
+                            "mdScreen" : [],
+                            "lgScreen" : []
+                        }]
+                    },
+                    {
+                        "lgThumbs" : [
+                        {
+                            "description" : "LG Lorem Ipsum",
+                            "smScreen" : [],
+                            "mdScreen" : [],
+                            "lgScreen" : []
+                        }]
+                    },
+                    {
+                    "smThumbs" : [
+                        {
+                            "description" : "SM Lorem Ipsum",
+                            "smScreen" : []
+                        }]
+                    }
+                ]
+            },{
+                "description" : "Out door project Lorem Ipsum",
+                "images" : [
+                    {
+                    	"heroes" : [
+                        {
+                            "description" : "Lorem Ipsum",
+                            "smScreen" : [],
+                            "mdScreen" : [],
+                            "lgScreen" : []
+                        }]
+                    },
+                    {
+                        "lgThumbs" : [
+                        {
+                            "description" : "LG Lorem Ipsum",
+                            "smScreen" : [],
+                            "mdScreen" : [],
+                            "lgScreen" : []
+                        }]
+                    },
+                    {
+                    "smThumbs" : [
+                        {
+                            "description" : "SM Lorem Ipsum",
+                            "smScreen" : []
+                        }]
+                    }
+                ]
+            },{
+                "description" : "Out door project Lorem Ipsum",
+                "images" : [
+                    {
+                    	"heroes" : [
+                        {
+                            "description" : "Lorem Ipsum",
+                            "smScreen" : [],
+                            "mdScreen" : [],
+                            "lgScreen" : []
+                        }]
+                    },
+                    {
+                        "lgThumbs" : [
+                        {
+                            "description" : "LG Lorem Ipsum",
+                            "smScreen" : [],
+                            "mdScreen" : [],
+                            "lgScreen" : []
+                        }]
+                    },
+                    {
+                    "smThumbs" : [
+                        {
+                            "description" : "SM Lorem Ipsum",
+                            "smScreen" : []
+                        }]
+                    }
+                ]
+            },{
+                "description" : "Out door project Lorem Ipsum",
+                "images" : [
+                    {
+                    	"heroes" : [
+                        {
+                            "description" : "Lorem Ipsum",
+                            "smScreen" : [],
+                            "mdScreen" : [],
+                            "lgScreen" : []
+                        }]
+                    },
+                    {
+                        "lgThumbs" : [
+                        {
+                            "description" : "LG Lorem Ipsum",
+                            "smScreen" : [],
+                            "mdScreen" : [],
+                            "lgScreen" : []
+                        }]
+                    },
+                    {
+                    "smThumbs" : [
+                        {
+                            "description" : "SM Lorem Ipsum",
+                            "smScreen" : []
+                        }]
+                    }
+                ]
+            },{
+                "description" : "Out door project Lorem Ipsum",
+                "images" : [
+                    {
+                    	"heroes" : [
+                        {
+                            "description" : "Lorem Ipsum",
+                            "smScreen" : [],
+                            "mdScreen" : [],
+                            "lgScreen" : []
+                        }]
+                    },
+                    {
+                        "lgThumbs" : [
+                        {
+                            "description" : "LG Lorem Ipsum",
+                            "smScreen" : [],
+                            "mdScreen" : [],
+                            "lgScreen" : []
+                        }]
+                    },
+                    {
+                    "smThumbs" : [
+                        {
+                            "description" : "SM Lorem Ipsum",
+                            "smScreen" : []
+                        }]
+                    }
+                ]
+            },{
+                "description" : "Out door project Lorem Ipsum",
                 "images" : [
                     {
                     	"heroes" : [
@@ -78,6 +323,7 @@
 		"type" : "Fine Details",
         "projects" : [
             {
+                "description" : "Details project Lorem Ipsum",
                 "images" : [
                     {
                     	"heroes" : [
