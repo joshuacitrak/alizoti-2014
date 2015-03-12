@@ -52,7 +52,7 @@ module.exports = function(grunt)
 						tasks: ['compass:dev']
 					},//sass
 					images: {
-				      files: ['**/*.{png,jpg,gif}', '**/**/*.{png,jpg,gif}', '**/**/**/*.{png,jpg,gif}'],
+				      files: ['**/*.{png,jpg,gif}'],
 				      tasks: ['imagemin'],
 				      options: {
 				      spawn: false,

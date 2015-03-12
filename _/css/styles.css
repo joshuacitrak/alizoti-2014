@@ -293,13 +293,53 @@ li {
 
 /* line 285, ../components/sass/_atoms.scss */
 .ng-show {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-  opacity: 0.5;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out; }
 
+/* line 291, ../components/sass/_atoms.scss */
+.ng-enter {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+
+/* starting animations for enter */
+/* line 297, ../components/sass/_atoms.scss */
+.ng-enter.ng-enter-active {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+
+/* terminal animations for enter */
+/* line 303, ../components/sass/_atoms.scss */
+.ng-leave {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+
+/* starting animations for leave */
+/* line 309, ../components/sass/_atoms.scss */
+.ng-leave.ng-leave-active {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+
+/* terminal animations for leave */
 /* line 4, ../components/sass/_molecules.scss */
 .header-nav-container, .footer-container {
   background: rgba(161, 161, 161, 0.7); }

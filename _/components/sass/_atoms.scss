@@ -287,3 +287,27 @@ li
     @include opacity(1);
     @include animateAll();
 }
+
+.ng-enter 
+{ 
+    @include opacity(0);
+    @include animateAll();
+}   /* starting animations for enter */
+
+.ng-enter.ng-enter-active 
+{
+    @include opacity(1);
+    @include animateAll();
+} /* terminal animations for enter */
+
+.ng-leave 
+{
+    @include opacity(1);
+    @include animateAll();
+}        /* starting animations for leave */
+
+.ng-leave.ng-leave-active 
+{
+    @include opacity(0);
+    @include animateAll();
+} /* terminal animations for leave */
