@@ -284,6 +284,6 @@ li
 
 .ng-show
 {
-    @include opacity(1);
+    @include opacity(.5);
     @include animateAll();
 }

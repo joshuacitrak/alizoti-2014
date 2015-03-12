@@ -1,354 +1,223 @@
 {
-	"menu" : ["Indoor", "Outdoor", "Fine Detail", "415-341-6577"],
+	"menu" : ["Indoor", "Outdoor", "Fine Detail", "Contact", "415-341-6577"],
     "slideshow" : [
         {
             "description" : "Slideshow Lorem",
-            "smScreen" : [],
-            "mdScreen" : [],
-            "lgScreen" : []
+            "type" : "Indoor",
+            "sm" : ["images/build/indoor/slideshow/sm/GoldCopperBrown-backsplash-3.jpg"],
+            "md" : ["images/build/indoor/slideshow/md/GoldCopperBrown-backsplash-3.jpg"],
+            "lg" : ["images/build/indoor/slideshow/lg/GoldCopperBrown-backsplash-3.jpg"]
         },  {
             "description" : "Slideshow Lorem",
-            "smScreen" : [],
-            "mdScreen" : [],
-            "lgScreen" : []
+            "type": "Outdoor",
+            "sm" : ["images/build/outdoor/slideshow/sm/colored-concrete-driveway-4.jpg"],
+            "md" : ["images/build/outdoor/slideshow/md/colored-concrete-driveway-4.jpg"],
+            "lg" : ["images/build/outdoor/slideshow/lg/colored-concrete-driveway-4.jpg"]
         },  {
             "description" : "Slideshow Lorem",
-            "smScreen" : [],
-            "mdScreen" : [],
-            "lgScreen" : []
+            "type" : "Details",
+            "sm" : ["images/build/details/slideshow/sm/Pool-medaliion.jpg"],
+            "md" : ["images/build/details/slideshow/md/Pool-medaliion.jpg"],
+            "lg" : ["images/build/details/slideshow/lg/Pool-medaliion.jpg"]
         }
     ],
 	"services" : [
 	{
 		"type" : "indoor",
+        "heroes-path" : "images/build/indoor/heroes",
+        "lgThumbs-path" : "images/build/indoor/LgThumbs",
+        "smThumbs-path" : "images/build/indoor/smThumbs",
         "projects" : [
             {
                 "description" : "Projects Lorem Ipsum",
-                "images" : [
+                "details" : "",
+                "images" : ["GoldCopperBrown-backsplash-2.jpg", "GoldCopperBrown-backsplash-3.jpg", "GoldCopperBrown-backsplash-4.jpg"], 
+                "descriptions" : [
                     {
-                    	"heroes" : [
-                        {
-                            "description" : "Lorem Ipsum",
-                            "smScreen" : [],
-                            "mdScreen" : [],
-                            "lgScreen" : []
-                        }]
-                    },
-                    {
-                        "lgThumbs" : [
-                        {
-                            "description" : "LG Lorem Ipsum",
-                            "smScreen" : [],
-                            "mdScreen" : [],
-                            "lgScreen" : []
-                        }]
-                    },
-                    {
-                    "smThumbs" : [
-                        {
-                            "description" : "SM Lorem Ipsum",
-                            "smScreen" : []
-                        }]
+                    	"description" : "Lorem Ipsum GoldCopperBrown-backsplash"
+                    },{
+                    	"description" : "Lorem Ipsum GoldCopperBrown-backsplash"
+                    },{
+                    	"description" : "Lorem Ipsum GoldCopperBrown-backsplash"
                     }
                 ]
             }, {
                 "description" : "Projects Lorem Ipsum",
-                "images" : [
+                "details" : "",
+                "images" : ["Crackled-ceramic-diagonal-layout-2.jpg", "Crackled-ceramic-diagonal-layout-3.jpg", "Crackled-ceramic-diagonal-layout-4.jpg", "Crackled-ceramic-diagonal-layout.jpg"], 
+                "descriptions" : [
                     {
-                    	"heroes" : [
-                        {
-                            "description" : "Lorem Ipsum",
-                            "smScreen" : [],
-                            "mdScreen" : [],
-                            "lgScreen" : []
-                        }]
-                    },
-                    {
-                        "lgThumbs" : [
-                        {
-                            "description" : "LG Lorem Ipsum",
-                            "smScreen" : [],
-                            "mdScreen" : [],
-                            "lgScreen" : []
-                        }]
-                    },
-                    {
-                    "smThumbs" : [
-                        {
-                            "description" : "SM Lorem Ipsum",
-                            "smScreen" : []
-                        }]
+                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
+                    },{
+                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
+                    },{
+                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
+                    },{
+                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
                     }
                 ]
             }, {
                 "description" : "Projects Lorem Ipsum",
-                "images" : [
+                "details" : "",
+                "images" : ["Green-herringbone-floor-w-Carrera-wall.jpg", "Green-herringbone-shower-floor-w-Carrera-wall.jpg", "Green-marble-w-border-after.jpg", "Green-marble-w-border.jpg"], 
+                "descriptions" : [
                     {
-                    	"heroes" : [
-                        {
-                            "description" : "Lorem Ipsum",
-                            "smScreen" : [],
-                            "mdScreen" : [],
-                            "lgScreen" : []
-                        }]
-                    },
-                    {
-                        "lgThumbs" : [
-                        {
-                            "description" : "LG Lorem Ipsum",
-                            "smScreen" : [],
-                            "mdScreen" : [],
-                            "lgScreen" : []
-                        }]
-                    },
-                    {
-                    "smThumbs" : [
-                        {
-                            "description" : "SM Lorem Ipsum",
-                            "smScreen" : []
-                        }]
+                    	"description" : "Lorem Ipsum Green-marble-w-border.jpg"
+                    },{
+                    	"description" : "Lorem Ipsum 2 Green-marble-w-border.jpg"
+                    },{
+                    	"description" : "Lorem Ipsum 3 Green-marble-w-border.jpg"
+                    },{
+                    	"description" : "Lorem Ipsum 4 Green-marble-w-border.jpg"
                     }
                 ]
             }, {
                 "description" : "Projects Lorem Ipsum",
-                "images" : [
+                "details" : "",
+                "images" : ["Porcelain-and-glass-mosaic-2.jpg", "Porcelain-and-glass-mosaic-3.jpg", "Porcelain-and-glass-mosaic-4.jpg", "Porcelain-and-glass-mosaic.jpg", "Porcelain-floor-w-accent.jpg"], 
+                "descriptions" : [
                     {
-                    	"heroes" : [
-                        {
-                            "description" : "Lorem Ipsum",
-                            "smScreen" : [],
-                            "mdScreen" : [],
-                            "lgScreen" : []
-                        }]
-                    },
-                    {
-                        "lgThumbs" : [
-                        {
-                            "description" : "LG Lorem Ipsum",
-                            "smScreen" : [],
-                            "mdScreen" : [],
-                            "lgScreen" : []
-                        }]
-                    },
-                    {
-                    "smThumbs" : [
-                        {
-                            "description" : "SM Lorem Ipsum",
-                            "smScreen" : []
-                        }]
+                    	"description" : "Lorem Ipsum Porcelain-floor-w-accent"
+                    },{
+                    	"description" : "Lorem Ipsum Porcelain-and-glass-mosaic"
+                    },{
+                    	"description" : "Lorem Ipsum Porcelain-and-glass-mosaic"
+                    },{
+                    	"description" : "Lorem Ipsum Porcelain-and-glass-mosaic"
+                    },{
+                    	"description" : "Lorem Ipsum Porcelain-and-glass-mosaic"
                     }
                 ]
             }
         ]},
         {
 		"type" : "Outdoor",
+            "heroes-path" : "images/build/outdoor/heroes",
+            "lgThumbs-path" : "images/build/outdoor/LgThumbs",
+            "smThumbs-path" : "images/build/outdoor/smThumbs",
         "projects" : [
             {
-                "description" : "Out door project Lorem Ipsum",
-                "images" : [
+                "description" : "Projects Lorem Ipsum",
+                "details" : "",
+                "images" : ["BBQ-area-backwall.jpg", "BBQ-backsplash-2.jpg", "Pool-bar-area.jpg"], 
+                "descriptions" : [
                     {
-                    	"heroes" : [
-                        {
-                            "description" : "Lorem Ipsum",
-                            "smScreen" : [],
-                            "mdScreen" : [],
-                            "lgScreen" : []
-                        }]
-                    },
-                    {
-                        "lgThumbs" : [
-                        {
-                            "description" : "LG Lorem Ipsum",
-                            "smScreen" : [],
-                            "mdScreen" : [],
-                            "lgScreen" : []
-                        }]
-                    },
-                    {
-                    "smThumbs" : [
-                        {
-                            "description" : "SM Lorem Ipsum",
-                            "smScreen" : []
-                        }]
+                    	"description" : "Lorem Ipsum BBQ-area-backwall"
+                    },{
+                    	"description" : "Lorem Ipsum BBQ-area-backwall"
+                    },{
+                    	"description" : "Lorem Ipsum BBQ-area-backwall"
                     }
                 ]
-            },{
-                "description" : "Out door project Lorem Ipsum",
-                "images" : [
+            }, {
+                "description" : "Projects Lorem Ipsum",
+                "details" : "",
+                "images" : ["brick-layout-1.jpg", "concrete-pour-2.jpg", "exterior-block.jpg", "finish.jpg", "finish.jpg2"], 
+                "descriptions" : [
                     {
-                    	"heroes" : [
-                        {
-                            "description" : "Lorem Ipsum",
-                            "smScreen" : [],
-                            "mdScreen" : [],
-                            "lgScreen" : []
-                        }]
-                    },
-                    {
-                        "lgThumbs" : [
-                        {
-                            "description" : "LG Lorem Ipsum",
-                            "smScreen" : [],
-                            "mdScreen" : [],
-                            "lgScreen" : []
-                        }]
-                    },
-                    {
-                    "smThumbs" : [
-                        {
-                            "description" : "SM Lorem Ipsum",
-                            "smScreen" : []
-                        }]
+                    	"description" : "Lorem Ipsum oven"
+                    },{
+                    	"description" : "Lorem Ipsum oven"
+                    },{
+                    	"description" : "Lorem Ipsum oven"
+                    },{
+                    	"description" : "Lorem Ipsum oven"
                     }
                 ]
-            },{
-                "description" : "Out door project Lorem Ipsum",
-                "images" : [
+            }, {
+                "description" : "Projects Lorem Ipsum",
+                "details" : "",
+                "images" : ["colored-concrete-driveway-1.jpg", "colored-concrete-driveway-4.jpg", "colored-concrete-planter-top.jpg", "colored-concrete-sidewalk.jpg"], 
+                "descriptions" : [
                     {
-                    	"heroes" : [
-                        {
-                            "description" : "Lorem Ipsum",
-                            "smScreen" : [],
-                            "mdScreen" : [],
-                            "lgScreen" : []
-                        }]
-                    },
-                    {
-                        "lgThumbs" : [
-                        {
-                            "description" : "LG Lorem Ipsum",
-                            "smScreen" : [],
-                            "mdScreen" : [],
-                            "lgScreen" : []
-                        }]
-                    },
-                    {
-                    "smThumbs" : [
-                        {
-                            "description" : "SM Lorem Ipsum",
-                            "smScreen" : []
-                        }]
+                    	"description" : "Lorem Ipsum colored-concrete-sidewalk.jpg"
+                    },{
+                    	"description" : "Lorem Ipsum colored-concrete-sidewalk.jpg"
+                    },{
+                    	"description" : "Lorem Ipsum colored-concrete-sidewalk.jpg"
+                    },{
+                    	"description" : "Lorem Ipsum colored-concrete-sidewalk.jpg"
                     }
                 ]
-            },{
-                "description" : "Out door project Lorem Ipsum",
-                "images" : [
+            }, {
+                "description" : "Projects Lorem Ipsum",
+                "details" : "",
+                "images" : ["colored-concrete-driveway-1.jpg", "colored-concrete-driveway-4.jpg", "colored-concrete-planter-top.jpg", "olored-concrete-sidewalk.jpg"], 
+                "descriptions" : [
                     {
-                    	"heroes" : [
-                        {
-                            "description" : "Lorem Ipsum",
-                            "smScreen" : [],
-                            "mdScreen" : [],
-                            "lgScreen" : []
-                        }]
-                    },
-                    {
-                        "lgThumbs" : [
-                        {
-                            "description" : "LG Lorem Ipsum",
-                            "smScreen" : [],
-                            "mdScreen" : [],
-                            "lgScreen" : []
-                        }]
-                    },
-                    {
-                    "smThumbs" : [
-                        {
-                            "description" : "SM Lorem Ipsum",
-                            "smScreen" : []
-                        }]
+                    	"description" : "Lorem Ipsum drive"
+                    },{
+                    	"description" : "Lorem Ipsum drive-"
+                    },{
+                    	"description" : "Lorem Ipsum drive"
+                    },{
+                    	"description" : "Lorem Ipsum drive"
                     }
                 ]
-            },{
-                "description" : "Out door project Lorem Ipsum",
-                "images" : [
+            }, {
+                "description" : "Projects Lorem Ipsum",
+                "details" : "",
+                "images" : ["Pool-medallion-3.jpg", "Jacuzzi.jpg", "Pool-mosaic-1.jpg", "Pool-mosaic-2.jpg"], 
+                "descriptions" : [
                     {
-                    	"heroes" : [
-                        {
-                            "description" : "Lorem Ipsum",
-                            "smScreen" : [],
-                            "mdScreen" : [],
-                            "lgScreen" : []
-                        }]
-                    },
-                    {
-                        "lgThumbs" : [
-                        {
-                            "description" : "LG Lorem Ipsum",
-                            "smScreen" : [],
-                            "mdScreen" : [],
-                            "lgScreen" : []
-                        }]
-                    },
-                    {
-                    "smThumbs" : [
-                        {
-                            "description" : "SM Lorem Ipsum",
-                            "smScreen" : []
-                        }]
+                    	"description" : "Lorem Ipsum pool"
+                    },{
+                    	"description" : "Lorem Ipsum pool"
+                    },{
+                    	"description" : "Lorem Ipsum pool"
+                    },{
+                    	"description" : "Lorem Ipsum pool"
                     }
                 ]
-            },{
-                "description" : "Out door project Lorem Ipsum",
-                "images" : [
+            }, {
+                "description" : "Projects Lorem Ipsum",
+                "details" : "",
+                "images" : ["Stone-wall-3.jpg", "Stone-wall-4.jpg", "Stone-wall-5.jpg", "Stone-wall-7.jpg"], 
+                "descriptions" : [
                     {
-                    	"heroes" : [
-                        {
-                            "description" : "Lorem Ipsum",
-                            "smScreen" : [],
-                            "mdScreen" : [],
-                            "lgScreen" : []
-                        }]
-                    },
-                    {
-                        "lgThumbs" : [
-                        {
-                            "description" : "LG Lorem Ipsum",
-                            "smScreen" : [],
-                            "mdScreen" : [],
-                            "lgScreen" : []
-                        }]
-                    },
-                    {
-                    "smThumbs" : [
-                        {
-                            "description" : "SM Lorem Ipsum",
-                            "smScreen" : []
-                        }]
+                    	"description" : "Lorem Ipsum stonewall"
+                    },{
+                    	"description" : "Lorem Ipsum stonewall"
+                    },{
+                    	"description" : "Lorem Ipsum stonewall"
+                    },{
+                    	"description" : "Lorem Ipsum stonewall"
                     }
                 ]
             }
         ]},
         {
 		"type" : "Fine Details",
+        "heroes-path" : "images/build/details/heroes",
+        "lgThumbs-path" : "images/build/details/LgThumbs",
+        "smThumbs-path" : "images/build/details/smThumbs",
         "projects" : [
             {
-                "description" : "Details project Lorem Ipsum",
-                "images" : [
+                "description" : "Mosaics",
+                "details" : "",
+                "images" : ["GoldCopperBrown-backsplash-2.jpg", "GoldCopperBrown-backsplash-3.jpg", "GoldCopperBrown-backsplash-4.jpg"], 
+                "descriptions" : [
                     {
-                    	"heroes" : [
-                        {
-                            "description" : "Lorem Ipsum",
-                            "smScreen" : [],
-                            "mdScreen" : [],
-                            "lgScreen" : []
-                        }]
-                    },
+                    	"description" : "Lorem Ipsum GoldCopperBrown-backsplash"
+                    },{
+                    	"description" : "Lorem Ipsum GoldCopperBrown-backsplash"
+                    },{
+                    	"description" : "Lorem Ipsum GoldCopperBrown-backsplash"
+                    }
+                ]
+            }, {
+                "description" : "Niches and Shelves",
+                "details" : "",
+                "images" : ["Crackled-ceramic-diagonal-layout-2.jpg", "Crackled-ceramic-diagonal-layout-3.jpg", "Crackled-ceramic-diagonal-layout-4.jpg", "Crackled-ceramic-diagonal-layout.jpg"], 
+                "descriptions" : [
                     {
-                        "lgThumbs" : [
-                        {
-                            "description" : "LG Lorem Ipsum",
-                            "smScreen" : [],
-                            "mdScreen" : [],
-                            "lgScreen" : []
-                        }]
-                    },
-                    {
-                    "smThumbs" : [
-                        {
-                            "description" : "SM Lorem Ipsum",
-                            "smScreen" : []
-                        }]
+                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
+                    },{
+                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
+                    },{
+                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
+                    },{
+                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
                     }
                 ]
             }
