@@ -8,7 +8,10 @@
 
 .header-nav-container
 {
-  height:100%; //75 large screen
+  height:60px; //75 large screen
+    position:absolute;
+    left:0;
+    width: 100%;
   padding-left:$default-space-lg;
   margin-top:0;
   z-index:30;

@@ -18,13 +18,16 @@
 
 	var dataObj = [];
 
-	app.controller('PageController', function($scope, $http, $location) {
+	app.controller('PageController', function($scope, $rootScope, $http, $location) {
         //$scope.scState = "sm"; //default do we want to do this? until the data loads, this is irrelevant
 		$http.get('_/js/data.json').success(
 				function(data, status, headers, config) {
+                    
 					$scope.dataObj = data;
                     
                     $scope.slideshow = $scope.dataObj.slideshow;
+                    
+                    $scope.menu = $scope.dataObj.menu;
                     
                     $scope.goTo = function(url){
                         $location.path(url);
@@ -48,30 +51,31 @@
                         //console.log("previous " + $scope.dataObj.services[0].projects[2].descriptions[3].description);
                     }
                     
+                    $scope.windowSize = 0;
                     $scope.jqUpdateSize = function(){
-                    // Get the dimensions of the viewport
-                        console.log("update size");
                     var width = $(window).width();
                         if( width < 767)
                         {
-                            $scope.scState = "sm"
+                            $scope.windowSize = 0;
                         }
                         else if(width <= 768 || width < 992)
                         {
-                            $scope.scState ="md";
+                            $scope.windowSize=1;
                         }
                         else
                         {
-                            $scope.scState = "lg";
+                            $scope.windowSize = 2;
                         }
+                        $scope.$apply(function() {
+                            $scope.windowSize }); //apply the update
                     };//getjqsize
-                    $(document).ready(function(){
-                        $scope.jqUpdateSize();                     
-                    });    // When the page first loads
-                    $(window).resize($scope.jqUpdateSize); 
+                                        
+                   $(document).ready($scope.jqUpdateSize);//call it once the data is loaded
+                    $(window).resize($scope.jqUpdateSize);//then update approriately 
+                    
 				}).error(function(data, status, headers, config) {
 			alert('data could not be loaded. epic fail.');
-		});
+		});//error
 	});
 
 	app.controller('NavController', function($scope, $location) {

@@ -1,20 +1,20 @@
 <section class="hero-container">
         <div class="hero" ng-click="goTo('/services/0/product/0')">
-            <img class="img-responsive" ng-src="{{slideshow[0].lg[0]}}" alt="" />
+            <img class="img-responsive" ng-src="{{slideshow[0].img[windowSize]}}" alt="" />
             <h3>{{slideshow[0].description}}</h3>
             <button class="btn btn-primary menu-item-cta-btn" ng-click="goTo('/services/0/product/1')">
                     Get inspired <span class="btn-caret"></span>
                 </button>
         </div>
         <div class="hero" ng-click="goTo('/services/1/product/0')">
-            <img class="img-responsive" ng-src="{{slideshow[1].lg[0]}}" alt="" />
+            <img class="img-responsive" ng-src="{{slideshow[1].img[windowSize]}}" alt="" />
             <h3>{{slideshow[1].description}}</h3>
             <button class="btn btn-primary menu-item-cta-btn" ng-click="goTo('/services/1/product/1')">
                     Start here <span class="btn-caret"></span>
                 </button>
         </div>
         <div class="hero" ng-click="goTo('/services/2/product/0')">
-            <img class="img-responsive" ng-src="{{slideshow[2].lg[0]}}" alt="" />
+            <img class="img-responsive" ng-src="{{slideshow[2].img[windowSize]}}" alt="" />
             <h3>{{slideshow[2].description}}</h3>
             <button class="btn btn-primary menu-item-cta-btn" ng-click="goTo('/services/2/product/1')">
                     See it now <span class="btn-caret"></span>
@@ -27,7 +27,7 @@
     <div class="col-xs-12 col-sm-4">
         <nav class="secondary-menu-item">
             <figure class="secondary-menu-fg" ng-click="goTo('/services/0/product/1')">
-                <img src="http://placehold.it/720x265" alt="" class="secondary-menu" />
+                <img ng-src="{{menu[0].img[windowSize]}}"alt="indoor menu item" class="secondary-menu" />
                 <div class="btn btn-primary secondary-menu-item-primary-btn">
                     <h2>Indoor</h2>
                 </div>
@@ -49,7 +49,7 @@
     <div class="col-xs-12 col-sm-4">
         <nav class="secondary-menu-item">
             <figure class="secondary-menu-fg" ng-click="goTo('/services/1/product/1')">
-                <img src="http://placehold.it/720x265" alt="" class="secondary-menu" />
+                <img ng-src="{{menu[1].img[windowSize]}}" alt="outdoor menu item" class="secondary-menu" />
                 <div class="btn btn-primary secondary-menu-item-primary-btn">
                     <h2>Outdoor</h2>
                 </div>
@@ -71,7 +71,7 @@
     <div class="col-xs-12 col-sm-4">
         <nav class="secondary-menu-item">
             <figure class="secondary-menu-fg" ng-click="goTo('/services/2/product/1')">
-                <img src="http://placehold.it/720x265" alt="" class="secondary-menu" />
+                <img ng-src="{{menu[2].img[windowSize]}}" alt="fine details menu item" class="secondary-menu" />
                 <div class="btn btn-primary secondary-menu-item-primary-btn">
                     <h2>Fine Detail</h2>
                 </div>

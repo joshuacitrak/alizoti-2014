@@ -1,3 +1,11 @@
+.header-nav-container
+{
+    height:65px; //75 large screen
+    @media (min-width:825px)//necessary evil d its thang
+      {
+          height:70px; //75 large screen
+      }
+}
 .hero-container
 {
   margin:0;

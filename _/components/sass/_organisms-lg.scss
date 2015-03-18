@@ -2,12 +2,12 @@
 {
   @media (min-width:825px)//necessary evil d its thang
     {
-      font-size:72px;
-      font-size:7.2rem;
+      font-size:60px;
+      font-size:6rem;
       .company-co
       {
-        font-size:52px;
-        font-size:5.2rem;
+        font-size:41px;
+        font-size:4.1rem;
       }//company co
     }//media
 }//company-name
@@ -31,7 +31,11 @@
 {
   position:absolute;
   right:$default-space-lg;
-  top:32px;
+  top:18px;
+    @media (min-width:825px)//necessary evil d its thang
+      {
+          top:23px;
+      }
   .menu-button
   {
     cursor:pointer;

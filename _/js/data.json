@@ -1,24 +1,29 @@
 {
-	"menu" : ["Indoor", "Outdoor", "Fine Detail", "Contact", "415-341-6577"],
+	"menu" : [
+        {
+            "type" : "Indoor",
+            "img" : ["images/build/indoor/menu/sm/Porcelain-and-glass-mosaic.jpg","images/build/indoor/menu/md/Porcelain-and-glass-mosaic.jpg","images/build/indoor/menu/lg/Porcelain-and-glass-mosaic.jpg"]
+        },  {
+            "type": "Outdoor",
+            "img" : ["images/build/outdoor/menu/sm/Marble-opening-outside.jpg","images/build/outdoor/menu/md/Marble-opening-outside.jpg","images/build/outdoor/menu/lg/Marble-opening-outside.jpg"]
+        },  {
+            "type" : "Details",
+            "img" : ["images/build/details/menu/sm/Pool-mosaic-detail.jpg","images/build/details/menu/md/Pool-mosaic-detail.jpg","images/build/details/menu/lg/Pool-mosaic-detail.jpg"]
+        }
+    ],
     "slideshow" : [
         {
             "description" : "So you have this great idea... Let us help you set it in stone.",
             "type" : "Indoor",
-            "sm" : ["images/build/indoor/slideshow/sm/GoldCopperBrown-backsplash-3.jpg"],
-            "md" : ["images/build/indoor/slideshow/md/GoldCopperBrown-backsplash-3.jpg"],
-            "lg" : ["images/build/indoor/slideshow/lg/GoldCopperBrown-backsplash-3.jpg"]
+            "img" : ["images/build/indoor/slideshow/sm/GoldCopperBrown-backsplash.jpg","images/build/indoor/slideshow/md/GoldCopperBrown-backsplash.jpg","images/build/indoor/slideshow/lg/GoldCopperBrown-backsplash-3.jpg"]
         },  {
             "description" : "Step-by-step, we'll walk you through the process of turning your living space into a dream home.",
             "type": "Outdoor",
-            "sm" : ["images/build/outdoor/slideshow/sm/colored-concrete-driveway-4.jpg"],
-            "md" : ["images/build/outdoor/slideshow/md/colored-concrete-driveway-4.jpg"],
-            "lg" : ["images/build/outdoor/slideshow/lg/colored-concrete-driveway-4.jpg"]
+            "img" : ["images/build/outdoor/slideshow/sm/colored-concrete-driveway-1.jpg","images/build/outdoor/slideshow/md/colored-concrete-driveway-1.jpg","images/build/outdoor/slideshow/lg/colored-concrete-driveway-4.jpg"]
         },  {
             "description" : "Quality workmanship down to the finest details.",
             "type" : "Details",
-            "sm" : ["images/build/details/slideshow/sm/Pool-medaliion.jpg"],
-            "md" : ["images/build/details/slideshow/md/Pool-medaliion.jpg"],
-            "lg" : ["images/build/details/slideshow/lg/Pool-medaliion.jpg"]
+            "img" : ["images/build/details/slideshow/sm/Pool-medaliion.jpg","images/build/details/slideshow/md/Pool-medaliion.jpg","images/build/details/slideshow/lg/Pool-medaliion.jpg"]
         }
     ],
 	"services" : [
