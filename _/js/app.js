@@ -18,7 +18,7 @@
 
 	var dataObj = [];
 
-	app.controller('PageController', function($scope, $rootScope, $http, $location) {
+	app.controller('PageController', function($scope, $rootScope, $http, $location, $routeParams) {
         //$scope.scState = "sm"; //default do we want to do this? until the data loads, this is irrelevant
 		$http.get('_/js/data.json').success(
 				function(data, status, headers, config) {
@@ -28,6 +28,12 @@
                     $scope.slideshow = $scope.dataObj.slideshow;
                     
                     $scope.menu = $scope.dataObj.menu;
+                    
+                    //If you want to use URL attributes before the website is loaded
+                    $rootScope.$on('$routeChangeSuccess', function () {
+                         $scope.servicesId = $routeParams.servicesId;
+                            $scope.productId = $routeParams.productId;
+                    });
                     
                     $scope.goTo = function(url){
                         $location.path(url);

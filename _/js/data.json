@@ -7,7 +7,7 @@
             "type": "Outdoor",
             "img" : ["images/build/outdoor/menu/sm/Marble-opening-outside.jpg","images/build/outdoor/menu/md/Marble-opening-outside.jpg","images/build/outdoor/menu/lg/Marble-opening-outside.jpg"]
         },  {
-            "type" : "Details",
+            "type" : "Fine Details",
             "img" : ["images/build/details/menu/sm/Pool-mosaic-detail.jpg","images/build/details/menu/md/Pool-mosaic-detail.jpg","images/build/details/menu/lg/Pool-mosaic-detail.jpg"]
         }
     ],
