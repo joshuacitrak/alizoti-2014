@@ -24,6 +24,8 @@
 				function(data, status, headers, config) {
 					$scope.dataObj = data;
                     
+                    $scope.slideshow = $scope.dataObj.slideshow;
+                    
                     $scope.goTo = function(url){
                         $location.path(url);
                         //console.log($scope.dataObj.menu[0] + " goto");
@@ -48,6 +50,7 @@
                     
                     $scope.jqUpdateSize = function(){
                     // Get the dimensions of the viewport
+                        console.log("update size");
                     var width = $(window).width();
                         if( width < 767)
                         {
@@ -62,7 +65,9 @@
                             $scope.scState = "lg";
                         }
                     };//getjqsize
-                    $(document).ready($scope.jqUpdateSize);    // When the page first loads
+                    $(document).ready(function(){
+                        $scope.jqUpdateSize();                     
+                    });    // When the page first loads
                     $(window).resize($scope.jqUpdateSize); 
 				}).error(function(data, status, headers, config) {
 			alert('data could not be loaded. epic fail.');

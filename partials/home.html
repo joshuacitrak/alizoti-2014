@@ -1,6 +1,25 @@
 <section class="hero-container">
-    <!--should be slick-->
-    <img class="img-responsive" src="http://placehold.it/1670x600">
+        <div class="hero" ng-click="goTo('/services/0/product/0')">
+            <img class="img-responsive" ng-src="{{slideshow[0].lg[0]}}" alt="" />
+            <h3>{{slideshow[0].description}}</h3>
+            <button class="btn btn-primary menu-item-cta-btn" ng-click="goTo('/services/0/product/1')">
+                    Get inspired <span class="btn-caret"></span>
+                </button>
+        </div>
+        <div class="hero" ng-click="goTo('/services/1/product/0')">
+            <img class="img-responsive" ng-src="{{slideshow[1].lg[0]}}" alt="" />
+            <h3>{{slideshow[1].description}}</h3>
+            <button class="btn btn-primary menu-item-cta-btn" ng-click="goTo('/services/1/product/1')">
+                    Start here <span class="btn-caret"></span>
+                </button>
+        </div>
+        <div class="hero" ng-click="goTo('/services/2/product/0')">
+            <img class="img-responsive" ng-src="{{slideshow[2].lg[0]}}" alt="" />
+            <h3>{{slideshow[2].description}}</h3>
+            <button class="btn btn-primary menu-item-cta-btn" ng-click="goTo('/services/2/product/1')">
+                    See it now <span class="btn-caret"></span>
+                </button>
+        </div>
 </section>
 <!--secondary menu partial start -->
 <section class="secondary-menu-container">
@@ -73,3 +92,24 @@
     <!--secondary menu partial -->
 </section>
 <!-- secondary-menu-container -->
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+          $('.hero-container').slick({
+              dots:true,
+              arrows:false,
+              autoplay:true,
+              autoplaySpeed:3500,
+              speed:2500,
+              fade:true,
+          })
+          .on('afterChange', function( e, slick, currentSlide ) {
+            console.log("change");
+        });
+    });
+    // On before slide change
+$('.hero-container').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+  console.log(nextSlide + " --------");
+});
+  </script>

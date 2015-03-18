@@ -2,19 +2,19 @@
 	"menu" : ["Indoor", "Outdoor", "Fine Detail", "Contact", "415-341-6577"],
     "slideshow" : [
         {
-            "description" : "Slideshow Lorem",
+            "description" : "So you have this great idea... Let us help you set it in stone.",
             "type" : "Indoor",
             "sm" : ["images/build/indoor/slideshow/sm/GoldCopperBrown-backsplash-3.jpg"],
             "md" : ["images/build/indoor/slideshow/md/GoldCopperBrown-backsplash-3.jpg"],
             "lg" : ["images/build/indoor/slideshow/lg/GoldCopperBrown-backsplash-3.jpg"]
         },  {
-            "description" : "Slideshow Lorem",
+            "description" : "Step-by-step, we'll walk you through the process of turning your living space into a dream home.",
             "type": "Outdoor",
             "sm" : ["images/build/outdoor/slideshow/sm/colored-concrete-driveway-4.jpg"],
             "md" : ["images/build/outdoor/slideshow/md/colored-concrete-driveway-4.jpg"],
             "lg" : ["images/build/outdoor/slideshow/lg/colored-concrete-driveway-4.jpg"]
         },  {
-            "description" : "Slideshow Lorem",
+            "description" : "Quality workmanship down to the finest details.",
             "type" : "Details",
             "sm" : ["images/build/details/slideshow/sm/Pool-medaliion.jpg"],
             "md" : ["images/build/details/slideshow/md/Pool-medaliion.jpg"],
