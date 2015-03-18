@@ -28,18 +28,18 @@
     ],
 	"services" : [
 	{
-		"type" : "indoor",
-        "heroes-path" : "images/build/indoor/heroes",
-        "lgThumbs-path" : "images/build/indoor/LgThumbs",
-        "smThumbs-path" : "images/build/indoor/smThumbs",
+		"type" : "Indoor",
+        "heroes/path" : "images/build/indoor/heroes//",
+        "lgThumbspath" : "images/build/indoor/LgThumbs/",
+        "smThumbspath" : "images/build/indoor/smThumbs/",
         "projects" : [
             {
-                "description" : "Projects Lorem Ipsum",
+                "description" : "Projects Lorem Ipsum <span class='emphasize'>kielbasa porchetta duis</span>",
                 "details" : "",
                 "images" : ["GoldCopperBrown-backsplash-2.jpg", "GoldCopperBrown-backsplash-3.jpg", "GoldCopperBrown-backsplash-4.jpg"], 
                 "descriptions" : [
                     {
-                    	"description" : "Lorem Ipsum GoldCopperBrown-backsplash"
+                    	"description" : "Lorem Ipsum GoldCopperBrown-backsplash "
                     },{
                     	"description" : "Lorem Ipsum GoldCopperBrown-backsplash"
                     },{
@@ -47,12 +47,12 @@
                     }
                 ]
             }, {
-                "description" : "Projects Lorem Ipsum",
+                "description" : "Projects Lorem Ipsum <span class='emphasize'>kielbasa porchetta duis</span>",
                 "details" : "",
                 "images" : ["Crackled-ceramic-diagonal-layout-2.jpg", "Crackled-ceramic-diagonal-layout-3.jpg", "Crackled-ceramic-diagonal-layout-4.jpg", "Crackled-ceramic-diagonal-layout.jpg"], 
                 "descriptions" : [
                     {
-                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
+                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout "
                     },{
                     	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
                     },{
@@ -62,12 +62,12 @@
                     }
                 ]
             }, {
-                "description" : "Projects Lorem Ipsum",
+                "description" : "Projects Lorem Ipsum <span class='emphasize'>kielbasa porchetta duis</span>",
                 "details" : "",
                 "images" : ["Green-herringbone-floor-w-Carrera-wall.jpg", "Green-herringbone-shower-floor-w-Carrera-wall.jpg", "Green-marble-w-border-after.jpg", "Green-marble-w-border.jpg"], 
                 "descriptions" : [
                     {
-                    	"description" : "Lorem Ipsum Green-marble-w-border.jpg"
+                    	"description" : "Lorem Ipsum Green-marble-w-border.jpg "
                     },{
                     	"description" : "Lorem Ipsum 2 Green-marble-w-border.jpg"
                     },{
@@ -77,12 +77,12 @@
                     }
                 ]
             }, {
-                "description" : "Projects Lorem Ipsum",
+                "description" : "Projects Lorem Ipsum <span class='emphasize'>kielbasa porchetta duis</span>",
                 "details" : "",
                 "images" : ["Porcelain-and-glass-mosaic-2.jpg", "Porcelain-and-glass-mosaic-3.jpg", "Porcelain-and-glass-mosaic-4.jpg", "Porcelain-and-glass-mosaic.jpg", "Porcelain-floor-w-accent.jpg"], 
                 "descriptions" : [
                     {
-                    	"description" : "Lorem Ipsum Porcelain-floor-w-accent"
+                    	"description" : "Lorem Ipsum Porcelain-floor-w-accent "
                     },{
                     	"description" : "Lorem Ipsum Porcelain-and-glass-mosaic"
                     },{
@@ -97,17 +97,17 @@
         ]},
         {
 		"type" : "Outdoor",
-            "heroes-path" : "images/build/outdoor/heroes",
-            "lgThumbs-path" : "images/build/outdoor/LgThumbs",
-            "smThumbs-path" : "images/build/outdoor/smThumbs",
+            "heroespath" : "images/build/outdoor/heroes/",
+            "lgThumbspath" : "images/build/outdoor/LgThumbs/",
+            "smThumbspath" : "images/build/outdoor/smThumbs/",
         "projects" : [
             {
-                "description" : "Projects Lorem Ipsum",
+                "description" : "Projects Lorem Ipsum <span class='emphasize'>kielbasa porchetta duis</span>",
                 "details" : "",
                 "images" : ["BBQ-area-backwall.jpg", "BBQ-backsplash-2.jpg", "Pool-bar-area.jpg"], 
                 "descriptions" : [
                     {
-                    	"description" : "Lorem Ipsum BBQ-area-backwall"
+                    	"description" : "Lorem Ipsum BBQ-area-backwall "
                     },{
                     	"description" : "Lorem Ipsum BBQ-area-backwall"
                     },{
@@ -115,12 +115,12 @@
                     }
                 ]
             }, {
-                "description" : "Projects Lorem Ipsum",
+                "description" : "Projects Lorem Ipsum <span class='emphasize'>kielbasa porchetta duis</span>",
                 "details" : "",
                 "images" : ["brick-layout-1.jpg", "concrete-pour-2.jpg", "exterior-block.jpg", "finish.jpg", "finish.jpg2"], 
                 "descriptions" : [
                     {
-                    	"description" : "Lorem Ipsum oven"
+                    	"description" : "Lorem Ipsum oven "
                     },{
                     	"description" : "Lorem Ipsum oven"
                     },{
@@ -130,12 +130,12 @@
                     }
                 ]
             }, {
-                "description" : "Projects Lorem Ipsum",
+                "description" : "Projects Lorem Ipsum <span class='emphasize'>kielbasa porchetta duis</span>",
                 "details" : "",
                 "images" : ["colored-concrete-driveway-1.jpg", "colored-concrete-driveway-4.jpg", "colored-concrete-planter-top.jpg", "colored-concrete-sidewalk.jpg"], 
                 "descriptions" : [
                     {
-                    	"description" : "Lorem Ipsum colored-concrete-sidewalk.jpg"
+                    	"description" : "Lorem Ipsum colored-concrete-sidewalk.jpg "
                     },{
                     	"description" : "Lorem Ipsum colored-concrete-sidewalk.jpg"
                     },{
@@ -145,12 +145,12 @@
                     }
                 ]
             }, {
-                "description" : "Projects Lorem Ipsum",
+                "description" : "Projects Lorem Ipsum <span class='emphasize'>kielbasa porchetta duis</span>",
                 "details" : "",
                 "images" : ["colored-concrete-driveway-1.jpg", "colored-concrete-driveway-4.jpg", "colored-concrete-planter-top.jpg", "olored-concrete-sidewalk.jpg"], 
                 "descriptions" : [
                     {
-                    	"description" : "Lorem Ipsum drive"
+                    	"description" : "Lorem Ipsum drive "
                     },{
                     	"description" : "Lorem Ipsum drive-"
                     },{
@@ -160,12 +160,12 @@
                     }
                 ]
             }, {
-                "description" : "Projects Lorem Ipsum",
+                "description" : "Projects Lorem Ipsum <span class='emphasize'>kielbasa porchetta duis</span>",
                 "details" : "",
                 "images" : ["Pool-medallion-3.jpg", "Jacuzzi.jpg", "Pool-mosaic-1.jpg", "Pool-mosaic-2.jpg"], 
                 "descriptions" : [
                     {
-                    	"description" : "Lorem Ipsum pool"
+                    	"description" : "Lorem Ipsum pool "
                     },{
                     	"description" : "Lorem Ipsum pool"
                     },{
@@ -175,12 +175,12 @@
                     }
                 ]
             }, {
-                "description" : "Projects Lorem Ipsum",
+                "description" : "Projects Lorem Ipsum <span class='emphasize'>kielbasa porchetta duis</span>",
                 "details" : "",
                 "images" : ["Stone-wall-3.jpg", "Stone-wall-4.jpg", "Stone-wall-5.jpg", "Stone-wall-7.jpg"], 
                 "descriptions" : [
                     {
-                    	"description" : "Lorem Ipsum stonewall"
+                    	"description" : "Lorem Ipsum stonewall "
                     },{
                     	"description" : "Lorem Ipsum stonewall"
                     },{
@@ -193,14 +193,14 @@
         ]},
         {
 		"type" : "Fine Details",
-        "heroes-path" : "images/build/details/heroes",
-        "lgThumbs-path" : "images/build/details/LgThumbs",
-        "smThumbs-path" : "images/build/details/smThumbs",
+        "heroes/path" : "images/build/details/heroes/",
+        "lgThumbs/path" : "images/build/details/LgThumbs/",
+        "smThumbs/path" : "images/build/details/smThumbs/",
         "projects" : [
             {
                 "description" : "Mosaics",
                 "details" : "",
-                "images" : ["GoldCopperBrown-backsplash-2.jpg", "GoldCopperBrown-backsplash-3.jpg", "GoldCopperBrown-backsplash-4.jpg"], 
+                "images" : ["Flagstone-wall-2.jpg", "Glass-mosaic-floor.jpg", "GoldCopperBrown-backsplash-3.jpg", "Herringbone-layout-with-mosaic-border.jpg", "Pennyround-floor-2.jpg", "Pool-mosaic-detail.jpg","Porcelain-and-glass-mosaic-4.jpg","Stone-w-gold-mosaic.jpg"], 
                 "descriptions" : [
                     {
                     	"description" : "Lorem Ipsum GoldCopperBrown-backsplash"
@@ -213,7 +213,22 @@
             }, {
                 "description" : "Niches and Shelves",
                 "details" : "",
-                "images" : ["Crackled-ceramic-diagonal-layout-2.jpg", "Crackled-ceramic-diagonal-layout-3.jpg", "Crackled-ceramic-diagonal-layout-4.jpg", "Crackled-ceramic-diagonal-layout.jpg"], 
+                "images" : ["Hand-crafted-ceramic.jpg", "Marble-mosaic-niche-medium.jpg", "Marble-niche-w-shelves.jpg", "Niche-inset-lines-up-w-wall.jpg", "Small-soap-niche.jpg", "Travertine-double-niche.jpg","Travertine-walls-pebble-floor.jpg"], 
+                "descriptions" : [
+                    {
+                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
+                    },{
+                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
+                    },{
+                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
+                    },{
+                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
+                    }
+                ]
+            }, {
+                "description" : "Patterns and Accents",
+                "details" : "",
+                "images" : ["BBQ-Trims-and-accents.jpg", "Bisazza-custom-wave-pattern.jpg", "Blue-glass-kitchen-backsplash.jpg", "colored-concrete-planter-top.jpg", "Keystone-w-lettering.jpg", "opening.jpg", "Patterned-glass-wall.jpg","Pool-medaliion.jpg","Travertine-walls-pebble-floor.jpg"], 
                 "descriptions" : [
                     {
                     	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"

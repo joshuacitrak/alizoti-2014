@@ -29,10 +29,15 @@
                     
                     $scope.menu = $scope.dataObj.menu;
                     
+                    $scope.services = $scope.dataObj.services;  //services[serviceId].product[productId]
+                    
+                    //$scope.productsImages =  $scope.dataObj.services[$scope.servicesId].projects[$scope.productId];
+                    
                     //If you want to use URL attributes before the website is loaded
                     $rootScope.$on('$routeChangeSuccess', function () {
                          $scope.servicesId = $routeParams.servicesId;
-                            $scope.productId = $routeParams.productId;
+                        $scope.productId = $routeParams.productId;
+                        console.log($scope.servicesId + " $scope.servicesId " + $scope.productId + " $scope.productId" );
                     });
                     
                     $scope.goTo = function(url){

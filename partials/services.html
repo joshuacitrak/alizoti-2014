@@ -7,12 +7,12 @@
         <figure class="main-fg" ng-click="goTo('services/2/product/0')">
             <img class="img-responsive main" src="http://placehold.it/720x370" />
             <figcaption class="caption main-caption">
-                Bathroom remodel. Tile and Fixtures. Main view.
+                {{ services[servicesId].projects[productId].descriptions[productId].description }}
             </figcaption>
         </figure>
         <article class="portfolio-description">
             <p>
-                Bacon ipsum dolor amet bresaola sirloin cupidatat ullamco kevin <span class="emphasize">kielbasa porchetta duis</span> tempor lorem. Tempor bacon flank, dolore tongue pork belly velit esse. Kielbasa meatloaf t-bone, voluptate capicola velit qui laboris sirloin brisket aute tenderloin.
+                   {{ services[servicesId].projects[productId].description }} <span class='emphasize'>kielbasa porchetta duis</span>
             </p>
             <div class="btn-portfolio-container">
                 <button class="btn btn-primary btn-portfolio" ng-click="previous('services/2/product/3')" >
@@ -24,14 +24,15 @@
             </div>
         </article>
     </div>
-    <!-- main image -->
+    <!-- main thumbs -->
     <!--thumbs-->
     <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 col-lg-offset-1">
         <ul class="thumb-list">
             <li class="thumb-list-item">
                 <figure class="thumb-fg">
-                    <img src="http://placehold.it/720x100" alt="" class="img-responsive thumb" />
+                    <img src="http://placehold.it/720x100"  alt="" class="img-responsive thumb" />
                     <figcaption class="caption thumb-caption">
+                        {{ services[serviceId].projects[productId].images.length }}
                         Bathroom remodel. Tile and Fixtures. Side view.
                     </figcaption>
                 </figure>
@@ -52,7 +53,8 @@
                     </figcaption>
                 </figure>
             </li>
-        </ul><!-- thumb-list -->
+        </ul>
+        <!-- thumb-list -->
         <aside class="more-container">
             <header class="portfolio-more">
                 <h4>More like this:</h4>
