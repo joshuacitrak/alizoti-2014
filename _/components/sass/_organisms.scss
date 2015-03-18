@@ -141,9 +141,12 @@
         outline:none;
         @include background(#fff);
         @include box-shadow(rgba(8, 8, 8, .2));
-      }
-      
+      }    
     }//form-item
+     .form-item-thanks
+    {
+        @include background(rgba(238, 188,28,.4));
+    }  
 }
 
 .bio-container
