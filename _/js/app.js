@@ -39,8 +39,10 @@
                     $rootScope.$on('$routeChangeSuccess', function () {
                         if($routeParams.servicesId)
                         {
-                            $scope.servicesId = $routeParams.servicesId;
-                            $scope.productId = $routeParams.productId;
+                            $scope.servicesId = $routeParams.servicesId <= 2 ? $routeParams.servicesId : 2;
+                            console.log($scope.servicesId  + " $scope.servicesId  ");
+                            $scope.productId = $routeParams.productId;// <= Number($scope.services[$scope.servicesId].projects.length) ? $scope.productId : Number($scope.services[$scope.servicesId].projects.length);
+                            //console.log($scope.services[$scope.servicesId].projects.length + " $scope.productId  " + ( $routeParams.productId <= $scope.services[$scope.servicesId].projects.length  ) + " -- " + $scope.productId );
                             $scope.pieceId = $routeParams.pieceId;
                             $scope.heroes = $scope.assembleImages();
                             $scope.currentHero = $scope.heroes[$scope.pieceId].hero;
