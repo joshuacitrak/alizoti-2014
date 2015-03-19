@@ -7,7 +7,7 @@
 			templateUrl : 'partials/home.html'
 		}).when('/home', {
 			templateUrl : 'partials/home.html'
-		}).when('/services/:servicesId/product/:productId', {
+		}).when('/services/:servicesId/product/:productId/piece/:pieceId', {
 			templateUrl : 'partials/services.html'
 		}).when('/contact', {
 			templateUrl : 'partials/contact.html'
@@ -31,14 +31,28 @@
                     
                     $scope.services = $scope.dataObj.services;  //services[serviceId].product[productId]
                     
-                    //$scope.productsImages = $scope.services[$scope.servicesId].projects[$scope.productId];
+                    $scope.heroes = {};
+                    $scope.lgThumbs = {};
+                    $scope.smThumbs = {};
                     
                     //If you want to use URL attributes before the website is loaded
                     $rootScope.$on('$routeChangeSuccess', function () {
-                         $scope.servicesId = $routeParams.servicesId;
-                        $scope.productId = $routeParams.productId;
-                        console.log($scope.servicesId + " $scope.servicesId " + $scope.productId + " $scope.productId" );
-                        console.log($scope.services[$scope.servicesId].projects[$scope.productId].images.length + " $scope.services[$scope.servicesId].projects[$scope.productId].images.length ");
+                        if($routeParams.servicesId)
+                        {
+                            $scope.servicesId = $routeParams.servicesId;
+                            $scope.productId = $routeParams.productId;
+                            $scope.pieceId = $routeParams.pieceId;
+                            $scope.heroes = $scope.assembleImages();
+                            $scope.currentHero = $scope.heroes[$scope.pieceId].hero;
+
+                            $scope.$apply(function(){
+                                $scope.heroes;
+                            });
+                        }
+                    });
+                    
+                    $scope.assembleImages = function(){
+                        var tmpArr = [];
                         for(var i = 0; i < $scope.services[$scope.servicesId].projects[$scope.productId].images.length; i++)
                         {
                             var sizeDir='';
@@ -53,16 +67,21 @@
                             else{
                                 sizeDir = 'lg/';
                             }
-                            var imgPath = $scope.services[$scope.servicesId].heroespath + sizeDir + $scope.services[$scope.servicesId].projects[$scope.productId].images[i];
-                            console.log(imgPath + "img path");
-                            //return array{[imgPath, id]}
+                            var heroesPath = $scope.services[$scope.servicesId].heroespath + sizeDir + $scope.services[$scope.servicesId].projects[$scope.productId].images[i];
+                            var lgThumbPath = $scope.services[$scope.servicesId].lgThumbspath + sizeDir + $scope.services[$scope.servicesId].projects[$scope.productId].images[i];
+                            var description = $scope.services[$scope.servicesId].projects[$scope.productId].descriptions[$scope.pieceId].description; 
+                           tmpArr.push({
+                              hero: heroesPath,
+                               lgThumb: lgThumbPath,
+                               desc : description,
+                               index: i});
                         }
-                    });
+                        return tmpArr
+                    };//assemble imagages
                     
                     $scope.goTo = function(url){
                         $location.path(url);
-                        //console.log($scope.dataObj.menu[0] + " goto");
-                    }
+                    };//goto
 
                     $scope.getProductId = function(){
                         //return productId

@@ -5,7 +5,7 @@
     <!-- main image -->
     <div class="col-xs-12 col-sm-6">
         <figure class="main-fg" ng-click="goTo('services/2/product/0')">
-            <img class="img-responsive main" src="http://placehold.it/720x370" />
+            <img class="img-responsive main" ng-src="{{currentHero}}" />
             <figcaption class="caption main-caption">
                 {{ services[servicesId].projects[productId].descriptions[productId].description }}
             </figcaption>
