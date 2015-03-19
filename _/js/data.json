@@ -29,7 +29,7 @@
 	"services" : [
 	{
 		"type" : "Indoor",
-        "heroes/path" : "images/build/indoor/heroes//",
+        "heroespath" : "images/build/indoor/heroes/",
         "lgThumbspath" : "images/build/indoor/LgThumbs/",
         "smThumbspath" : "images/build/indoor/smThumbs/",
         "projects" : [
@@ -117,7 +117,7 @@
             }, {
                 "description" : "Projects Lorem Ipsum <span class='emphasize'>kielbasa porchetta duis</span>",
                 "details" : "",
-                "images" : ["brick-layout-1.jpg", "concrete-pour-2.jpg", "exterior-block.jpg", "finish.jpg", "finish.jpg2"], 
+                "images" : ["brick-layout-1.jpg", "concrete-pour-2.jpg", "exterior-block.jpg", "finish.jpg", "finish2.jpg"], 
                 "descriptions" : [
                     {
                     	"description" : "Lorem Ipsum oven "
@@ -193,7 +193,7 @@
         ]},
         {
 		"type" : "Fine Details",
-        "heroes/path" : "images/build/details/heroes/",
+        "heroespath" : "images/build/details/heroes/",
         "lgThumbs/path" : "images/build/details/LgThumbs/",
         "smThumbs/path" : "images/build/details/smThumbs/",
         "projects" : [

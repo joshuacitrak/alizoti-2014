@@ -31,13 +31,31 @@
                     
                     $scope.services = $scope.dataObj.services;  //services[serviceId].product[productId]
                     
-                    //$scope.productsImages =  $scope.dataObj.services[$scope.servicesId].projects[$scope.productId];
+                    //$scope.productsImages = $scope.services[$scope.servicesId].projects[$scope.productId];
                     
                     //If you want to use URL attributes before the website is loaded
                     $rootScope.$on('$routeChangeSuccess', function () {
                          $scope.servicesId = $routeParams.servicesId;
                         $scope.productId = $routeParams.productId;
                         console.log($scope.servicesId + " $scope.servicesId " + $scope.productId + " $scope.productId" );
+                        console.log($scope.services[$scope.servicesId].projects[$scope.productId].images.length + " $scope.services[$scope.servicesId].projects[$scope.productId].images.length ");
+                        for(var i = 0; i < $scope.services[$scope.servicesId].projects[$scope.productId].images.length; i++)
+                        {
+                            var sizeDir='';
+                            if($scope.windowSize === 0)
+                            {
+                                sizeDir = 'sm/';
+                            }
+                            else if ($scope.windowSize === 1)
+                            {
+                                sizeDir = 'md/';
+                            }
+                            else{
+                                sizeDir = 'lg/';
+                            }
+                            var imgPath = $scope.services[$scope.servicesId].heroespath + sizeDir + $scope.services[$scope.servicesId].projects[$scope.productId].images[i];
+                            console.log(imgPath + "img path");
+                        }
                     });
                     
                     $scope.goTo = function(url){
