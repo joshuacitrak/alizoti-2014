@@ -70,6 +70,7 @@
                             var heroesPath = $scope.services[$scope.servicesId].heroespath + sizeDir + $scope.services[$scope.servicesId].projects[$scope.productId].images[i];
                             var lgThumbPath = $scope.services[$scope.servicesId].lgThumbspath + sizeDir + $scope.services[$scope.servicesId].projects[$scope.productId].images[i];
                             var description = $scope.services[$scope.servicesId].projects[$scope.productId].descriptions[$scope.pieceId].description; 
+                            
                            tmpArr.push({
                               hero: heroesPath,
                                lgThumb: lgThumbPath,
@@ -130,7 +131,8 @@
 	app.controller('NavController', function($scope, $location) {
 		this.isActive = function(viewLocation)
 		{
-			return viewLocation === $location.path();		
+            var arrStr = $location.path().split("/");//only needs to check the top level
+			return viewLocation === arrStr[1]+"/"+arrStr[2] ;		
 		};
 	});
     

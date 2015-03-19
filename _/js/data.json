@@ -30,7 +30,7 @@
 	{
 		"type" : "Indoor",
         "heroespath" : "images/build/indoor/heroes/",
-        "lgThumbspath" : "images/build/indoor/LgThumbs/",
+        "lgThumbspath" : "images/build/indoor/lgThumb/",
         "smThumbspath" : "images/build/indoor/smThumbs/",
         "projects" : [
             {
@@ -79,7 +79,7 @@
             }, {
                 "description" : "Projects Lorem Ipsum <span class='emphasize'>kielbasa porchetta duis</span>",
                 "details" : "",
-                "images" : ["Porcelain-and-glass-mosaic-2.jpg", "Porcelain-and-glass-mosaic-3.jpg", "Porcelain-and-glass-mosaic-4.jpg", "Porcelain-and-glass-mosaic.jpg", "Porcelain-floor-w-accent.jpg"], 
+                "images" : ["Porcelain-and-glass-mosaic-2.jpg", "Porcelain-and-glass-mosaic-3.jpg", "Porcelain-and-glass-mosaic-4.jpg", "Porcelain-and-glass-mosaic.jpg"], 
                 "descriptions" : [
                     {
                     	"description" : "Lorem Ipsum Porcelain-floor-w-accent "
@@ -98,7 +98,7 @@
         {
 		"type" : "Outdoor",
             "heroespath" : "images/build/outdoor/heroes/",
-            "lgThumbspath" : "images/build/outdoor/LgThumbs/",
+            "lgThumbspath" : "images/build/outdoor/lgThumb/",
             "smThumbspath" : "images/build/outdoor/smThumbs/",
         "projects" : [
             {
@@ -112,6 +112,19 @@
                     	"description" : "Lorem Ipsum BBQ-area-backwall"
                     },{
                     	"description" : "Lorem Ipsum BBQ-area-backwall"
+                    }
+                ]
+            },   {
+                "description" : "Projects Lorem Ipsum <span class='emphasize'>kielbasa porchetta duis</span>",
+                "details" : "",
+                "images" : ["Marble-opening.jpg", "Marble-opening-outside.jpg", "Marble-opening-inside.jpg"], 
+                "descriptions" : [
+                    {
+                    	"description" : "Marble-opening-inside.jpg"
+                    },{
+                    	"description" : "Marble-opening-inside.jpg"
+                    },{
+                    	"description" : "Marble-opening-inside.jpg"
                     }
                 ]
             }, {
@@ -194,8 +207,8 @@
         {
 		"type" : "Fine Details",
         "heroespath" : "images/build/details/heroes/",
-        "lgThumbs/path" : "images/build/details/LgThumbs/",
-        "smThumbs/path" : "images/build/details/smThumbs/",
+        "lgThumbspath" : "images/build/details/lgThumb/",
+        "smThumbspath" : "images/build/details/smThumbs/",
         "projects" : [
             {
                 "description" : "Mosaics",

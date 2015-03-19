@@ -28,28 +28,11 @@
     <!--thumbs-->
     <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 col-lg-offset-1">
         <ul class="thumb-list">
-            <li class="thumb-list-item">
+            <li class="thumb-list-item" ng-repeat=" (lgThumb,key) in heroes">
                 <figure class="thumb-fg">
-                    <img src="http://placehold.it/720x100"  alt="" class="img-responsive thumb" />
+                    <img ng-src="{{key.lgThumb}} " alt="" class="img-responsive thumb" />
                     <figcaption class="caption thumb-caption">
-                        {{ services[serviceId].projects[productId].images.length }}
-                        Bathroom remodel. Tile and Fixtures. Side view.
-                    </figcaption>
-                </figure>
-            </li>
-            <li class="thumb-list-item">
-                <figure class="thumb-fg">
-                    <img src="http://placehold.it/720x100" alt="" class="img-responsive thumb" />
-                    <figcaption class="caption thumb-caption">
-                        Bathroom remodel. Tile and Fixtures. Side view.
-                    </figcaption>
-                </figure>
-            </li>
-            <li class="thumb-list-item">
-                <figure class="thumb-fg">
-                    <img src="http://placehold.it/720x100" alt="" class="img-responsive thumb" />
-                    <figcaption class="caption thumb-caption">
-                        Bathroom remodel. Tile and Fixtures. Side view.
+                         {{key.desc}}
                     </figcaption>
                 </figure>
             </li>
