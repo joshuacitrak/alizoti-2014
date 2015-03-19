@@ -55,6 +55,7 @@
                             }
                             var imgPath = $scope.services[$scope.servicesId].heroespath + sizeDir + $scope.services[$scope.servicesId].projects[$scope.productId].images[i];
                             console.log(imgPath + "img path");
+                            //return array{[imgPath, id]}
                         }
                     });
                     
