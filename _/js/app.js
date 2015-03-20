@@ -1,5 +1,5 @@
 (function() {
-	var app = angular.module('alizotiApp', [ 'ngRoute', 'ngAnimate' ]).config(
+	var app = angular.module('alizotiApp', [ 'ngRoute', 'ngAnimate', 'ngTouch' ]).config(
 			router);
 
 	function router($routeProvider) {
@@ -71,7 +71,7 @@
                             }
                             var heroesPath = $scope.services[$scope.servicesId].heroespath + sizeDir + $scope.services[$scope.servicesId].projects[$scope.productId].images[i];
                             var lgThumbPath = $scope.services[$scope.servicesId].lgThumbspath + sizeDir + $scope.services[$scope.servicesId].projects[$scope.productId].images[i];
-                            var description = $scope.services[$scope.servicesId].projects[$scope.productId].descriptions[$scope.pieceId].description; 
+                            var description = $scope.services[$scope.servicesId].projects[$scope.productId].descriptions;//[$scope.pieceId].description; 
                             
                            tmpArr.push({
                               hero: heroesPath,
@@ -87,20 +87,32 @@
                     };//goto
 
                     $scope.getProductId = function(){
-                        //return productId
-                        //console.log($scope.dataObj.slideshow[0].type + " getProduct id");
+                       // console.log($scope.dataObj.slideshow[0].type + " getProduct id");
                     }
 
                     $scope.next = function(){
-                        //check the current productId against the length
-                        //
-                       // console.log("next " + $scope.dataObj.services[2].projects[0].images[0]);
+                        if($scope.pieceId === $scope.heroes.length-1)
+                        {
+                            $scope.pieceId = 0;
+                        }
+                        else
+                        {
+                            $scope.pieceId++;
+                        }
+                        
+                        $scope.currentHero = $scope.heroes[$scope.pieceId].hero;
                     }
 
                     $scope.previous = function(){
-                        //check the current productId agaist the length
-                        //--
-                        //console.log("previous " + $scope.dataObj.services[0].projects[2].descriptions[3].description);
+                        if($scope.pieceId <= 0)
+                        {
+                            $scope.pieceId = $scope.heroes.length-1;
+                        }
+                        else
+                        {
+                            $scope.pieceId--;
+                        }
+                        $scope.currentHero = $scope.heroes[$scope.pieceId].hero;
                     }
                     
                     $scope.windowSize = 0;

@@ -4,10 +4,10 @@
     </header>
     <!-- main image -->
     <div class="col-xs-12 col-sm-6">
-        <figure class="main-fg" ng-click="goTo('services/2/product/0')">
+        <figure class="main-fg" ng-click="goTo('services/2/product/0')" ng-swipe-left="previous()" ng-swipe-right="next()">
             <img class="img-responsive main" ng-src="{{currentHero}}" />
             <figcaption class="caption main-caption">
-                {{ services[servicesId].projects[productId].descriptions[productId].description }}
+                {{ services[servicesId].projects[productId].descriptions[pieceId].description }}
             </figcaption>
         </figure>
         <article class="portfolio-description">
@@ -15,10 +15,10 @@
                    {{ services[servicesId].projects[productId].description }} <span class='emphasize'>kielbasa porchetta duis</span>
             </p>
             <div class="btn-portfolio-container">
-                <button class="btn btn-primary btn-portfolio" ng-click="previous('services/2/product/3')" >
+                <button class="btn btn-primary btn-portfolio" ng-click="previous('services/2/product/3')" ng-click="previous()">
                     &lt; previous
                 </button>
-                <button class="btn btn-primary  btn-portfolio" ng-click="next('services/2/product/3')" >
+                <button class="btn btn-primary  btn-portfolio" ng-click="next('services/2/product/3')" ng-click="next()">
                     next &gt;
                 </button>
             </div>
@@ -32,7 +32,7 @@
                 <figure class="thumb-fg">
                     <img ng-src="{{key.lgThumb}} " alt="" class="img-responsive thumb" />
                     <figcaption class="caption thumb-caption">
-                         {{key.desc}}
+                         {{key.desc[lgThumb].description}}
                     </figcaption>
                 </figure>
             </li>
