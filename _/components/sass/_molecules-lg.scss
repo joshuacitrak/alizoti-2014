@@ -10,6 +10,82 @@
 {
   margin:0;
   padding:0; //resets
+    
+    .cta-container
+    {
+        @include background(rgba(0, 0, 0, .4));
+        position:absolute;
+        left:15%;
+        bottom:17px;
+        width:280px;
+        padding:$default-space-md $default-space-lg;
+        
+        @media (min-width:1170px)//necessary evil d its thang
+          {
+              width:310px;
+              bottom:25px;
+          }
+    }
+    h3
+    {
+        font-size:$p-font-size; 
+      font-size:$p-font-size-rem;
+      line-height:$p-line-height;
+        padding:$default-space-md $default-space-lg $default-space-md  0;
+        @include text-shadow(rgba(black, 0.6) 2px 2px 5px);
+    }
+    
+    .menu-item-cta-btn
+    {
+      margin-top:0;
+        float:left;
+        padding:$default-space-sm 0;
+        
+        @include box-shadow(rgba(black, 0.6) 2px 2px 5px);
+    }
+    
+    //slick styles override
+    .slick-dots
+    {
+        display: block;
+      position: absolute;
+      bottom: 12px;
+      left: 50%;
+        
+        li
+        {
+            position: relative;
+          display: inline-block;
+          width: 7px;
+          height: 7px;
+          margin: 0 5px;
+          padding: 0;
+          cursor: pointer;
+            
+            button
+            {
+                font-size: 0;
+              line-height: 0;
+              display: block;
+              width: 7px;
+              height: 7px;
+              padding: 7px;
+                border:none;
+                opacity:.4;
+                @include background($grey2);
+                @include border-radius(50%);
+            }
+        }
+        
+        li.slick-active
+        {
+            button
+            {
+                opacity:1;
+                @include background($red2);
+            }        
+        }
+    }
 }
 
 .bio-container

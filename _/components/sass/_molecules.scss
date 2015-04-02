@@ -19,19 +19,8 @@
 
 .hero
 {
-    cursor: pointer;
     position: relative;
     display: block;
-    
-    h3
-    {
-        
-    }
-    
-    button
-    {
-        
-    }
 }
 
 .secondary-menu-container, .contact-container, .bio-container, .portfolio-container
@@ -47,6 +36,7 @@
   font-size:17px;
   font-size:1.7rem;
   padding-top:$default-space-lg;
+    margin-top: 85px;
   @media (min-width:$md-sm-screen)//necessary evil BS doesn't give me the BPs i need
     {
       font-size:$p-font-size;
@@ -56,6 +46,11 @@
 .bio-container
 {
   padding-top:$default-space-lg*3;
+}
+
+.portfolio-container
+{
+    margin-top: 85px
 }
 
 .portfolio-container, .more-container

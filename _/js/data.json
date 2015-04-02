@@ -13,11 +13,11 @@
     ],
     "slideshow" : [
         {
-            "description" : "So you have this great idea... Let us help you set it in stone.",
+            "description" : "Step-by-step, we'll walk you through the process of turning your living space into a dream home.",
             "type" : "Indoor",
             "img" : ["images/build/indoor/slideshow/sm/GoldCopperBrown-backsplash.jpg","images/build/indoor/slideshow/md/GoldCopperBrown-backsplash.jpg","images/build/indoor/slideshow/lg/GoldCopperBrown-backsplash-3.jpg"]
         },  {
-            "description" : "Step-by-step, we'll walk you through the process of turning your living space into a dream home.",
+            "description" : "So you have this great idea... Let us help you set it in stone.",
             "type": "Outdoor",
             "img" : ["images/build/outdoor/slideshow/sm/colored-concrete-driveway-1.jpg","images/build/outdoor/slideshow/md/colored-concrete-driveway-1.jpg","images/build/outdoor/slideshow/lg/colored-concrete-driveway-4.jpg"]
         },  {
@@ -216,11 +216,21 @@
                 "images" : ["Flagstone-wall-2.jpg", "Glass-mosaic-floor.jpg", "GoldCopperBrown-backsplash-3.jpg", "Herringbone-layout-with-mosaic-border.jpg", "Pennyround-floor-2.jpg", "Pool-mosaic-detail.jpg","Porcelain-and-glass-mosaic-4.jpg","Stone-w-gold-mosaic.jpg"], 
                 "descriptions" : [
                     {
-                    	"description" : "Lorem Ipsum GoldCopperBrown-backsplash"
+                    	"description" : "Flagstone wall"
                     },{
-                    	"description" : "Lorem Ipsum GoldCopperBrown-backsplash"
+                    	"description" : "Glass mosiac"
                     },{
-                    	"description" : "Lorem Ipsum GoldCopperBrown-backsplash"
+                    	"description" : "Gold coppper and brown backsplash"
+                    },{
+                    	"description" : "Herringbone layout"
+                    },{
+                    	"description" : "Pennyround floor"
+                    },{
+                    	"description" : "Pool mosaic"
+                    },{
+                    	"description" : "Porcelain and glass mosaic"
+                    },{
+                    	"description" : "Stone and gold mosaic"
                     }
                 ]
             }, {

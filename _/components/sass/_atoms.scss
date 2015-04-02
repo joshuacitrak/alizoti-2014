@@ -276,38 +276,30 @@ li
 //--------------------------
 //------------------------------------------------------------------
 
+.ng-hide, .ng-show, .ng-enter, .ng-leave
+{
+-webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+}
+
 .ng-hide
 {
     @include opacity(0);
-    @include animateAll();
 }
 
 .ng-show
 {
     @include opacity(1);
-    @include animateAll();
 }
 
-.ng-enter 
+#partials.ng-enter 
 { 
     @include opacity(0);
-    @include animateAll();
 }   /* starting animations for enter */
 
-.ng-enter.ng-enter-active 
+#partials.ng-enter.ng-enter-active 
 {
     @include opacity(1);
-    @include animateAll();
 } /* terminal animations for enter */
-
-.ng-leave 
-{
-    @include opacity(1);
-    @include animateAll();
-}        /* starting animations for leave */
-
-.ng-leave.ng-leave-active 
-{
-    @include opacity(0);
-    @include animateAll();
-} /* terminal animations for leave */

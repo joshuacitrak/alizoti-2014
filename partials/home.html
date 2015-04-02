@@ -1,24 +1,30 @@
 <section class="hero-container">
-        <div class="hero" ng-click="goTo('/services/0/product/0')">
-            <img class="img-responsive" ng-src="{{slideshow[0].img[windowSize]}}" alt="" />
-            <h3>{{slideshow[0].description}}</h3>
-            <button class="btn btn-primary menu-item-cta-btn" ng-click="goTo('/services/0/product/0/piece/0')">
-                    Get inspired <span class="btn-caret"></span>
-                </button>
+        <div class="hero">
+            <img class="img-responsive" ng-src="{{slideshow[0].img[windowSize]}}" alt="{{slideshow[2].description}}" />
+            <div class="cta-container hidden-xs">
+                <h3>{{slideshow[0].description}}</h3>
+                <button class="btn btn-primary menu-item-cta-btn" ng-click="goTo('/services/0/product/0/piece/0')">
+                        Get inspired <span class="btn-caret"></span>
+                    </button>
+            </div>
         </div>
-        <div class="hero" ng-click="goTo('/services/1/product/0')">
-            <img class="img-responsive" ng-src="{{slideshow[1].img[windowSize]}}" alt="" />
-            <h3>{{slideshow[1].description}}</h3>
-            <button class="btn btn-primary menu-item-cta-btn" ng-click="goTo('/services/1/product/1/piece/3')">
-                    Start here <span class="btn-caret"></span>
-                </button>
+        <div class="hero">
+            <img class="img-responsive" ng-src="{{slideshow[1].img[windowSize]}}" alt="{{slideshow[2].description}}" />
+            <div class="cta-container hidden-xs">
+                <h3>{{slideshow[1].description}}</h3>
+                <button class="btn btn-primary menu-item-cta-btn" ng-click="goTo('/services/1/product/1/piece/3')">
+                        Start here <span class="btn-caret"></span>
+                    </button>
+            </div>
         </div>
-        <div class="hero" ng-click="goTo('/services/2/product/0')">
-            <img class="img-responsive" ng-src="{{slideshow[2].img[windowSize]}}" alt="" />
-            <h3>{{slideshow[2].description}}</h3>
-            <button class="btn btn-primary menu-item-cta-btn" ng-click="goTo('/services/2/product/2/piece/3')">
-                    See it now <span class="btn-caret"></span>
-                </button>
+        <div class="hero">
+            <img class="img-responsive" ng-src="{{slideshow[2].img[windowSize]}}" alt="{{slideshow[2].description}}" />
+            <div class="cta-container hidden-xs">
+                <h3>{{slideshow[2].description}}</h3>
+                <button class="btn btn-primary menu-item-cta-btn" ng-click="goTo('/services/2/product/2/piece/3')">
+                        See it now <span class="btn-caret"></span>
+                    </button>
+            </div>
         </div>
 </section>
 <!--secondary menu partial start -->
@@ -26,7 +32,7 @@
     <!-- turn these into angular partials or ng-repeat this?-->
     <div class="col-xs-12 col-sm-4">
         <nav class="secondary-menu-item">
-            <figure class="secondary-menu-fg" ng-click="goTo('/services/0/product/1/piece/5')">
+            <figure class="secondary-menu-fg" ng-click="goTo('/services/0/product/3/piece/0')">
                 <img ng-src="{{menu[0].img[windowSize]}}"alt="indoor menu item" class="secondary-menu" />
                 <div class="btn btn-primary secondary-menu-item-primary-btn">
                     <h2>Indoor</h2>

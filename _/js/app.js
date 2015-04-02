@@ -40,16 +40,11 @@
                         if($routeParams.servicesId)
                         {
                             $scope.servicesId = $routeParams.servicesId <= 2 ? $routeParams.servicesId : 2;
-                            console.log($scope.servicesId  + " $scope.servicesId  ");
-                            $scope.productId = $routeParams.productId;// <= Number($scope.services[$scope.servicesId].projects.length) ? $scope.productId : Number($scope.services[$scope.servicesId].projects.length);
-                            //console.log($scope.services[$scope.servicesId].projects.length + " $scope.productId  " + ( $routeParams.productId <= $scope.services[$scope.servicesId].projects.length  ) + " -- " + $scope.productId );
+                            $scope.productId = $routeParams.productId;// 
                             $scope.pieceId = $routeParams.pieceId;
                             $scope.heroes = $scope.assembleImages();
                             $scope.currentHero = $scope.heroes[$scope.pieceId].hero;
-
-                            $scope.$apply(function(){
-                                $scope.heroes;
-                            });
+                            $scope.smThumbs = $scope.getSmThumbs();                            
                         }
                     });
                     
@@ -81,6 +76,37 @@
                         }
                         return tmpArr
                     };//assemble imagages
+                    
+                    $scope.getSmThumbs = function(){
+                        console.log("get sm thumbs");
+                        var tmpArr = [];
+                        for(var i = 0; i<$scope.services[$scope.servicesId].projects.length; i++)
+                        {
+                            console.log(i + " i ");
+                            if(i != $scope.productId)
+                            {
+                                console.log(i + " if i  ");
+                                var sizeDir='';
+                                if($scope.windowSize === 0)
+                                {
+                                    sizeDir = 'sm/';
+                                }
+                                else if ($scope.windowSize === 1)
+                                {
+                                    sizeDir = 'md/';
+                                }
+                                else{
+                                    sizeDir = 'lg/';
+                                }
+                                var smThumbPath = $scope.services[$scope.servicesId].smThumbspath + sizeDir + $scope.services[$scope.servicesId].projects[i].images[0];
+                                var description = $scope.services[$scope.servicesId].projects[i].description;
+                                tmpArr.push({thumb:smThumbPath,
+                                                      desc:description});
+                            }
+                        }
+                        $scope.smThumbs = tmpArr;
+                        return $scope.smThumbs;
+                    };//smThumbs
                     
                     $scope.goTo = function(url){
                         $location.path(url);

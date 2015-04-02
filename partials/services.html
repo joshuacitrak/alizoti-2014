@@ -43,25 +43,9 @@
                 <h4>More like this:</h4>
             </header>
             <ul class="more-list">
-                <li class="more-list-item">
+                <li class="more-list-item" ng-repeat="(thumb,key) in smThumbs">
                     <figure class="more-fg">
-                        <img src="http://placehold.it/100x100" alt="" class="img-responsive thumb more-thumb" />
-                        <figcaption class="caption more-caption">
-                            ...
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="more-list-item">
-                    <figure class="more-fg">
-                        <img src="http://placehold.it/100x100" alt="" class="img-responsive thumb more-thumb" />
-                        <figcaption class="caption more-caption">
-                            ...
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="more-list-item">
-                    <figure class="more-fg">
-                        <img src="http://placehold.it/100x100" alt="" class="img-responsive thumb more-thumb" />
+                        <img ng-src="{{thumb[key]}}" alt="" class="img-responsive thumb more-thumb" />
                         <figcaption class="caption more-caption">
                             ...
                         </figcaption>
