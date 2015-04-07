@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* line 5, ../../../../../../Users/apple/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline; }
 
-/* line 22, ../../../../../../Users/apple/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1; }
 
-/* line 24, ../../../../../../Users/apple/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
-/* line 26, ../../../../../../Users/apple/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 28, ../../../../../../Users/apple/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
-/* line 30, ../../../../../../Users/apple/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none; }
-  /* line 103, ../../../../../../Users/apple/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+  /* line 103, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
   q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none; }
 
-/* line 32, ../../../../../../Users/apple/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none; }
 
-/* line 116, ../../../../../../Users/apple/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
 /*fallback*/
 /*52/$rembase*/
 /* $line-height-base ÷ 52*/
-/* line 11, ../../../../../../Users/apple/.rvm/gems/ruby-2.1.2/gems/susy-2.1.2/sass/susy/language/susy/_box-sizing.scss */
+/* line 11, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/susy-2.1.2/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -104,7 +104,7 @@ body {
   overflow-x: hidden;
   color: white;
   background: #ededed;
-  background: url('../../images/pattern-2cns.png?1415228600'); }
+  background: url('../../images/pattern-2cns.png?1421775716'); }
 
 /* line 76, ../components/sass/_atoms.scss */
 .container-fluid {
@@ -249,7 +249,7 @@ li {
 
 /* line 229, ../components/sass/_atoms.scss */
 .emphasize {
-  color: #eebc1c; }
+  color: #d47d19; }
 
 /* line 234, ../components/sass/_atoms.scss */
 .quotes {
@@ -309,6 +309,18 @@ li {
 #partials.ng-enter.ng-enter-active {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1; }
+
+/* terminal animations for enter */
+/* line 307, ../components/sass/_atoms.scss */
+#partials.ng-leave {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1; }
+
+/* terminal animations for enter */
+/* line 311, ../components/sass/_atoms.scss */
+#partials.ng-leave.ng-leave-active {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0; }
 
 /* terminal animations for enter */
 /* line 4, ../components/sass/_molecules.scss */

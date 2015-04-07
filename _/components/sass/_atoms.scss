@@ -228,7 +228,7 @@ li
 
 .emphasize
 {
-  color:$orange2;
+  color:$orange1;
 }
 
 .quotes //should be 129 % of base font size
@@ -302,4 +302,13 @@ li
 #partials.ng-enter.ng-enter-active 
 {
     @include opacity(1);
+} /* terminal animations for enter */
+
+#partials.ng-leave 
+{
+    @include opacity(1);
+} /* terminal animations for enter */
+#partials.ng-leave.ng-leave-active
+{
+    @include opacity(0);
 } /* terminal animations for enter */

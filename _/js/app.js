@@ -18,7 +18,7 @@
 
 	var dataObj = [];
 
-	app.controller('PageController', function($scope, $rootScope, $http, $location, $routeParams) {
+	app.controller('PageController', function($scope, $rootScope, $http, $location, $routeParams, $window) {
         //$scope.scState = "sm"; //default do we want to do this? until the data loads, this is irrelevant
 		$http.get('_/js/data.json').success(
 				function(data, status, headers, config) {
@@ -45,6 +45,8 @@
                             $scope.heroes = $scope.assembleImages();
                             $scope.currentHero = $scope.heroes[$scope.pieceId].hero;
                             $scope.smThumbs = $scope.getSmThumbs();                            
+                            $scope.servicesId = $routeParams.servicesId;
+                            $scope.productId = $routeParams.productId;
                         }
                     });
                     
@@ -64,6 +66,7 @@
                             else{
                                 sizeDir = 'lg/';
                             }
+                            
                             var heroesPath = $scope.services[$scope.servicesId].heroespath + sizeDir + $scope.services[$scope.servicesId].projects[$scope.productId].images[i];
                             var lgThumbPath = $scope.services[$scope.servicesId].lgThumbspath + sizeDir + $scope.services[$scope.servicesId].projects[$scope.productId].images[i];
                             var description = $scope.services[$scope.servicesId].projects[$scope.productId].descriptions;//[$scope.pieceId].description; 
@@ -78,30 +81,16 @@
                     };//assemble imagages
                     
                     $scope.getSmThumbs = function(){
-                        console.log("get sm thumbs");
                         var tmpArr = [];
                         for(var i = 0; i<$scope.services[$scope.servicesId].projects.length; i++)
                         {
-                            console.log(i + " i ");
                             if(i != $scope.productId)
                             {
-                                console.log(i + " if i  ");
-                                var sizeDir='';
-                                if($scope.windowSize === 0)
-                                {
-                                    sizeDir = 'sm/';
-                                }
-                                else if ($scope.windowSize === 1)
-                                {
-                                    sizeDir = 'md/';
-                                }
-                                else{
-                                    sizeDir = 'lg/';
-                                }
-                                var smThumbPath = $scope.services[$scope.servicesId].smThumbspath + sizeDir + $scope.services[$scope.servicesId].projects[i].images[0];
+                                var smThumbPath = $scope.services[$scope.servicesId].smThumbspath +  $scope.services[$scope.servicesId].projects[i].images[0];
                                 var description = $scope.services[$scope.servicesId].projects[i].description;
                                 tmpArr.push({thumb:smThumbPath,
-                                                      desc:description});
+                                                      desc:description,
+                                                        index:i});
                             }
                         }
                         $scope.smThumbs = tmpArr;
@@ -109,8 +98,13 @@
                     };//smThumbs
                     
                     $scope.goTo = function(url){
+                        console.log(url + " url");
                         $location.path(url);
                     };//goto
+                    
+                    $scope.thumbClick = function(btn){
+                        console.log(btn + " btn ");
+                    };//thumb click
 
                     $scope.getProductId = function(){
                        // console.log($scope.dataObj.slideshow[0].type + " getProduct id");
@@ -127,7 +121,7 @@
                         }
                         
                         $scope.currentHero = $scope.heroes[$scope.pieceId].hero;
-                    }
+                    }//next
 
                     $scope.previous = function(){
                         if($scope.pieceId <= 0)
@@ -139,16 +133,31 @@
                             $scope.pieceId--;
                         }
                         $scope.currentHero = $scope.heroes[$scope.pieceId].hero;
-                    }
+                    }//previous
                     
-                    $scope.windowSize = 0;
-                    $scope.jqUpdateSize = function(){
-                    var width = $(window).width();
-                        if( width < 767)
+                    $scope.windowWidth = window.innerWidth;
+                    $(window).on("resize.doResize", function (){
+                    $scope.windowWidth = window.innerWidth;
+                    console.log(window.innerWidth);
+
+                    $scope.$apply(function(){
+                       
+                    });
+                });//listener
+
+                $scope.$on("$destroy",function (){
+                     $(window).off("resize.doResize"); //remove the handler added earlier
+                });//destroy
+                    
+                    $scope.$watch(function(){
+                    return $window.innerWidth;
+                    }, function(value) {
+                    console.log(value+ " window width");
+                    if( value < 767)
                         {
                             $scope.windowSize = 0;
                         }
-                        else if(width <= 768 || width < 992)
+                        else if(value <= 768 || value < 992)
                         {
                             $scope.windowSize=1;
                         }
@@ -156,12 +165,7 @@
                         {
                             $scope.windowSize = 2;
                         }
-                        $scope.$apply(function() {
-                            $scope.windowSize }); //apply the update
-                    };//getjqsize
-                                        
-                   $(document).ready($scope.jqUpdateSize);//call it once the data is loaded
-                    $(window).resize($scope.jqUpdateSize);//then update approriately 
+                    });//watch
                     
 				}).error(function(data, status, headers, config) {
 			alert('data could not be loaded. epic fail.');
