@@ -22,17 +22,24 @@
         
         @media (min-width:1170px)//necessary evil d its thang
           {
-              width:310px;
+              width:350px;
               bottom:25px;
           }
     }
     h3
     {
         font-size:$p-font-size; 
-      font-size:$p-font-size-rem;
+        font-size:$p-font-size-rem;
       line-height:$p-line-height;
         padding:$default-space-md $default-space-lg $default-space-md  0;
         @include text-shadow(rgba(black, 0.6) 2px 2px 5px);
+        
+        @media (min-width:1170px)//necessary evil d its thang
+        {
+            font-size: 24px;
+            font-size: 2.4rem;
+            line-height:1;
+        }
     }
     
     .menu-item-cta-btn

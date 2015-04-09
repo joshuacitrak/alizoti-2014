@@ -1,4 +1,4 @@
-<section class="hero-container">
+<section class="hero-container" ng-click="goTo('/services/0/product/0')">
         <div class="hero">
             <img class="img-responsive" ng-src="{{slideshow[0].img[windowSize]}}" alt="{{slideshow[2].description}}" />
             <div class="cta-container hidden-xs">
@@ -8,7 +8,7 @@
                     </button>
             </div>
         </div>
-        <div class="hero">
+        <div class="hero" ng-click="goTo('services/1/product/3')">
             <img class="img-responsive" ng-src="{{slideshow[1].img[windowSize]}}" alt="{{slideshow[2].description}}" />
             <div class="cta-container hidden-xs">
                 <h3>{{slideshow[1].description}}</h3>
@@ -17,7 +17,7 @@
                     </button>
             </div>
         </div>
-        <div class="hero">
+        <div class="hero" ng-click="goTo('/services/2/product/2')">
             <img class="img-responsive" ng-src="{{slideshow[2].img[windowSize]}}" alt="{{slideshow[2].description}}" />
             <div class="cta-container hidden-xs">
                 <h3>{{slideshow[2].description}}</h3>
@@ -45,7 +45,7 @@
             </figure>
             <div class="visible-xs-block">
                 <h3>So you have this great idea... Let us help you set it in stone.</h3>
-                <button class="btn btn-primary menu-item-cta-btn" ng-click="goTo('/services/0/product/1')">
+                <button class="btn btn-primary menu-item-cta-btn" ng-click="goTo('/services/0/product/3')">
                     Get inspired <span class="btn-caret"></span>
                 </button>
             </div>

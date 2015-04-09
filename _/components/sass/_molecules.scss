@@ -23,6 +23,16 @@
     display: block;
 }
 
+.hero-container
+{
+    h3
+    {
+        font-size:$p-font-size; 
+      font-size:$p-font-size-rem;
+      line-height:$p-line-height;
+    }
+}
+
 .secondary-menu-container, .contact-container, .bio-container, .portfolio-container
 {
   padding-bottom:$default-space-lg;
