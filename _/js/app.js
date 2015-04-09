@@ -7,7 +7,7 @@
 			templateUrl : 'partials/home.html'
 		}).when('/home', {
 			templateUrl : 'partials/home.html'
-		}).when('/services/:servicesId/product/:productId/piece/:pieceId', {
+		}).when('/services/:servicesId/product/:productId', {
 			templateUrl : 'partials/services.html'
 		}).when('/contact', {
 			templateUrl : 'partials/contact.html'
@@ -41,7 +41,7 @@
                         {
                             $scope.servicesId = $routeParams.servicesId <= 2 ? $routeParams.servicesId : 2;
                             $scope.productId = $routeParams.productId;// 
-                            $scope.pieceId = $routeParams.pieceId;
+                            $scope.pieceId = 0;
                             $scope.heroes = $scope.assembleImages();
                             $scope.currentHero = $scope.heroes[$scope.pieceId].hero;
                             $scope.smThumbs = $scope.getSmThumbs();                            
@@ -98,17 +98,33 @@
                     };//smThumbs
                     
                     $scope.goTo = function(url){
-                        console.log(url + " url");
                         $location.path(url);
                     };//goto
                     
                     $scope.thumbClick = function(btn){
-                        console.log(btn + " btn ");
+                        $scope.pieceId = btn;
+                       $scope.currentHero = $scope.heroes[$scope.pieceId].hero;
                     };//thumb click
-
-                    $scope.getProductId = function(){
-                       // console.log($scope.dataObj.slideshow[0].type + " getProduct id");
-                    }
+                    
+                    $scope.$watch('pieceId', function(newVal, oldVal)
+                                  {
+                        if(!newVal) newVal = 1;
+                        else newVal++;
+                        //add class to new value .thumb-fg-disabled
+                        $(".thumb-list .thumb-list-item:nth-child(" + newVal +") figure").addClass("thumbfgdisabled"); 
+                        $(".thumb-list .thumb-list-item:nth-child(" + newVal +") figure figcaption").addClass("thumbcaptiondisabled");
+                        
+                        //remove class from old
+                        if(oldVal === undefined) oldVal = 1;
+                        else oldVal++;
+                        $(".thumb-list .thumb-list-item:nth-child(" + oldVal +") figure").removeClass("thumbfgdisabled"); 
+                        $(".thumb-list .thumb-list-item:nth-child(" + oldVal +") figure figcaption").removeClass("thumbcaptiondisabled");
+                    });
+                    
+                    $scope.$on('ngRepeatFinished', function(ngRepeatFinishedEvent) {
+ console.log("repeate finished");
+    //do stuff, execute functions -- whatever...
+});
 
                     $scope.next = function(){
                         if($scope.pieceId === $scope.heroes.length-1)

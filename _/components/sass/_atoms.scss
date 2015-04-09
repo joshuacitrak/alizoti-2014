@@ -276,20 +276,20 @@ li
 //--------------------------
 //------------------------------------------------------------------
 
-.ng-hide, .ng-show, .ng-enter, .ng-leave
+.thumb-list-item.ng-show, .thumb-list-item.ng-hide, .thumb-list-item.ng-move, #partials.ng-enter, #partials.ng-leave
 {
--webkit-transition: 0.5s linear all;
-  -moz-transition: 0.5s linear all;
-  -o-transition: 0.5s linear all;
-  transition: 0.5s linear all;
+-webkit-transition: 0.325s linear all;
+  -moz-transition: 0.325s linear all;
+  -o-transition: 0.325s linear all;
+  transition: 0.325s linear all;
 }
 
-.ng-hide
+.thumb-list-item.ng-hide
 {
     @include opacity(0);
 }
 
-.ng-show
+.thumb-list-item.ng-show
 {
     @include opacity(1);
 }

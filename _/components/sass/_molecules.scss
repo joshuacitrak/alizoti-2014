@@ -221,7 +221,7 @@
   }//thumb listitem
 }//thumb list
 
-.main-fg, .thumb-fg, .more-fg, .secondary-menu-caption
+.thumb-fg, .more-fg, .secondary-menu-caption
 {
   &:hover >.caption, &:focus > .caption, &:active > .caption
   {
@@ -231,12 +231,53 @@
   }
 }
 
+.main-fg //end state
+{
+    cursor: default;
+    //@include opacity(0);
+    .caption
+    {
+        //@include animateAll();
+       //@include background(rgba(8, 8,8, 1));
+        //bottom:0;
+    }
+}
+
+.main-fg-start
+{
+    @include opacity(0);
+    @include animateAll();
+}
+
+.main-fg-end
+{
+    @include opacity(1);
+    @include animateAll();
+}
+
 .thumb-fg
 {
   &:hover >.thumb-caption, &:focus > .thumb-caption, &:active > .thumb-caption
   {
     bottom:$default-space-lg;
   }
+}
+
+.thumbfgdisabled //reset stuff bc i didn't think ahead to the states of these
+{
+    @include opacity(.8);
+    @include animateAll();
+    cursor: default;
+    &:hover >.thumbcaptiondisabled, &:focus >.thumbcaptiondisabled, &:active >.thumbcaptiondisabled
+    {
+      bottom:0;
+    @include background($lt-blue);
+  }
+    
+    .thumbcaptiondisabled
+    {
+        @include background($lt-blue);
+    }
 }
 
 .more-fg
