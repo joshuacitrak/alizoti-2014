@@ -211,7 +211,7 @@
                 "title" : "Mosaics.",
                 "description" : "These details show where our artisanship shines: how we layout the tile: how we finish each corner; and how we line up the niche inset continuously with the wall tiles.",
                 "details" : "",
-                "images" : ["Flagstone-wall-2.jpg", "Glass-mosaic-floor.jpg", "GoldCopperBrown-backsplash-3.jpg", "Herringbone-layout-with-mosaic-border.jpg", "Pennyround-floor-2.jpg", "Pool-mosaic-detail.jpg","Porcelain-and-glass-mosaic-4.jpg","Stone-w-gold-mosaic.jpg"], 
+                "images" : ["Pool-mosaic-detail.jpg", "Glass-mosaic-floor.jpg", "GoldCopperBrown-backsplash-3.jpg", "Herringbone-layout-with-mosaic-border.jpg", "Pennyround-floor-2.jpg", "Flagstone-wall-2.jpg","Porcelain-and-glass-mosaic-4.jpg","Stone-w-gold-mosaic.jpg"], 
                 "descriptions" : [
                     {
                     	"description" : "Flagstone wall"
@@ -224,7 +224,7 @@
                     },{
                     	"description" : "Pennyround floor"
                     },{
-                    	"description" : "Pool mosaic"
+                    	"description" : "Flagstone wall"
                     },{
                     	"description" : "Porcelain and glass mosaic"
                     },{

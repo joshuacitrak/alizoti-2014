@@ -3,7 +3,7 @@
         <h2 class="portfolio-title">{{menu[servicesId].type}}</h2>
     </header>
     <!-- main image -->
-    <div class="col-xs-12 col-sm-7 col-md-6">
+    <div class="col-xs-12 col-sm-7 col-md-7">
         <figure class="main-fg" ng-swipe-left="previous()" ng-swipe-right="next()">
             <img class="img-responsive main" ng-src="{{currentHero}}" alt="hero" />
             <figcaption class="caption main-caption">
@@ -26,7 +26,7 @@
     </div>
     <!-- main thumbs -->
     <!--thumbs-->
-    <div class="col-xs-12 col-sm-4 col-md-5 col-lg-4 col-lg-offset-1 last">
+    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-4  last">
         <ul class="thumb-list">
             <li class="thumb-list-item" ng-repeat=" (key,thumb) in heroes" ng-click="thumbClick(thumb.index)">
                 <figure class="thumb-fg" ng-class="{thumbfgdisabled: $first}">

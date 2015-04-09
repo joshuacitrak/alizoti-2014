@@ -38,15 +38,11 @@
                     //If you want to use URL attributes before the website is loaded
                     $rootScope.$on('$routeChangeSuccess', function () {
                         if($routeParams.servicesId)
-                        {
-                            $scope.servicesId = $routeParams.servicesId <= 2 ? $routeParams.servicesId : 2;
-                            $scope.productId = $routeParams.productId;// 
-                            $scope.pieceId = 0;
-                            $scope.heroes = $scope.assembleImages();
-                            $scope.currentHero = $scope.heroes[$scope.pieceId].hero;
-                            $scope.smThumbs = $scope.getSmThumbs();                            
+                        {                       
                             $scope.servicesId = $routeParams.servicesId;
                             $scope.productId = $routeParams.productId;
+                            $scope.pieceId = 0;
+                            $scope.setPage();
                         }
                     });
                     
@@ -79,6 +75,13 @@
                         }
                         return tmpArr
                     };//assemble imagages
+                    
+                    $scope.setPage = function(){
+                        console.log("Set page");
+                            $scope.heroes = $scope.assembleImages();
+                            $scope.currentHero = $scope.heroes[$scope.pieceId].hero;
+                            $scope.smThumbs = $scope.getSmThumbs();     
+                    }
                     
                     $scope.getSmThumbs = function(){
                         var tmpArr = [];
@@ -119,12 +122,7 @@
                         else oldVal++;
                         $(".thumb-list .thumb-list-item:nth-child(" + oldVal +") figure").removeClass("thumbfgdisabled"); 
                         $(".thumb-list .thumb-list-item:nth-child(" + oldVal +") figure figcaption").removeClass("thumbcaptiondisabled");
-                    });
-                    
-                    $scope.$on('ngRepeatFinished', function(ngRepeatFinishedEvent) {
- console.log("repeate finished");
-    //do stuff, execute functions -- whatever...
-});
+                    });//watch piece id
 
                     $scope.next = function(){
                         if($scope.pieceId === $scope.heroes.length-1)
@@ -154,12 +152,11 @@
                     $scope.windowWidth = window.innerWidth;
                     $(window).on("resize.doResize", function (){
                     $scope.windowWidth = window.innerWidth;
-                    console.log(window.innerWidth);
-
                     $scope.$apply(function(){
                        
                     });
                 });//listener
+                    
 
                 $scope.$on("$destroy",function (){
                      $(window).off("resize.doResize"); //remove the handler added earlier
@@ -169,6 +166,7 @@
                     return $window.innerWidth;
                     }, function(value) {
                     console.log(value+ " window width");
+                        var oldVal = $scope.windowSize;
                     if( value < 767)
                         {
                             $scope.windowSize = 0;
@@ -181,6 +179,8 @@
                         {
                             $scope.windowSize = 2;
                         }
+                        if (oldVal != $scope.windowSize)
+                            $scope.setPage();
                     });//watch
                     
 				}).error(function(data, status, headers, config) {
