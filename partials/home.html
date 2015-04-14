@@ -1,25 +1,25 @@
-<section class="hero-container" ng-click="goTo('/services/0/product/0')">
+<section class="hero-container hidden-xs">
         <div class="hero">
             <img class="img-responsive" ng-src="{{slideshow[0].img[windowSize]}}" alt="{{slideshow[2].description}}" />
-            <div class="cta-container hidden-xs">
+            <div class="cta-container">
                 <h3>{{slideshow[0].description}}</h3>
                 <button class="btn btn-primary menu-item-cta-btn" ng-click="goTo('/services/0/product/0')">
                         Get inspired <span class="btn-caret"></span>
                     </button>
             </div>
         </div>
-        <div class="hero" ng-click="goTo('services/1/product/3')">
+        <div class="hero">
             <img class="img-responsive" ng-src="{{slideshow[1].img[windowSize]}}" alt="{{slideshow[2].description}}" />
-            <div class="cta-container hidden-xs">
+            <div class="cta-container">
                 <h3>{{slideshow[1].description}}</h3>
                 <button class="btn btn-primary menu-item-cta-btn" ng-click="goTo('services/1/product/3')">
                         Start here <span class="btn-caret"></span>
                     </button>
             </div>
         </div>
-        <div class="hero" ng-click="goTo('/services/2/product/2')">
+        <div class="hero">
             <img class="img-responsive" ng-src="{{slideshow[2].img[windowSize]}}" alt="{{slideshow[2].description}}" />
-            <div class="cta-container hidden-xs">
+            <div class="cta-container">
                 <h3>{{slideshow[2].description}}</h3>
                 <button class="btn btn-primary menu-item-cta-btn" ng-click="goTo('/services/2/product/2')">
                         See it now <span class="btn-caret"></span>
@@ -102,17 +102,37 @@
 
 <script type="text/javascript">
     $(document).ready(function(){
-          $('.hero-container').slick({
-              dots:true,
-              arrows:false,
-              autoplay:true,
-              autoplaySpeed:3500,
-              speed:2500,
-              fade:true,
-          })
-          .on('afterChange', function( e, slick, currentSlide ) {
-            console.log("change");
-        });
+        if($(window).innerWidth() > 767)
+        {
+              $('.hero-container').slick({
+                  dots:true,
+                  arrows:false,
+                  autoplay:true,
+                  autoplaySpeed:3500,
+                  speed:2500,
+                  fade:true,
+              })
+              .on('afterChange', function( e, slick, currentSlide ) {
+                console.log("change");
+            });
+        }
+        
+        $( window ).resize(function() {
+             if($(window).innerWidth() > 767)
+            {
+                  $('.hero-container').slick({
+                      dots:true,
+                      arrows:false,
+                      autoplay:true,
+                      autoplaySpeed:3500,
+                      speed:2500,
+                      fade:true,
+                  })
+                  .on('afterChange', function( e, slick, currentSlide ) {
+                    console.log("change");
+                });
+            }
+    });
     });
     // On before slide change
 $('.hero-container').on('beforeChange', function(event, slick, currentSlide, nextSlide){

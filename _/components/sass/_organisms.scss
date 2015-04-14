@@ -1,7 +1,8 @@
 .mobile-menu
 {
-  float:none;//reset
-  margin-top:0;//reset
+  float:right;//reset
+  margin-top:-50px;//reset
+    z-index:34;
   font-size:$p-font-size; //for easy touch
   font-size:$p-font-size-rem; //for easy touch
   .mobile-list-menu
