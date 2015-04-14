@@ -71,7 +71,7 @@
 
 .btn-portfolio-container
 {
-  padding-top:$default-space-md;
+  padding-top:$default-space-lg;
 }
 
 .more-container
@@ -324,4 +324,9 @@
 .secondary-menu-caption-hide
 {
   
+}
+
+.details-link
+{
+    cursor: pointer;
 }

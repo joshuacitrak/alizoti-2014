@@ -35,13 +35,17 @@
                     $scope.lgThumbs = {};
                     $scope.smThumbs = {};
                     
+                    $scope.isDetails = false;
+                    
                     //If you want to use URL attributes before the website is loaded
                     $rootScope.$on('$routeChangeSuccess', function () {
                         if($routeParams.servicesId)
                         {                       
                             $scope.servicesId = $routeParams.servicesId;
                             $scope.productId = $routeParams.productId;
-                            $scope.pieceId = 0;
+                            if(!$scope.isDetails)
+                                $scope.pieceId = 0;
+                            $scope.isDetails = false;
                             $scope.setPage();
                         }
                     });
@@ -66,10 +70,12 @@
                             var heroesPath = $scope.services[$scope.servicesId].heroespath + sizeDir + $scope.services[$scope.servicesId].projects[$scope.productId].images[i];
                             var lgThumbPath = $scope.services[$scope.servicesId].lgThumbspath + sizeDir + $scope.services[$scope.servicesId].projects[$scope.productId].images[i];
                             var description = $scope.services[$scope.servicesId].projects[$scope.productId].descriptions;//[$scope.pieceId].description; 
+                            var detailsUrl = $scope.services[$scope.servicesId].projects[$scope.productId].details;
                             
                            tmpArr.push({
                               hero: heroesPath,
                                lgThumb: lgThumbPath,
+                               detailsUrl:detailsUrl,
                                desc : description,
                                index: i});
                         }
@@ -77,7 +83,6 @@
                     };//assemble imagages
                     
                     $scope.setPage = function(){
-                        console.log("Set page");
                             $scope.heroes = $scope.assembleImages();
                             $scope.currentHero = $scope.heroes[$scope.pieceId].hero;
                             $scope.smThumbs = $scope.getSmThumbs();     
@@ -104,10 +109,24 @@
                         $location.path(url);
                     };//goto
                     
+                    $scope.detailsClick = function(){
+                        $scope.isDetails = true;
+                        $scope.currentHero = $scope.heroes[$scope.pieceId].hero;
+                        $scope.pieceId = $scope.services[$scope.servicesId].projects[$scope.productId].details[2];
+                        $scope.goTo('services/'+$scope.services[$scope.servicesId].projects[$scope.productId].details[0]+'/product/'+$scope.services[$scope.servicesId].projects[$scope.productId].details[1]);
+                    };
+                    
                     $scope.thumbClick = function(btn){
                         $scope.pieceId = btn;
                        $scope.currentHero = $scope.heroes[$scope.pieceId].hero;
                     };//thumb click
+                    
+                    $scope.getDetails = function(){
+                        if($scope.servicesId == 2)
+                            return true;
+                        else
+                            return false;
+                    };
                     
                     $scope.$watch('pieceId', function(newVal, oldVal)
                                   {
@@ -165,7 +184,6 @@
                     $scope.$watch(function(){
                     return $window.innerWidth;
                     }, function(value) {
-                    console.log(value+ " window width");
                         var oldVal = $scope.windowSize;
                     if( value < 767)
                         {
@@ -179,7 +197,7 @@
                         {
                             $scope.windowSize = 2;
                         }
-                        if (oldVal != $scope.windowSize)
+                        if (oldVal != $scope.windowSize && oldVal != undefined)
                             $scope.setPage();
                     });//watch
                     

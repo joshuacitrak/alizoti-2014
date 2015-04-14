@@ -36,7 +36,7 @@
             {
                 "title" : "Berkeley Hills Kitchen Backsplash. Glass mosaic.",
                 "description" : "The copper, dark, and fuchsia combination looks incredible with sunlight.",
-                "details" : "",
+                "details" :[ "2","0","2"],
                 "images" : ["GoldCopperBrown-backsplash-2.jpg", "GoldCopperBrown-backsplash-3.jpg", "GoldCopperBrown-backsplash-4.jpg"], 
                 "descriptions" : [
                     {
@@ -50,7 +50,7 @@
             }, {
                 "title" : "San Anselmo Bathroom Remodel.",  
                 "description" : "The imperfection of the tiles required more care in layout, but it created a unique charm: lines are softer and gave warm, three-dimensional look.",
-                "details" : "",
+                "details" : [ "2","1","3"],
                 "images" : ["Crackled-ceramic-diagonal-layout-2.jpg", "Crackled-ceramic-diagonal-layout-3.jpg", "Crackled-ceramic-diagonal-layout-4.jpg", "Crackled-ceramic-diagonal-layout.jpg"], 
                 "descriptions" : [
                     {
@@ -66,7 +66,7 @@
             }, {
                 "title" : "Ross Bathroom.",
                 "description" : "1x2 green marble herringbone w custom border. Following all the angles and returns of the room with the border was quite intense, but was a lot of fun.",
-                "details" : "",
+                "details" : [ "2","0","3"],
                 "images" : ["Green-herringbone-floor-w-Carrera-wall.jpg", "Green-herringbone-shower-floor-w-Carrera-wall.jpg", "Green-marble-w-border-after.jpg", "Green-marble-w-border.jpg"], 
                 "descriptions" : [
                     {
@@ -82,7 +82,7 @@
             }, {
                 "title" : "Corte Madera Bathroom.",
                 "description" : "Missing...",
-                "details" : "",
+                "details" : [ "2","0","6"],
                 "images" : ["Porcelain-and-glass-mosaic-2.jpg", "Porcelain-and-glass-mosaic-3.jpg", "Porcelain-and-glass-mosaic-4.jpg", "Porcelain-and-glass-mosaic.jpg"], 
                 "descriptions" : [
                     {
@@ -108,7 +108,7 @@
             {
                 "title" : "San Rafael Pool Bar and BBQ Section.",
                 "description" : "Pool BBQ and bar area with travertine tile. The bar front has herringbone pattern with border over curved surface. Behind the BBQ grill is a diagonal pattern with accent and border.",
-                "details" : "",
+                "details" : [ "2","2","0"],
                 "images" : ["BBQ-area-backwall.jpg", "BBQ-backsplash-2.jpg", "Pool-bar-area.jpg"], 
                 "descriptions" : [
                     {
@@ -122,7 +122,7 @@
             },   {
                "title" : "Belvedere Tiburon Limestone Gate Repair.",
                 "description" : "Repair water damage around the gate opening and install new limestone gate opening. Match to existing gates. Custom cut and bevel each limestone. Custom lettering was performed by Alma Stone.",
-                "details" : "",
+                "details" : [ "2","2","4"],
                 "images" : ["Marble-opening.jpg", "Marble-opening-outside.jpg", "Marble-opening-inside.jpg"], 
                 "descriptions" : [
                     {
@@ -136,7 +136,7 @@
             }, {
                 "title" : "Pacifica Wood Fire Pizza Oven.",
                 "description" : "Built from scratch with a friend. Base and body was built with fire bricks, cement blocks and concrete. It was finished with two coats of colored stucco.",
-                "details" : "",
+               "details" : [ "2","2","5"],
                 "images" : ["brick-layout-1.jpg", "concrete-pour-2.jpg", "exterior-block.jpg", "finish.jpg", "finish2.jpg"], 
                 "descriptions" : [
                     {
@@ -154,7 +154,7 @@
             }, {
                 "title" : "Larkspur Colored Concrete Driveway.",
                 "description" : "The existing concrete driveway was not sloped properly and trapping water. We re-cemented to slope properly so water could drain. Cut concrete panels into 36x36, 36x18 and 18x18 pieces, layout into the pattern throughout the parameter of the house, driveway and the deck.",
-                "details" : "",
+                "details" : [ "2","2","3"],
                 "images" : ["colored-concrete-driveway-1.jpg", "colored-concrete-driveway-4.jpg", "colored-concrete-planter-top.jpg", "colored-concrete-sidewalk.jpg"], 
                 "descriptions" : [
                     {
@@ -169,8 +169,8 @@
                 ]
             }, {
                 "title" : "San Rafael Mosaic Pool Mosaics.",
-                "description" : "Bissaza mosaic is approx 3/4 x 3/4, and typically comes in 12x12 sheet. On thisproject, the light colored Bissaza sheet was separated into 2-3 piece strips, pieces were cut to fit to create the gradual wave look.",
-                "details" : "",
+                "description" : "Bissaza mosaic is approx 3/4 x 3/4, and typically comes in 12x12 sheet. On this project, the light colored Bissaza sheet was separated into 2-3 piece strips, pieces were cut to fit to create the gradual wave look.",
+                "details" : [ "2","2","7"],
                 "images" : ["Pool-medallion-3.jpg", "Jacuzzi.jpg", "Pool-mosaic-1.jpg", "Pool-mosaic-2.jpg"], 
                 "descriptions" : [
                     {
@@ -186,7 +186,7 @@
             }, {
                 "title" : "Belvedere Tiburon Limestone Gate Repair.",
                 "description" : "Repair water damage around the gate opening and install new limestone gate opening. Match to existing gates. Custom cut and bevel each limestone. Custom lettering was performed by Alma Stone.",
-                "details" : "",
+                "details" : [ "2","0","5"],
                 "images" : ["Stone-wall-3.jpg", "Stone-wall-4.jpg", "Stone-wall-5.jpg", "Stone-wall-7.jpg"], 
                 "descriptions" : [
                     {
@@ -210,7 +210,6 @@
             {
                 "title" : "Mosaics.",
                 "description" : "These details show where our artisanship shines: how we layout the tile: how we finish each corner; and how we line up the niche inset continuously with the wall tiles.",
-                "details" : "",
                 "images" : ["Pool-mosaic-detail.jpg", "Glass-mosaic-floor.jpg", "GoldCopperBrown-backsplash-3.jpg", "Herringbone-layout-with-mosaic-border.jpg", "Pennyround-floor-2.jpg", "Flagstone-wall-2.jpg","Porcelain-and-glass-mosaic-4.jpg","Stone-w-gold-mosaic.jpg"], 
                 "descriptions" : [
                     {
@@ -234,7 +233,6 @@
             }, {
                 "title" : "Niches and Shelves.",
                 "description" : "These details show where our artisanship shines: how we layout the tile: how we finish each corner; and how we line up the niche inset continuously with the wall tiles.",
-                "details" : "",
                 "images" : ["Hand-crafted-ceramic.jpg", "Marble-mosaic-niche-medium.jpg", "Marble-niche-w-shelves.jpg", "Niche-inset-lines-up-w-wall.jpg", "Small-soap-niche.jpg", "Travertine-double-niche.jpg","Travertine-walls-pebble-floor.jpg"], 
                 "descriptions" : [
                     {
@@ -256,10 +254,19 @@
             }, {
                 "title" : "Patterns and Accents.",
                 "description" : "These details show where our artisanship shines: how we layout the tile: how we finish each corner; and how we line up the niche inset continuously with the wall tiles.",
-                "details" : "",
                 "images" : ["BBQ-Trims-and-accents.jpg", "Bisazza-custom-wave-pattern.jpg", "Blue-glass-kitchen-backsplash.jpg", "colored-concrete-planter-top.jpg", "Keystone-w-lettering.jpg", "opening.jpg", "Patterned-glass-wall.jpg","Pool-medaliion.jpg","Travertine-walls-pebble-floor.jpg"], 
                 "descriptions" : [
                     {
+                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
+                    },{
+                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
+                    },{
+                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
+                    },{
+                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
+                    }, {
+                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
+                    },{
                     	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
                     },{
                     	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"

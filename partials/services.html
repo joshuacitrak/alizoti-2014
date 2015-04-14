@@ -13,6 +13,7 @@
         <article class="portfolio-description">
             <p>
                   <span class='emphasize'>{{ services[servicesId].projects[productId].title }} </span> {{ services[servicesId].projects[productId].description }} 
+                  <a class="details-link" ng-hide="getDetails()" ng-click="detailsClick()">See this in fine detail...</a>
             </p>
             <div class="btn-portfolio-container">
                 <button class="btn btn-primary btn-portfolio" ng-click="previous()">
@@ -29,9 +30,9 @@
     <div class="col-xs-12 col-sm-5 col-md-5 col-lg-4  last">
         <ul class="thumb-list">
             <li class="thumb-list-item" ng-repeat=" (key,thumb) in heroes" ng-click="thumbClick(thumb.index)">
-                <figure class="thumb-fg" ng-class="{thumbfgdisabled: $first}">
+                <figure class="thumb-fg" ng-class="{thumbfgdisabled: key == pieceId}">
                     <img ng-src="{{thumb.lgThumb}} " alt="{{thumb.desc[key].description}}" class="img-responsive thumb" />
-                    <figcaption class="caption thumb-caption" ng-class="{thumbcaptiondisabled: $first}">
+                    <figcaption class="caption thumb-caption" ng-class="{thumbcaptiondisabled: key == pieceId}">
                          {{thumb.desc[key].description}}
                     </figcaption>
                 </figure>

@@ -383,7 +383,7 @@ li {
 
 /* line 72, ../components/sass/_molecules.scss */
 .btn-portfolio-container {
-  padding-top: 7px; }
+  padding-top: 17px; }
 
 /* line 77, ../components/sass/_molecules.scss */
 .more-container {
@@ -599,6 +599,10 @@ li {
   height: 100%;
   text-align: center;
   padding-top: 17px; }
+
+/* line 329, ../components/sass/_molecules.scss */
+.details-link {
+  cursor: pointer; }
 
 /* line 1, ../components/sass/_organisms.scss */
 .mobile-menu {
