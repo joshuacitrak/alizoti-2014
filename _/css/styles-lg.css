@@ -366,8 +366,8 @@ li {
   padding-top: 51px; }
 
 /* line 50, ../components/sass/_molecules.scss */
-.portfolio-container {
-  margin-top: 85px; }
+.portfolio-container, .contact-container {
+  margin-top: 65px; }
 
 /* line 55, ../components/sass/_molecules.scss */
 .portfolio-container, .more-container {
@@ -682,6 +682,10 @@ li {
   margin-top: 0; }
 
 /* line 103, ../components/sass/_molecules-lg.scss */
+.portfolio-container, .contact-container {
+  margin-top: 85px; }
+
+/* line 108, ../components/sass/_molecules-lg.scss */
 .bio-container {
   padding-top: 0; }
 
