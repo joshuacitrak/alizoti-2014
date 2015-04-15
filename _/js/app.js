@@ -86,7 +86,7 @@
                             $scope.heroes = $scope.assembleImages();
                             $scope.currentHero = $scope.heroes[$scope.pieceId].hero;
                             $scope.smThumbs = $scope.getSmThumbs();     
-                    }
+                    }//setPage
                     
                     $scope.getSmThumbs = function(){
                         var tmpArr = [];
@@ -114,11 +114,18 @@
                         $scope.currentHero = $scope.heroes[$scope.pieceId].hero;
                         $scope.pieceId = $scope.services[$scope.servicesId].projects[$scope.productId].details[2];
                         $scope.goTo('services/'+$scope.services[$scope.servicesId].projects[$scope.productId].details[0]+'/product/'+$scope.services[$scope.servicesId].projects[$scope.productId].details[1]);
-                    };
+                    };//detailsClick
                     
                     $scope.thumbClick = function(btn){
                         $scope.pieceId = btn;
-                       $scope.currentHero = $scope.heroes[$scope.pieceId].hero;
+                        $( ".main-fg" ).fadeOut( 370, function() {
+                            // Animation complete
+                            $scope.currentHero = $scope.heroes[$scope.pieceId].hero;
+                            $scope.$apply();
+                            $( ".main-fg" ).fadeIn(370, function() {
+                            });
+                          });
+                        
                     };//thumb click
                     
                     $scope.getDetails = function(){
@@ -126,7 +133,7 @@
                             return true;
                         else
                             return false;
-                    };
+                    };//getDetails
                     
                     $scope.$watch('pieceId', function(newVal, oldVal)
                                   {
@@ -144,28 +151,37 @@
                     });//watch piece id
 
                     $scope.next = function(){
-                        if($scope.pieceId === $scope.heroes.length-1)
-                        {
-                            $scope.pieceId = 0;
-                        }
-                        else
-                        {
-                            $scope.pieceId++;
-                        }
-                        
-                        $scope.currentHero = $scope.heroes[$scope.pieceId].hero;
+                        $( ".main-fg" ).fadeOut( 370, function() {
+                            if($scope.pieceId === $scope.heroes.length-1)
+                            {
+                                $scope.pieceId = 0;
+                            }
+                            else
+                            {
+                                $scope.pieceId++;
+                            }
+                            $scope.currentHero = $scope.heroes[$scope.pieceId].hero;
+                            $scope.$apply();
+                            $( ".main-fg" ).fadeIn(370, function() {
+                            });
+                        });
                     }//next
 
                     $scope.previous = function(){
-                        if($scope.pieceId <= 0)
-                        {
-                            $scope.pieceId = $scope.heroes.length-1;
-                        }
-                        else
-                        {
-                            $scope.pieceId--;
-                        }
-                        $scope.currentHero = $scope.heroes[$scope.pieceId].hero;
+                        $( ".main-fg" ).fadeOut( 370, function() {
+                            if($scope.pieceId <= 0)
+                            {
+                                $scope.pieceId = $scope.heroes.length-1;
+                            }
+                            else
+                            {
+                                $scope.pieceId--;
+                            }
+                            $scope.currentHero = $scope.heroes[$scope.pieceId].hero;
+                            $scope.$apply();
+                                $( ".main-fg" ).fadeIn(370, function() {
+                                });
+                        });
                     }//previous
                     
                     $scope.windowWidth = window.innerWidth;

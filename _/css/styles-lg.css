@@ -530,9 +530,9 @@ li {
 
 /* line 233, ../components/sass/_molecules.scss */
 .main-fg {
-  cursor: default; }
+  cursor: pointer; }
 
-/* line 245, ../components/sass/_molecules.scss */
+/* line 238, ../components/sass/_molecules.scss */
 .main-fg-start {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -541,7 +541,7 @@ li {
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out; }
 
-/* line 251, ../components/sass/_molecules.scss */
+/* line 244, ../components/sass/_molecules.scss */
 .main-fg-end {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
@@ -550,11 +550,11 @@ li {
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out; }
 
-/* line 259, ../components/sass/_molecules.scss */
+/* line 252, ../components/sass/_molecules.scss */
 .thumb-fg:hover > .thumb-caption, .thumb-fg:focus > .thumb-caption, .thumb-fg:active > .thumb-caption {
   bottom: 17px; }
 
-/* line 265, ../components/sass/_molecules.scss */
+/* line 258, ../components/sass/_molecules.scss */
 .thumbfgdisabled {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
@@ -563,28 +563,28 @@ li {
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
   cursor: default; }
-  /* line 270, ../components/sass/_molecules.scss */
+  /* line 263, ../components/sass/_molecules.scss */
   .thumbfgdisabled:hover > .thumbcaptiondisabled, .thumbfgdisabled:focus > .thumbcaptiondisabled, .thumbfgdisabled:active > .thumbcaptiondisabled {
     bottom: 0;
     background: #1cafee; }
-  /* line 276, ../components/sass/_molecules.scss */
+  /* line 269, ../components/sass/_molecules.scss */
   .thumbfgdisabled .thumbcaptiondisabled {
     background: #1cafee; }
 
-/* line 282, ../components/sass/_molecules.scss */
+/* line 275, ../components/sass/_molecules.scss */
 .more-fg {
   max-width: 100px; }
-  /* line 285, ../components/sass/_molecules.scss */
+  /* line 278, ../components/sass/_molecules.scss */
   .more-fg:hover > .caption, .more-fg:focus > .caption, .more-fg:active > .caption {
     color: #fafafa;
     background: #1cafee; }
 
-/* line 292, ../components/sass/_molecules.scss */
+/* line 285, ../components/sass/_molecules.scss */
 .portfolio-more {
   margin-bottom: 0;
   margin: 7px 0; }
 
-/* line 298, ../components/sass/_molecules.scss */
+/* line 291, ../components/sass/_molecules.scss */
 .secondary-menu-caption {
   width: 50%;
   left: 50%;
@@ -593,7 +593,7 @@ li {
   text-align: center;
   padding-top: 17px; }
 
-/* line 318, ../components/sass/_molecules.scss */
+/* line 311, ../components/sass/_molecules.scss */
 .details-link {
   cursor: pointer; }
 
