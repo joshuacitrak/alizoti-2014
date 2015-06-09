@@ -12,6 +12,14 @@
       display:block;
        float:left;
        padding-right:$default-space-lg+2;
+        &:last-child
+        {
+             padding-right:0;
+            @media (min-width:$sm-screen)//necessary evil BS doesn't give me the BPs i need
+            {
+                padding-right:$default-space-lg+2;
+            }
+        }
        a
        {
          @include text-link-style($grey1, none, $grey5, underline);
@@ -23,7 +31,16 @@
 .company-name h1
   {
     color:$red2;
-    line-height:.8;
+    line-height:1;
+    font-size:$h3-font-size;
+    font-size:$h3-font-size-rem;
+      
+      @media (min-width:$sm-screen)//necessary evil BS doesn't give me the BPs i need
+        {
+            font-size:$h1-font-size;
+            font-size:$h1-font-size-rem;
+            line-height:.8;
+        }
     a
     {
       color:inherit;
@@ -32,8 +49,13 @@
     .company-co
     {
       color:$black;
-      font-size:$h3-font-size;
-      font-size:$h3-font-size-rem;
+      font-size:$p-font-size;
+      font-size:$p-font-size-rem;
+        @media (min-width:$sm-screen)//necessary evil BS doesn't give me the BPs i need
+        {
+            font-size:$h3-font-size;
+          font-size:$h3-font-size-rem;
+        }
     }//company co
 }//company-name
 .company-info
@@ -49,11 +71,17 @@
     
     h3
     {
-    font-size:13px;
-    font-size:1.3rem;
+    font-size:12px;
+    font-size:1.2rem;
     font-family:$main-font-bold;
-    line-height:.8;
+    line-height:1;
     color:$red1;
+        @media (min-width:$sm-screen)//necessary evil BS doesn't give me the BPs i need
+        {
+            font-size:13px;
+            font-size:1.3rem;
+            line-height:.8;
+        }
     }//h3
   }//contact 
   
@@ -98,18 +126,22 @@
     line-height:1.1;
     font-family:$main-font-bold;
     padding-top: 7px;
-    font-size:$p-font-size; 
-    font-size:$p-font-size-rem; 
-    width: 50%;
-    @media (min-width:$sm-screen)//necessary evil BS doesn't give me the BPs i need
+    font-size:18px; 
+    font-size:1.8rem; 
+    width: 40%;
+    @media (min-width:$small-screen)//necessary evil BS doesn't give me the BPs i need
+    {
+      width: 50%;
+    }
+      @media (min-width:$sm-screen)//necessary evil BS doesn't give me the BPs i need
     {
       width: 58%;
     }
     @media (min-width:$md-sm-screen)//necessary evil BS doesn't give me the BPs i need
     {
-      font-size:$h4-font-size; 
-      font-size:$h4-font-size-rem; 
-      width: 67%;
+      font-size:$p-font-size; 
+      font-size:$p-font-size-rem; 
+      width: 66%;
     }//min-width 685
     
   }//h3
