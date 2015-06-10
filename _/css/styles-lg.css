@@ -277,7 +277,7 @@ li {
     content: ">"; }
 
 /* line 266, ../components/sass/_atoms.scss */
-.thumb-list-item.ng-show, .thumb-list-item.ng-hide, .thumb-list-item.ng-move, #partials.ng-enter, #partials.ng-leave {
+.thumb-list-item.ng-show, .thumb-list-item.ng-hide, .thumb-list-item.ng-move {
   -webkit-transition: 0.325s linear all;
   -moz-transition: 0.325s linear all;
   -o-transition: 0.325s linear all;
@@ -293,30 +293,6 @@ li {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1; }
 
-/* line 284, ../components/sass/_atoms.scss */
-#partials.ng-enter {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0; }
-
-/* starting animations for enter */
-/* line 289, ../components/sass/_atoms.scss */
-#partials.ng-enter.ng-enter-active {
-  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-  opacity: 1; }
-
-/* terminal animations for enter */
-/* line 294, ../components/sass/_atoms.scss */
-#partials.ng-leave {
-  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-  opacity: 1; }
-
-/* terminal animations for enter */
-/* line 298, ../components/sass/_atoms.scss */
-#partials.ng-leave.ng-leave-active {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0; }
-
-/* terminal animations for enter */
 /* line 4, ../components/sass/_molecules.scss */
 .header-nav-container, .footer-container {
   background: rgba(161, 161, 161, 0.7); }

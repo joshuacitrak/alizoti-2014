@@ -86,6 +86,7 @@
                             $scope.heroes = $scope.assembleImages();
                             $scope.currentHero = $scope.heroes[$scope.pieceId].hero;
                             $scope.smThumbs = $scope.getSmThumbs();     
+                            $scope.$apply();
                     }//setPage
                     
                     $scope.getSmThumbs = function(){

@@ -263,7 +263,7 @@ li
 //--------------------------
 //------------------------------------------------------------------
 
-.thumb-list-item.ng-show, .thumb-list-item.ng-hide, .thumb-list-item.ng-move, #partials.ng-enter, #partials.ng-leave
+.thumb-list-item.ng-show, .thumb-list-item.ng-hide, .thumb-list-item.ng-move
 {
 -webkit-transition: 0.325s linear all;
   -moz-transition: 0.325s linear all;
@@ -281,21 +281,4 @@ li
     @include opacity(1);
 }
 
-#partials.ng-enter 
-{ 
-    @include opacity(0);
-}   /* starting animations for enter */
 
-#partials.ng-enter.ng-enter-active 
-{
-    @include opacity(1);
-} /* terminal animations for enter */
-
-#partials.ng-leave 
-{
-    @include opacity(1);
-} /* terminal animations for enter */
-#partials.ng-leave.ng-leave-active
-{
-    @include opacity(0);
-} /* terminal animations for enter */
