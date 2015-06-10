@@ -36,15 +36,15 @@
             {
                 "title" : "Berkeley Hills Kitchen Backsplash. Glass mosaic.",
                 "description" : "The copper, dark, and fuchsia combination looks incredible with sunlight.",
-                "details" :[ "2","0","2"],
+                "details" :[ "2","0","1"],
                 "images" : ["GoldCopperBrown-backsplash-2.jpg", "GoldCopperBrown-backsplash-3.jpg", "GoldCopperBrown-backsplash-4.jpg"], 
                 "descriptions" : [
                     {
-                    	"description" : "Lorem Ipsum GoldCopperBrown-backsplash "
+                    	"description" : "Berkeley kitchen backsplash "
                     },{
-                    	"description" : "Lorem Ipsum GoldCopperBrown-backsplash"
+                    	"description" : "Berkeley kitchen backsplash "
                     },{
-                    	"description" : "Lorem Ipsum GoldCopperBrown-backsplash"
+                    	"description" : "Berkeley kitchen backsplash "
                     }
                 ]
             }, {
@@ -54,47 +54,43 @@
                 "images" : ["Crackled-ceramic-diagonal-layout-2.jpg", "Crackled-ceramic-diagonal-layout-3.jpg", "Crackled-ceramic-diagonal-layout-4.jpg", "Crackled-ceramic-diagonal-layout.jpg"], 
                 "descriptions" : [
                     {
-                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout "
+                    	"description" : "San Anselmo bathroom remodel"
                     },{
-                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
+                    	"description" : "San Anselmo bathroom remodel"
                     },{
-                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
+                    	"description" : "San Anselmo bathroom remodel"
                     },{
-                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
+                    	"description" : "San Anselmo bathroom remodel"
                     }
                 ]
             }, {
                 "title" : "Ross Bathroom.",
                 "description" : "1x2 green marble herringbone w custom border. Following all the angles and returns of the room with the border was quite intense, but was a lot of fun.",
-                "details" : [ "2","0","3"],
+                "details" : [ "2","0","2"],
                 "images" : ["Green-herringbone-floor-w-Carrera-wall.jpg", "Green-herringbone-shower-floor-w-Carrera-wall.jpg", "Green-marble-w-border-after.jpg", "Green-marble-w-border.jpg"], 
                 "descriptions" : [
                     {
-                    	"description" : "Lorem Ipsum Green-marble-w-border.jpg "
+                    	"description" : "Ross bathroom"
                     },{
-                    	"description" : "Lorem Ipsum 2 Green-marble-w-border.jpg"
+                    	"description" : "Ross bathroom"
                     },{
-                    	"description" : "Lorem Ipsum 3 Green-marble-w-border.jpg"
+                    	"description" : "Ross bathroom"
                     },{
-                    	"description" : "Lorem Ipsum 4 Green-marble-w-border.jpg"
+                    	"description" : "Ross bathroom"
                     }
                 ]
             }, {
                 "title" : "Corte Madera Bathroom.",
-                "description" : "Missing...",
-                "details" : [ "2","0","6"],
-                "images" : ["Porcelain-and-glass-mosaic-2.jpg", "Porcelain-and-glass-mosaic-3.jpg", "Porcelain-and-glass-mosaic-4.jpg", "Porcelain-and-glass-mosaic.jpg"], 
+                "description" : "Porcelain tile and ceramic mosaic combo. The mosaic accent was strategically placed under the skylight to enhance the light.",
+                "details" : [ "2","0","5"],
+                "images" : ["Porcelain-and-glass-mosaic-2.jpg", "Porcelain-and-glass-mosaic-3.jpg", "Porcelain-and-glass-mosaic.jpg"], 
                 "descriptions" : [
                     {
-                    	"description" : "Lorem Ipsum Porcelain-floor-w-accent "
+                    	"description" : "Corte Madera Bathroom "
                     },{
-                    	"description" : "Lorem Ipsum Porcelain-and-glass-mosaic"
+                    	"description" : "Corte Madera Bathroom"
                     },{
-                    	"description" : "Lorem Ipsum Porcelain-and-glass-mosaic"
-                    },{
-                    	"description" : "Lorem Ipsum Porcelain-and-glass-mosaic"
-                    },{
-                    	"description" : "Lorem Ipsum Porcelain-and-glass-mosaic"
+                    	"description" : "Corte Madera Bathroom"
                     }
                 ]
             }
@@ -122,7 +118,7 @@
             },   {
                "title" : "Belvedere Tiburon Limestone Gate Repair.",
                 "description" : "Repair water damage around the gate opening and install new limestone gate opening. Match to existing gates. Custom cut and bevel each limestone. Custom lettering was performed by Alma Stone.",
-                "details" : [ "2","2","4"],
+                "details" : [ "2","2","3"],
                 "images" : ["Marble-opening.jpg", "Marble-opening-outside.jpg", "Marble-opening-inside.jpg"], 
                 "descriptions" : [
                     {
@@ -136,7 +132,7 @@
             }, {
                 "title" : "Pacifica Wood Fire Pizza Oven.",
                 "description" : "Built from scratch with a friend. Base and body was built with fire bricks, cement blocks and concrete. It was finished with two coats of colored stucco.",
-               "details" : [ "2","2","5"],
+               "details" : [ "2","2","4"],
                 "images" : ["brick-layout-1.jpg", "concrete-pour-2.jpg", "exterior-block.jpg", "finish.jpg", "finish2.jpg"], 
                 "descriptions" : [
                     {
@@ -154,7 +150,7 @@
             }, {
                 "title" : "Larkspur Colored Concrete Driveway.",
                 "description" : "The existing concrete driveway was not sloped properly and trapping water. We re-cemented to slope properly so water could drain. Cut concrete panels into 36x36, 36x18 and 18x18 pieces, layout into the pattern throughout the parameter of the house, driveway and the deck.",
-                "details" : [ "2","2","3"],
+                "details" : [ "2","2","2"],
                 "images" : ["colored-concrete-driveway-1.jpg", "colored-concrete-driveway-4.jpg", "colored-concrete-planter-top.jpg", "colored-concrete-sidewalk.jpg"], 
                 "descriptions" : [
                     {
@@ -168,35 +164,35 @@
                     }
                 ]
             }, {
-                "title" : "San Rafael Mosaic Pool Mosaics.",
-                "description" : "Bissaza mosaic is approx 3/4 x 3/4, and typically comes in 12x12 sheet. On this project, the light colored Bissaza sheet was separated into 2-3 piece strips, pieces were cut to fit to create the gradual wave look.",
-                "details" : [ "2","2","7"],
+                "title" : "San Rafael Pool Mosaics.",
+                "description" : "On this project, the light colored Bissaza sheet was separated into 2-3 piece strips, pieces were cut to fit to create the gradual wave look.",
+                "details" : [ "2","2","5"],
                 "images" : ["Pool-medallion-3.jpg", "Jacuzzi.jpg", "Pool-mosaic-1.jpg", "Pool-mosaic-2.jpg"], 
                 "descriptions" : [
                     {
-                    	"description" : "Lorem Ipsum pool "
+                    	"description" : "San Rafael Pool Mosaics"
                     },{
-                    	"description" : "Lorem Ipsum pool"
+                    	"description" : "San Rafael Pool Mosaics"
                     },{
-                    	"description" : "Lorem Ipsum pool"
+                    	"description" : "San Rafael Pool Mosaics"
                     },{
-                    	"description" : "Lorem Ipsum pool"
+                    	"description" : "San Rafael Pool Mosaics"
                     }
                 ]
             }, {
-                "title" : "Belvedere Tiburon Limestone Gate Repair.",
-                "description" : "Repair water damage around the gate opening and install new limestone gate opening. Match to existing gates. Custom cut and bevel each limestone. Custom lettering was performed by Alma Stone.",
-                "details" : [ "2","0","5"],
+                "title" : "Ross Stone Wall ",
+                "description" : "Create matching stone finish on the new tower. Each stone was cut-to-fit.",
+                "details" : [ "2","0","4"],
                 "images" : ["Stone-wall-3.jpg", "Stone-wall-4.jpg", "Stone-wall-5.jpg", "Stone-wall-7.jpg"], 
                 "descriptions" : [
                     {
-                    	"description" : "Lorem Ipsum stonewall "
+                    	"description" : "Ross Stone Wall"
                     },{
-                    	"description" : "Lorem Ipsum stonewall"
+                    	"description" : "Ross Stone Wall"
                     },{
-                    	"description" : "Lorem Ipsum stonewall"
+                    	"description" : "Ross Stone Wall"
                     },{
-                    	"description" : "Lorem Ipsum stonewall"
+                    	"description" : "Ross Stone Wall"
                     }
                 ]
             }
@@ -210,22 +206,20 @@
             {
                 "title" : "Mosaics.",
                 "description" : "These details show where our artisanship shines: how we layout the tile: how we finish each corner; and how we line up the niche inset continuously with the wall tiles.",
-                "images" : ["Pool-mosaic-detail.jpg", "Glass-mosaic-floor.jpg", "GoldCopperBrown-backsplash-3.jpg", "Herringbone-layout-with-mosaic-border.jpg", "Pennyround-floor-2.jpg", "Flagstone-wall-2.jpg","Porcelain-and-glass-mosaic-4.jpg","Stone-w-gold-mosaic.jpg"], 
+                "images" : ["Pool-mosaic-detail.jpg", "GoldCopperBrown-backsplash-3.jpg", "Herringbone-layout-with-mosaic-border.jpg", "Pennyround-floor-2.jpg", "Flagstone-wall-2.jpg","Porcelain-and-glass-mosaic-4.jpg","Stone-w-gold-mosaic.jpg"], 
                 "descriptions" : [
                     {
-                    	"description" : "Flagstone wall"
+                    	"description" : "Pool Bisazza mosaic, hand crafted wave"
                     },{
-                    	"description" : "Glass mosiac"
+                    	"description" : "Gold, copper and fuchsia kitchen backsplash"
                     },{
-                    	"description" : "Gold coppper and brown backsplash"
-                    },{
-                    	"description" : "Herringbone layout"
+                    	"description" : "Green marble herringbone with mosaic border"
                     },{
                     	"description" : "Pennyround floor"
                     },{
-                    	"description" : "Flagstone wall"
+                    	"description" : "Custom cut stone wall"
                     },{
-                    	"description" : "Porcelain and glass mosaic"
+                    	"description" : "Porcelain field with ceramic accent"
                     },{
                     	"description" : "Stone and gold mosaic"
                     }
@@ -233,47 +227,41 @@
             }, {
                 "title" : "Niches and Shelves.",
                 "description" : "These details show where our artisanship shines: how we layout the tile: how we finish each corner; and how we line up the niche inset continuously with the wall tiles.",
-                "images" : ["Hand-crafted-ceramic.jpg", "Marble-mosaic-niche-medium.jpg", "Marble-niche-w-shelves.jpg", "Niche-inset-lines-up-w-wall.jpg", "Small-soap-niche.jpg", "Travertine-double-niche.jpg","Travertine-walls-pebble-floor.jpg"], 
+                "images" : ["Hand-crafted-ceramic.jpg", "Marble-mosaic-niche-medium.jpg", "Marble-niche-w-shelves.jpg", "Niche-inset-lines-up-w-wall.jpg", "Small-soap-niche.jpg", "Travertine-double-niche.jpg"], 
                 "descriptions" : [
                     {
-                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
+                    	"description" : "Handcrafted Mexican tile"
                     },{
-                    	"description" : "Lorem Ipsum Marble-mosaic-niche-medium"
+                    	"description" : "Black and white marble niche"
                     },{
-                    	"description" : "Marble-niche-w-shelves"
+                    	"description" : "Medium niche with a shelf"
                     },{
-                    	"description" : "Lorem Ipsum Niche-inset-lines-up-w-wall"
+                    	"description" : "Niche inset lines up with wall"
                     },{
-                    	"description" : "Lorem Ipsum Small-soap-niche"
+                    	"description" : "Small soap niche"
                     },{
-                    	"description" : "Lorem Ipsum Travertine-double-niche"
-                    },{
-                    	"description" : "Lorem Ipsum Travertine-walls-pebble-floor"
+                    	"description" : "Travertine double niche"
                     }
                 ]
             }, {
                 "title" : "Patterns and Accents.",
                 "description" : "These details show where our artisanship shines: how we layout the tile: how we finish each corner; and how we line up the niche inset continuously with the wall tiles.",
-                "images" : ["BBQ-Trims-and-accents.jpg", "Bisazza-custom-wave-pattern.jpg", "Blue-glass-kitchen-backsplash.jpg", "colored-concrete-planter-top.jpg", "Keystone-w-lettering.jpg", "opening.jpg", "Patterned-glass-wall.jpg","Pool-medaliion.jpg","Travertine-walls-pebble-floor.jpg"], 
+                "images" : ["BBQ-Trims-and-accents.jpg", "Bisazza-custom-wave-pattern.jpg", "colored-concrete-planter-top.jpg", "Keystone-w-lettering.jpg", "opening.jpg", "Pool-medaliion.jpg","Travertine-walls-pebble-floor.jpg"], 
                 "descriptions" : [
                     {
-                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
+                    	"description" : "Diagonal layout with accent"
                     },{
-                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
+                    	"description" : "Bisazza water fountain"
                     },{
-                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
-                    },{
-                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
+                    	"description" : "Colored concrete pattern"
                     }, {
-                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
+                    	"description" : "Custom lettering by Alma Stone"
                     },{
-                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
+                    	"description" : "Pizza oven opening"
                     },{
-                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
+                    	"description" : "Pool medallion"
                     },{
-                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
-                    },{
-                    	"description" : "Lorem Ipsum Crackled-ceramic-diagonal-layout"
+                    	"description" : "Travertine walls and pebble floor"
                     }
                 ]
             }

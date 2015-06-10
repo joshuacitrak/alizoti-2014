@@ -71,12 +71,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'bankgothic_lt_bt';
-  src: url("../../fonts/bankgothic_lt_bt_light-webfont.eot");
-  src: url("../../fonts/bankgothic_lt_bt_light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/bankgothic_lt_bt_light-webfont.woff2") format("woff2"), url("../../fonts/bankgothic_lt_bt_light-webfont.woff") format("woff"), url("../../fonts/bankgothic_lt_bt_light-webfont.ttf") format("truetype"), url("../../fonts/bankgothic_lt_bt_light-webfont.svg#bankgothic_lt_bt") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
   font-family: 'quicksand-light';
   src: url("../../fonts/quicksand-light-webfont.eot");
   src: url("../../fonts/quicksand-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/quicksand-light-webfont.woff2") format("woff2"), url("../../fonts/quicksand-light-webfont.woff") format("woff"), url("../../fonts/quicksand-light-webfont.ttf") format("truetype"), url("../../fonts/quicksand-light-webfont.svg#quicksand-light") format("svg");
@@ -88,11 +82,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   src: url("../../fonts/quicksand-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/quicksand-regular-webfont.woff2") format("woff2"), url("../../fonts/quicksand-regular-webfont.woff") format("woff"), url("../../fonts/quicksand-regular-webfont.ttf") format("truetype"), url("../../fonts/quicksand-regular-webfont.svg#quicksand-regular") format("svg");
   font-weight: normal;
   font-style: normal; }
-/* line 57, ../components/sass/_atoms.scss */
+/* line 44, ../components/sass/_atoms.scss */
 html {
   font-size: 62.5%; }
 
-/* line 61, ../components/sass/_atoms.scss */
+/* line 48, ../components/sass/_atoms.scss */
 body {
   font-family: "quicksand-regular" !important;
   font-size: 10px;
@@ -106,7 +100,7 @@ body {
   background: #ededed;
   background: url('../../images/617cb5c2.png?1433875262'); }
 
-/* line 76, ../components/sass/_atoms.scss */
+/* line 63, ../components/sass/_atoms.scss */
 .container-fluid {
   padding: 0; }
 
@@ -114,15 +108,15 @@ body {
  * $rembase:10px;
  * $line-height-base:33
  */
-/* line 89, ../components/sass/_atoms.scss */
+/* line 76, ../components/sass/_atoms.scss */
 h1, h2, h3, h4 {
   text-rendering: optimizeLegibility; }
 
-/* line 93, ../components/sass/_atoms.scss */
+/* line 80, ../components/sass/_atoms.scss */
 h2, h3, h4 {
   font-family: "quicksand-light"; }
 
-/* line 97, ../components/sass/_atoms.scss */
+/* line 84, ../components/sass/_atoms.scss */
 h1 {
   font-size: 52px;
   /*fallback*/
@@ -131,31 +125,31 @@ h1 {
   line-height: 3.25;
   /* $line-height-base ÷ 52*/ }
 
-/* line 103, ../components/sass/_atoms.scss */
+/* line 90, ../components/sass/_atoms.scss */
 h2 {
   font-size: 47px;
   font-size: 4.7rem;
   line-height: 2.93; }
 
-/* line 109, ../components/sass/_atoms.scss */
+/* line 96, ../components/sass/_atoms.scss */
 h3 {
   font-size: 32px;
   font-size: 3.2rem;
   line-height: 2; }
 
-/* line 115, ../components/sass/_atoms.scss */
+/* line 102, ../components/sass/_atoms.scss */
 h4 {
   font-size: 29px;
   font-size: 2.9rem;
   line-height: 1.815; }
 
-/* line 121, ../components/sass/_atoms.scss */
+/* line 108, ../components/sass/_atoms.scss */
 p {
   font-size: 20px;
   font-size: 2rem;
   line-height: 1.25; }
 
-/* line 134, ../components/sass/_atoms.scss */
+/* line 121, ../components/sass/_atoms.scss */
 a, .link {
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
@@ -167,30 +161,30 @@ a, .link {
   a:hover, a:active, a:focus, .link:hover, .link:active, .link:focus {
     color: #474747;
     text-decoration: none; }
-  /* line 137, ../components/sass/_atoms.scss */
+  /* line 124, ../components/sass/_atoms.scss */
   a:active, a:hover, afocus, .link:active, .link:hover, .linkfocus {
     outline: 0; }
 
-/* line 143, ../components/sass/_atoms.scss */
+/* line 130, ../components/sass/_atoms.scss */
 section, nav, article, aside, header, footer {
   overflow: hidden;
   *zoom: 1; }
 
-/* line 148, ../components/sass/_atoms.scss */
+/* line 135, ../components/sass/_atoms.scss */
 nav, article, aside {
   margin-bottom: 17px; }
 
-/* line 153, ../components/sass/_atoms.scss */
+/* line 140, ../components/sass/_atoms.scss */
 section, .main-content, .secondary-menu-item {
   -moz-box-shadow: rgba(8, 8, 8, 0.2) 1px 1px 3px, rgba(8, 8, 8, 0.2) -1px 1px 3px, rgba(8, 8, 8, 0.2) 1px -1px 3px, rgba(8, 8, 8, 0.2) -1px -1px 3px;
   -webkit-box-shadow: rgba(8, 8, 8, 0.2) 1px 1px 3px, rgba(8, 8, 8, 0.2) -1px 1px 3px, rgba(8, 8, 8, 0.2) 1px -1px 3px, rgba(8, 8, 8, 0.2) -1px -1px 3px;
   box-shadow: rgba(8, 8, 8, 0.2) 1px 1px 3px, rgba(8, 8, 8, 0.2) -1px 1px 3px, rgba(8, 8, 8, 0.2) 1px -1px 3px, rgba(8, 8, 8, 0.2) -1px -1px 3px; }
 
-/* line 159, ../components/sass/_atoms.scss */
+/* line 146, ../components/sass/_atoms.scss */
 header {
   font-family: 'bankgothic_lt_md'; }
 
-/* line 164, ../components/sass/_atoms.scss */
+/* line 151, ../components/sass/_atoms.scss */
 nav {
   font-family: "quicksand-regular";
   position: relative;
@@ -203,30 +197,30 @@ nav {
   }
   */ }
 
-/* line 178, ../components/sass/_atoms.scss */
+/* line 165, ../components/sass/_atoms.scss */
 section {
   background: #ededed;
   margin-top: 17px;
   padding-left: 17px; }
 
-/* line 185, ../components/sass/_atoms.scss */
+/* line 172, ../components/sass/_atoms.scss */
 input, textarea {
   background: #ededed;
   width: 390px;
   max-width: 390px; }
 
-/* line 192, ../components/sass/_atoms.scss */
+/* line 179, ../components/sass/_atoms.scss */
 textarea {
   height: 300px;
   max-height: 300px; }
 
-/* line 198, ../components/sass/_atoms.scss */
+/* line 185, ../components/sass/_atoms.scss */
 figure {
   position: relative;
   overflow: hidden;
   cursor: pointer; }
 
-/* line 205, ../components/sass/_atoms.scss */
+/* line 192, ../components/sass/_atoms.scss */
 figcaption {
   position: absolute;
   bottom: 17px;
@@ -242,27 +236,27 @@ figcaption {
   transition: all 0.5s ease-out;
   width: 100%; }
 
-/* line 219, ../components/sass/_atoms.scss */
+/* line 206, ../components/sass/_atoms.scss */
 li {
   position: relative;
   float: left; }
 
-/* line 229, ../components/sass/_atoms.scss */
+/* line 216, ../components/sass/_atoms.scss */
 .emphasize {
   color: #d47d19; }
 
-/* line 234, ../components/sass/_atoms.scss */
+/* line 221, ../components/sass/_atoms.scss */
 .quotes {
   font-size: 129%;
   font-family: "bankgothic_lt_md"; }
 
-/* line 241, ../components/sass/_atoms.scss */
+/* line 228, ../components/sass/_atoms.scss */
 .contact-required {
   color: #ae9d6b;
   font-size: 11.096px;
   font-size: 1.109rem; }
 
-/* line 248, ../components/sass/_atoms.scss */
+/* line 235, ../components/sass/_atoms.scss */
 .form-item-hint {
   font-size: 12px;
   font-size: 1.2rem;
@@ -274,50 +268,50 @@ li {
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out; }
 
-/* line 264, ../components/sass/_atoms.scss */
+/* line 251, ../components/sass/_atoms.scss */
 .btn-caret {
   display: inline-block;
   font-family: "quicksand-light"; }
-  /* line 269, ../components/sass/_atoms.scss */
+  /* line 256, ../components/sass/_atoms.scss */
   .btn-caret:after {
     content: ">"; }
 
-/* line 279, ../components/sass/_atoms.scss */
+/* line 266, ../components/sass/_atoms.scss */
 .thumb-list-item.ng-show, .thumb-list-item.ng-hide, .thumb-list-item.ng-move, #partials.ng-enter, #partials.ng-leave {
   -webkit-transition: 0.325s linear all;
   -moz-transition: 0.325s linear all;
   -o-transition: 0.325s linear all;
   transition: 0.325s linear all; }
 
-/* line 287, ../components/sass/_atoms.scss */
+/* line 274, ../components/sass/_atoms.scss */
 .thumb-list-item.ng-hide {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0; }
 
-/* line 292, ../components/sass/_atoms.scss */
+/* line 279, ../components/sass/_atoms.scss */
 .thumb-list-item.ng-show {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1; }
 
-/* line 297, ../components/sass/_atoms.scss */
+/* line 284, ../components/sass/_atoms.scss */
 #partials.ng-enter {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0; }
 
 /* starting animations for enter */
-/* line 302, ../components/sass/_atoms.scss */
+/* line 289, ../components/sass/_atoms.scss */
 #partials.ng-enter.ng-enter-active {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1; }
 
 /* terminal animations for enter */
-/* line 307, ../components/sass/_atoms.scss */
+/* line 294, ../components/sass/_atoms.scss */
 #partials.ng-leave {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1; }
 
 /* terminal animations for enter */
-/* line 311, ../components/sass/_atoms.scss */
+/* line 298, ../components/sass/_atoms.scss */
 #partials.ng-leave.ng-leave-active {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0; }
