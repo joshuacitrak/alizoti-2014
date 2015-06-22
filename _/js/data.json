@@ -15,7 +15,7 @@
         {
             "description" : "Step-by-step, we'll walk you through the process of turning your living space into a dream home.",
             "type" : "Indoor",
-            "img" : ["images/build/indoor/slideshow/sm/GoldCopperBrown-backsplash.jpg","images/build/indoor/slideshow/md/GoldCopperBrown-backsplash.jpg","images/build/indoor/slideshow/lg/GoldCopperBrown-backsplash-3.jpg"]
+            "img" : ["images/build/indoor/slideshow/sm/Green-marble-w-border-after.jpg","images/build/indoor/slideshow/md/Green-marble-w-border-after.jpg","images/build/indoor/slideshow/lg/Green-marble-w-border-after.jpg"]
         },  {
             "description" : "So you have this great idea... Let us help you set it in stone.",
             "type": "Outdoor",
@@ -33,7 +33,23 @@
         "lgThumbspath" : "images/build/indoor/lgThumb/",
         "smThumbspath" : "images/build/indoor/smThumb/",
         "projects" : [
-            {
+             {
+                "title" : "Ross Bathroom.",
+                "description" : "1x2 green marble herringbone w custom border. Following all the angles and returns of the room with the border was quite intense, but was a lot of fun.",
+                "details" : [ "2","0","2"],
+                "images" : ["Green-herringbone-floor-w-Carrera-wall.jpg", "Green-herringbone-shower-floor-w-Carrera-wall.jpg", "Green-marble-w-border-after.jpg", "Green-marble-w-border.jpg"], 
+                "descriptions" : [
+                    {
+                    	"description" : "Ross bathroom"
+                    },{
+                    	"description" : "Ross bathroom"
+                    },{
+                    	"description" : "Ross bathroom"
+                    },{
+                    	"description" : "Ross bathroom"
+                    }
+                ]
+            }, {
                 "title" : "Berkeley Hills Kitchen Backsplash. Glass mosaic.",
                 "description" : "The copper, dark, and fuchsia combination looks incredible with sunlight.",
                 "details" :[ "2","0","1"],
@@ -63,20 +79,20 @@
                     	"description" : "San Anselmo bathroom remodel"
                     }
                 ]
-            }, {
-                "title" : "Ross Bathroom.",
-                "description" : "1x2 green marble herringbone w custom border. Following all the angles and returns of the room with the border was quite intense, but was a lot of fun.",
-                "details" : [ "2","0","2"],
-                "images" : ["Green-herringbone-floor-w-Carrera-wall.jpg", "Green-herringbone-shower-floor-w-Carrera-wall.jpg", "Green-marble-w-border-after.jpg", "Green-marble-w-border.jpg"], 
+            },{
+                "title" : "Seacliff glass tile with Schluter metal trim.",
+                "description" : "Green field tile with black niche accent, lighter floor combination with metal trim finish gave a very modern look.",
+                "details" : [ "2","1","6"],
+                "images" : ["Glass-w-Schluter-metal-trim-3.jpg", "Glass-w-Schluter-metal-trim.jpg",  "Glass-w-Schluter-metal-trim-4.jpg", "Glass-w-Schluter-metal-trim-6.jpg"], 
                 "descriptions" : [
                     {
-                    	"description" : "Ross bathroom"
+                    	"description" : "Green field tile with black niche accent"
                     },{
-                    	"description" : "Ross bathroom"
+                    	"description" : "Green field tile with black niche accent"
                     },{
-                    	"description" : "Ross bathroom"
+                    	"description" : "Seacliff glass tile with Schluter metal trim"
                     },{
-                    	"description" : "Ross bathroom"
+                    	"description" : "Seacliff glass tile with Schluter metal trim"
                     }
                 ]
             }, {
@@ -108,11 +124,11 @@
                 "images" : ["BBQ-area-backwall.jpg", "BBQ-backsplash-2.jpg", "Pool-bar-area.jpg"], 
                 "descriptions" : [
                     {
-                    	"description" : "Lorem Ipsum BBQ-area-backwall "
+                    	"description" : "San Rafael Pool Bar and BBQ Section"
                     },{
-                    	"description" : "Lorem Ipsum BBQ-area-backwall"
+                    	"description" : "San Rafael Pool Bar and BBQ Section"
                     },{
-                    	"description" : "Lorem Ipsum BBQ-area-backwall"
+                    	"description" : "San Rafael Pool Bar and BBQ Section"
                     }
                 ]
             },   {
@@ -122,11 +138,11 @@
                 "images" : ["Marble-opening.jpg", "Marble-opening-outside.jpg", "Marble-opening-inside.jpg"], 
                 "descriptions" : [
                     {
-                    	"description" : "Marble-opening-inside.jpg"
+                    	"description" : "Belvedere Tiburon Limestone Gate Repair"
                     },{
-                    	"description" : "Marble-opening-inside.jpg"
+                    	"description" : "Belvedere Tiburon Limestone Gate Repair"
                     },{
-                    	"description" : "Marble-opening-inside.jpg"
+                    	"description" : "Belvedere Tiburon Limestone Gate Repair"
                     }
                 ]
             }, {
@@ -136,15 +152,15 @@
                 "images" : ["brick-layout-1.jpg", "concrete-pour-2.jpg", "exterior-block.jpg", "finish.jpg", "finish2.jpg"], 
                 "descriptions" : [
                     {
-                    	"description" : "Lorem Ipsum oven "
+                    	"description" : "Pacifica Wood Fire Pizza Oven "
                     },{
-                    	"description" : "Lorem Ipsum oven"
+                    	"description" : "Pacifica Wood Fire Pizza Oven"
                     },{
-                    	"description" : "Lorem Ipsum oven"
+                    	"description" : "Pacifica Wood Fire Pizza Oven"
                     },{
-                    	"description" : "Lorem Ipsum oven"
+                    	"description" : "Pacifica Wood Fire Pizza Oven"
                     },{
-                    	"description" : "Lorem Ipsum oven"
+                    	"description" : "Pacifica Wood Fire Pizza Oven"
                     }
                 ]
             }, {
@@ -154,13 +170,13 @@
                 "images" : ["colored-concrete-driveway-1.jpg", "colored-concrete-driveway-4.jpg", "colored-concrete-planter-top.jpg", "colored-concrete-sidewalk.jpg"], 
                 "descriptions" : [
                     {
-                    	"description" : "Lorem Ipsum colored-concrete-sidewalk.jpg "
+                    	"description" : "Larkspur Colored Concrete Driveway"
                     },{
-                    	"description" : "Lorem Ipsum colored-concrete-sidewalk.jpg"
+                    	"description" : "Larkspur Colored Concrete Driveway"
                     },{
-                    	"description" : "Lorem Ipsum colored-concrete-sidewalk.jpg"
+                    	"description" : "Larkspur Colored Concrete Driveway"
                     },{
-                    	"description" : "Lorem Ipsum colored-concrete-sidewalk.jpg"
+                    	"description" : "Larkspur Colored Concrete Driveway"
                     }
                 ]
             }, {
@@ -227,7 +243,7 @@
             }, {
                 "title" : "Niches and Shelves.",
                 "description" : "These details show where our artisanship shines: how we layout the tile: how we finish each corner; and how we line up the niche inset continuously with the wall tiles.",
-                "images" : ["Hand-crafted-ceramic.jpg", "Marble-mosaic-niche-medium.jpg", "Marble-niche-w-shelves.jpg", "Niche-inset-lines-up-w-wall.jpg", "Small-soap-niche.jpg", "Travertine-double-niche.jpg"], 
+                "images" : ["Hand-crafted-ceramic.jpg", "Marble-mosaic-niche-medium.jpg", "Marble-niche-w-shelves.jpg", "Niche-inset-lines-up-w-wall.jpg", "Small-soap-niche.jpg", "Travertine-double-niche.jpg", "Glass-w-Schluter-metal-trim-5.jpg"], 
                 "descriptions" : [
                     {
                     	"description" : "Handcrafted Mexican tile"
@@ -241,6 +257,8 @@
                     	"description" : "Small soap niche"
                     },{
                     	"description" : "Travertine double niche"
+                    },{
+                    	"description" : "Green field tile with black niche accent"
                     }
                 ]
             }, {

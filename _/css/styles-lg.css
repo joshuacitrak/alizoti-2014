@@ -563,11 +563,11 @@ li {
   text-align: center;
   padding-top: 17px; }
 
-/* line 311, ../components/sass/_molecules.scss */
+/* line 301, ../components/sass/_molecules.scss */
 .details-link {
   cursor: pointer; }
 
-/* line 316, ../components/sass/_molecules.scss */
+/* line 306, ../components/sass/_molecules.scss */
 .header-div {
   color: #d47d19; }
 
@@ -873,8 +873,8 @@ li {
     /* line 251, ../components/sass/_organisms.scss */
     .footer-container footer .legal-contact-social p {
       font-family: "bankgothic_lt_md";
-      font-size: 11.096px;
-      font-size: 1.109rem;
+      font-size: 13px;
+      font-size: 1.3rem;
       text-align: center; }
       /* line 258, ../components/sass/_organisms.scss */
       .footer-container footer .legal-contact-social p a {
